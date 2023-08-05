@@ -1,11 +1,9 @@
-// src/components/__stories__/PrimaryButton.stories.tsx
-
 import React from 'react';
-import { Meta, Story } from '@storybook/react'; // Import both Meta and Story from @storybook/react
-import { PrimaryButton, PrimaryButtonProps } from '../PrimaryButton'; // Import PrimaryButton and PrimaryButtonProps
+import { Meta, Story } from '@storybook/react';
+import { PrimaryButton, PrimaryButtonProps } from '../PrimaryButton';
 
 export default {
-  title: 'Components/PrimaryButton',
+  title: 'Buttons/PrimaryButton', // Changed the title to 'Buttons/PrimaryButton'
   component: PrimaryButton,
 } as Meta;
 
@@ -15,6 +13,7 @@ export const Default = Template.bind({});
 Default.args = {
   children: 'Click Me',
 };
+
 
 export const Disabled = Template.bind({});
 Disabled.args = {

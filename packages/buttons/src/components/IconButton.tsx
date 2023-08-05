@@ -14,7 +14,7 @@ const IconButtonWrapper = styled.button<IconButtonProps>`
   border: none;
   cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
   opacity: ${props => (props.disabled ? 0.5 : 1)};
-`;
+};`
 
 const IconButton: React.FC<IconButtonProps> = ({ onClick, disabled, className, children }) => {
   return (
