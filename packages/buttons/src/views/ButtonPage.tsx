@@ -1,32 +1,22 @@
+// ButtonPage.tsx
+
 import React from 'react';
-import {
-  PrimaryButton,
-  SecondaryButton,
-  IconButton,
-  ButtonGroup
-} from '../components';
+import { PrimaryButton, SecondaryButton, IconButton } from '../Elements';
 
 const ButtonPage: React.FC = () => {
-  const handlePrimaryClick = () => {
-    console.log('Primary button clicked');
-  };
-
-  const handleSecondaryClick = () => {
-    console.log('Secondary button clicked');
-  };
-
-  const handleIconClick = () => {
-    console.log('Icon button clicked');
-  };
-
   return (
     <div>
-      <h1>Button Examples</h1>
-      <ButtonGroup>
-        <PrimaryButton label="Primary Button" onClick={handlePrimaryClick} />
-        <SecondaryButton label="Secondary Button" onClick={handleSecondaryClick} />
-        <IconButton icon="check" onClick={handleIconClick} />
-      </ButtonGroup>
+      <h2>Primary Button</h2>
+      <PrimaryButton>Click Me</PrimaryButton>
+
+      <h2>Secondary Button</h2>
+      <SecondaryButton>Click Me</SecondaryButton>
+
+      <h2>Icon Button</h2>
+      <IconButton>
+        <svg /* Add your SVG icon here */ />
+      </IconButton>
+ 
     </div>
   );
 };
