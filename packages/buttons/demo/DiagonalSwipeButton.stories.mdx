@@ -1,0 +1,21 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import DiagonalSwipeButton from '../src/Elements/DiagonalSwipeButton.tsx';
+
+<Meta title="Buttons/DiagonalSwipeButton" component={DiagonalSwipeButton} />
+
+# DiagonalSwipeButton
+
+A button with diagonal swipe animation on hover.
+
+## Default
+
+```tsx
+import React from 'react';
+import DiagonalSwipeButton from '../src/Elements/DiagonalSwipeButton.tsx';
+
+export const Template: Story = (args) => <DiagonalSwipeButton {...args}>Hover Me!</DiagonalSwipeButton>;
+
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Hover Me!',
+};

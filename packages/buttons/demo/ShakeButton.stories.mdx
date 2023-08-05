@@ -1,0 +1,21 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import ShakeButton from '../src/Elements/StyledButton.tsx';
+
+<Meta title="Buttons/ShakeButton" component={ShakeButton} />
+
+# ShakeButton
+
+A button with a shake animation on hover.
+
+## Default
+
+```tsx
+import React from 'react';
+import { ShakeButton } from '../src/ShakeButton';
+
+export const Template: Story = (args) => <ShakeButton {...args}>Click Me!</ShakeButton>;
+
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Click Me!',
+};
