@@ -7,16 +7,20 @@ export default {
   component: SecondaryButton,
 } as Meta;
 
-const Template: Story = args => <SecondaryButton {...args} />;
+const CenteredTemplate: Story = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <SecondaryButton {...args} />
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {
   onClick: () => console.log('Button clicked'),
   disabled: false,
   children: 'Secondary Button',
 };
 
-export const Disabled = Template.bind({});
+export const Disabled = CenteredTemplate.bind({});
 Disabled.args = {
   onClick: () => console.log('Button clicked'),
   disabled: true,

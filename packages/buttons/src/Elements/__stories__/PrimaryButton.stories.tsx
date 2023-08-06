@@ -7,27 +7,30 @@ export default {
   component: PrimaryButton,
 } as Meta;
 
-const Template: Story<PrimaryButtonProps> = (args) => <PrimaryButton {...args} />;
+const CenteredTemplate: Story<PrimaryButtonProps> = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <PrimaryButton {...args} />
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {
   children: 'Click Me',
 };
 
-
-export const Disabled = Template.bind({});
+export const Disabled = CenteredTemplate.bind({});
 Disabled.args = {
   children: 'Disabled Button',
   disabled: true,
 };
 
-export const CustomStyle = Template.bind({});
+export const CustomStyle = CenteredTemplate.bind({});
 CustomStyle.args = {
   children: 'Custom Style',
   className: 'custom-button',
 };
 
-export const CustomOnClick = Template.bind({});
+export const CustomOnClick = CenteredTemplate.bind({});
 CustomOnClick.args = {
   children: 'Custom OnClick',
   onClick: () => alert('Button Clicked!'),

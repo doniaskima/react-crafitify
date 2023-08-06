@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import AnimatedButton from '../AnimatedButton';
+import AnimatedButton, { AnimatedButtonProps } from '../AnimatedButton';
 
 export default {
   title: 'Buttons/AnimatedButton',
@@ -24,26 +24,30 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (args) => <AnimatedButton {...args} />;
+const CenteredTemplate: Story<AnimatedButtonProps> = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <AnimatedButton {...args} />
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {
   children: 'Hover Me!',
 };
 
-export const Large = Template.bind({});
+export const Large = CenteredTemplate.bind({});
 Large.args = {
   children: 'Large Hover Me!',
   style: { fontSize: '1.3em', width: '160px', height: '50px' },
 };
 
-export const Rounded = Template.bind({});
+export const Rounded = CenteredTemplate.bind({});
 Rounded.args = {
   children: 'Rounded Hover Me!',
   style: { borderRadius: '10px' },
 };
 
-export const CustomColor = Template.bind({});
+export const CustomColor = CenteredTemplate.bind({});
 CustomColor.args = {
   children: 'Custom Color Hover Me!',
   bgColor: '#ff9900', // Change the background color

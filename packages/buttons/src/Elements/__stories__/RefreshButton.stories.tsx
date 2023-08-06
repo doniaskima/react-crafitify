@@ -7,26 +7,30 @@ export default {
   component: RefreshButton,
 } as Meta;
 
-const Template: Story = (args) => <RefreshButton {...args} />;
+const CenteredTemplate: Story = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <RefreshButton {...args} />
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {
   children: 'Refresh',
 };
 
-export const Small = Template.bind({});
+export const Small = CenteredTemplate.bind({});
 Small.args = {
   children: 'Small Refresh',
   style: { fontSize: '14px' },
 };
 
-export const Large = Template.bind({});
+export const Large = CenteredTemplate.bind({});
 Large.args = {
   children: 'Large Refresh',
   style: { fontSize: '20px' },
 };
 
-export const Rounded = Template.bind({});
+export const Rounded = CenteredTemplate.bind({});
 Rounded.args = {
   children: 'Rounded Refresh',
   style: { borderRadius: '1rem' },

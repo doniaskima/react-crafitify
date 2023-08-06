@@ -7,20 +7,24 @@ export default {
   component: TertiaryButton,
 } as Meta;
 
-const Template: Story = (args) => <TertiaryButton {...args} />;
+const CenteredTemplate: Story = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <TertiaryButton {...args} />
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {
   children: 'Button',
 };
 
-export const Large = Template.bind({});
+export const Large = CenteredTemplate.bind({});
 Large.args = {
   children: 'Large Button',
   style: { fontSize: '20px', padding: '12px 24px' },
 };
 
-export const CustomColor = Template.bind({});
+export const CustomColor = CenteredTemplate.bind({});
 CustomColor.args = {
   children: 'Custom Color Button',
   bgColor: '#ff9900', // Change the background color on hover

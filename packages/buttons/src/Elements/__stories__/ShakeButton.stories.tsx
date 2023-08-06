@@ -7,26 +7,30 @@ export default {
   component: ShakeButton,
 } as Meta;
 
-const Template: Story = (args) => <ShakeButton {...args} />;
+const CenteredTemplate: Story = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <ShakeButton {...args} />
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {
   children: 'Shake',
 };
 
-export const Small = Template.bind({});
+export const Small = CenteredTemplate.bind({});
 Small.args = {
   children: 'Small Shake',
   style: { height: '2.5em', width: '6em', fontSize: '14px' },
 };
 
-export const Large = Template.bind({});
+export const Large = CenteredTemplate.bind({});
 Large.args = {
   children: 'Large Shake',
   style: { height: '3.5em', width: '10em', fontSize: '20px' },
 };
 
-export const Rounded = Template.bind({});
+export const Rounded = CenteredTemplate.bind({});
 Rounded.args = {
   children: 'Rounded Shake',
   style: { borderRadius: '20em' },

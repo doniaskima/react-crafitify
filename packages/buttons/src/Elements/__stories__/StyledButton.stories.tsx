@@ -7,12 +7,16 @@ export default {
   component: StyledButton,
 } as Meta;
 
-const Template: Story = (args) => <StyledButton {...args}>Sign up</StyledButton>;
+const CenteredTemplate: Story = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <StyledButton {...args}>Sign up</StyledButton>
+  </div>
+);
 
-export const Default = Template.bind({});
+export const Default = CenteredTemplate.bind({});
 Default.args = {};
 
-export const CustomColors = Template.bind({});
+export const CustomColors = CenteredTemplate.bind({});
 CustomColors.args = {
   style: {
     '--primary-color': '#FF5733',

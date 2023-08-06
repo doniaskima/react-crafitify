@@ -1,13 +1,49 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import GenerateBtn from '../GenerateBtn';
+import GenerateBtn, { GenerateBtnProps } from '../GenerateBtn';
 
 export default {
   title: 'Buttons/GenerateBtn',
   component: GenerateBtn,
+  parameters: {
+    controls: { expanded: true },
+  },
+  argTypes: {
+    children: {
+      description: 'Content to display inside the button',
+      control: { type: 'text' },
+    },
+    disabled: {
+      description: 'Disables the button',
+      control: { type: 'boolean' },
+    },
+    loading: {
+      description: 'Shows a loading spinner in the button',
+      control: { type: 'boolean' },
+    },
+    onClick: {
+      description: 'Custom onClick event handler',
+      action: 'Button Clicked!',
+    },
+  },
 } as Meta;
 
-const Template: Story = (args) => <GenerateBtn {...args} />;
+const Template: Story<GenerateBtnProps> = (args) => (
+  <div
+    style={{
+      display: 'flex',
+      width: '100%',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '150px',
+    }}
+  >
+    <GenerateBtn {...args}>{args.children}</GenerateBtn>
+    <br />
+    <GenerateBtn {...args} disabled />
+  </div>
+);
 
 export const Default = Template.bind({});
 Default.args = {
@@ -20,39 +56,14 @@ Disabled.args = {
   disabled: true,
 };
 
-export const CustomStyle = Template.bind({});
-CustomStyle.args = {
-  children: 'Custom Style',
-  className: 'custom-button',
+export const Loading = Template.bind({});
+Loading.args = {
+  children: 'Loading...',
   loading: true,
 };
 
-export const CustomOnClick = Template.bind({});
-CustomOnClick.args = {
-  children: 'Custom OnClick',
+export const Sparkling = Template.bind({});
+Sparkling.args = {
+  children: 'Sparkling Button',
   onClick: () => alert('Button Clicked!'),
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  children: 'Small Button',
-  size: 'small',
-};
-
-export const Medium = Template.bind({});
-Medium.args = {
-  children: 'Medium Button',
-  size: 'medium',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  children: 'Large Button',
-  size: 'large',
-};
-
-export const Rounded = Template.bind({});
-Rounded.args = {
-  children: 'Rounded Button',
-  borderRadius: '50px',
 };
