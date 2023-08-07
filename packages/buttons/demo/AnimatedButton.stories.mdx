@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
-import AnimatedButton from '../src/Elements/AnimatedButton.tsx';
+import AnimatedButton  from '../src/Elements/AnimatedButton';
 
 <Meta title="Buttons/AnimatedButton" component={AnimatedButton} />
 
@@ -7,15 +7,7 @@ import AnimatedButton from '../src/Elements/AnimatedButton.tsx';
 
 A button with animated hover and active effects.
 
-## Default
+## Usage
 
-```tsx
-import React from 'react';
-import AnimatedButton from '../src/Elements/AnimatedButton.tsx';
-
-export const Template: Story = (args) => <AnimatedButton {...args}>Hover Me!</AnimatedButton>;
-
-export const Default = Template.bind({});
-Default.args = {
-  children: 'Hover Me!',
-};
+```jsx
+<AnimatedButton>Hover Me!</AnimatedButton>

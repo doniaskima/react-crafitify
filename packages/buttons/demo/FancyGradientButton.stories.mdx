@@ -1,0 +1,34 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import CustomStyledButton, { FancyGradientButtonProps } from '../src/Elements/FancyGradientButton.tsx';
+
+<Meta title="Buttons/FancyGradientButton" component={CustomStyledButton} />
+
+# FancyGradientButton
+
+A button with a fancy gradient design.
+
+## Usage
+
+```jsx
+import React from 'react';
+import CustomStyledButton from '../FancyGradientButton';
+
+const CenteredTemplate = ({ children }) => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    {children}
+  </div>
+);
+
+export const Default = CenteredTemplate.bind({});
+Default.args = {
+  size: 'medium',
+  mainBgColor: '#814fd1',
+  gradientBgColor1: 'rgb(222, 203, 226)',
+  gradientBgColor2: 'rgb(79, 131, 209)',
+  ringColor: '#6f00ff',
+  shadowColor: 'rgba(79, 99, 209, 0.64)',
+  hoverShadowColor: 'rgba(79, 99, 209, 0.64)',
+  mainFgColor: '#313133',
+  hoverFgColor: 'rgb(38, 11, 53)',
+  children: 'Button',
+};

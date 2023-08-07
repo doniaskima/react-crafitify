@@ -1,0 +1,41 @@
+
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import FancyArrowButton from '../src/Elements/FancyArrowButton.tsx';
+
+<Meta title="Buttons/FancyArrowButton" component={FancyArrowButton} />
+
+# FancyArrowButton
+
+A button with a fancy arrow design.
+
+## Usage
+
+```jsx
+import React from 'react';
+import FancyArrowButton from '../FancyArrowButton';
+
+const CenteredStory = ({ children }) => {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const Template = (args) => (
+  <CenteredStory>
+    <FancyArrowButton {...args} />
+  </CenteredStory>
+);
+
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Button',
+};
