@@ -1,7 +1,7 @@
 # React DoniaCraft
 
-[![npm version](https://img.shields.io/npm/v/reactdoniacraft.svg)](https://www.npmjs.com/package/reactdoniacraft)
-[![npm downloads](https://img.shields.io/npm/dm/reactdoniacraft.svg)](https://www.npmjs.com/package/reactdoniacraft)
+[![npm version](https://img.shields.io/npm/v/reactdoniacraft.svg)](https://www.npmjs.com/package/react-craft-buttons)
+[![npm downloads](https://img.shields.io/npm/dm/reactdoniacraft.svg)](https://www.npmjs.com/package/react-craft-buttons)
 [![License](https://img.shields.io/github/license/your-username/reactdoniacraft.svg)](https://github.com/your-username/reactdoniacraft/blob/main/LICENSE)
 
 ## Introduction
@@ -20,4 +20,4 @@ React DoniaCraft is a lightweight and customizable React component library for c
 To install React DoniaCraft, you can use your preferred package manager:
 
 ```bash
-npm install reactdoniacraft --save
+npm install react-craft --save
