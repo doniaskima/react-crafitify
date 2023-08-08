@@ -7,4 +7,4 @@ My Button Package is a collection of reusable React components and containers re
 You can install the package using npm or yarn:
 
 ```bash
-npm install my-button-package
+npm i react-craft-buttons
