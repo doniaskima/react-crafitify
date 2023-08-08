@@ -114,8 +114,8 @@ const StyledButton = styled.button<CustomIconButtonProps>`
   }
 `;
 
-const CustomIconButton: React.FC<CustomIconButtonProps> = ({ children, ...rest }) => {
-  return <StyledButton {...rest}>{children}</StyledButton>;
+const CustomIconButton: React.FC<CustomIconButtonProps> = ({ ...rest }) => {
+  return <StyledButton {...rest} />;
 };
 
 export default CustomIconButton;

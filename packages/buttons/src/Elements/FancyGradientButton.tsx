@@ -1,18 +1,8 @@
 // FancyGradientButton.tsx
-import React from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import styled from 'styled-components';
 
-interface FancyGradientButtonProps {
-  size?: 'small' | 'medium' | 'large';
-  mainBgColor?: string;
-  gradientBgColor1?: string;
-  gradientBgColor2?: string;
-  ringColor?: string;
-  shadowColor?: string;
-  hoverShadowColor?: string;
-  mainFgColor?: string;
-  hoverFgColor?: string;
-}
+ 
 
 const StyledButton = styled.button<FancyGradientButtonProps>`
   --min-width: ${(props) => (props.size === 'large' ? '220px' : props.size === 'small' ? '150px' : '180px')};
@@ -118,9 +108,22 @@ const StyledButton = styled.button<FancyGradientButtonProps>`
     opacity: 0;
   }
 }`
+interface FancyGradientButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  size?: 'small' | 'medium' | 'large';
+  mainBgColor?: string;
+  gradientBgColor1?: string;
+  gradientBgColor2?: string;
+  ringColor?: string;
+  shadowColor?: string;
+  hoverShadowColor?: string;
+  mainFgColor?: string;
+  hoverFgColor?: string;
+}
 
-const CustomStyledButton: React.FC<FancyGradientButtonProps> = ({ children, ...props }) => {
+const FancyGradientButton: React.FC<FancyGradientButtonProps> = ({ children, ...props }) => {
   return <StyledButton {...props}>{children}</StyledButton>;
 };
 
-export default CustomStyledButton;
+export default FancyGradientButton;
+
+ 

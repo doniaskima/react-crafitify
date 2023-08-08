@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const StyledButton = styled.button`
@@ -84,7 +84,7 @@ const EmptyHeart = styled.svg`
   }
 `;
 
-const Lovebtn: React.FC = ({ children, ...rest }) => {
+const Lovebtn: React.FC<{ children: ReactNode }> = ({ children, ...rest }) => {
   return (
     <StyledButton {...rest}>
       <EmptyHeart className="empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">

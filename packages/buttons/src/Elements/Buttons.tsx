@@ -24,8 +24,7 @@ const buttonVariantStyles = {
     }
   `,
 };
-
-const StyledButton = styled.button`
+const StyledButton = styled.button<ButtonProps>`
   display: inline-flex;
   transition: color 0.2s;
   outline: none;
@@ -39,13 +38,12 @@ const StyledButton = styled.button`
   border-radius: 0.375rem; /* rounded-md multiplied by 4 to match tailwindcss scale */
   align-items: center;
   justify-content: center;
-  ${({ variant }) => buttonVariantStyles[variant]};
+  ${({ variant }: { variant: 'primary' | 'secondary' | 'outline' }) => buttonVariantStyles[variant]}
 };`
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant: 'primary' | 'secondary' | 'outline';
 };
-
 const Button: React.FC<ButtonProps> = ({
   children,
   variant = 'primary',

@@ -5,6 +5,7 @@ interface SecondaryButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   className?: string;
+  children?: React.ReactNode; 
 }
 
 const SecondaryButtonWrapper = styled.button<SecondaryButtonProps>`
@@ -25,5 +26,6 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({ onClick, disabled, cl
     </SecondaryButtonWrapper>
   );
 };
+
 
 export default SecondaryButton;

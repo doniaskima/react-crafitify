@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
+interface TertiaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  textColor?: string;
+  borderColor?: string;
+  bgColor?: string;
+  shadowColor?: string;
+}
+
+const StyledButton = styled.button<TertiaryButtonProps>`
 padding: 10px 20px;
 text-transform: uppercase;
 border-radius: 8px;
@@ -31,9 +38,8 @@ user-select: none;
      0 0 100px ${props.shadowColor || '#008cff'}`};
 }
 `;
-
-
-const TertiaryButton = ({ children, ...rest }) => {
+ 
+const TertiaryButton: React.FC<TertiaryButtonProps> = ({ children, ...rest }) => {
   return <StyledButton {...rest}>{children}</StyledButton>;
 };
 

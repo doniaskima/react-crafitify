@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode, ButtonHTMLAttributes } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const shakeAnimation = keyframes`
@@ -45,7 +45,11 @@ const StyledButton = styled.button`
   }
 `;
 
-const ShakeButton = ({ children, ...rest }) => {
+interface ShakeButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+}
+
+const ShakeButton: React.FC<ShakeButtonProps> = ({ children, ...rest }) => {
   return <StyledButton {...rest}>{children}</StyledButton>;
 };
 

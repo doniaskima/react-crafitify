@@ -1,5 +1,4 @@
 export { default as SecondaryButton } from './Elements/SecondaryButton';
-export { default as ButtonPage } from './views/ButtonPage';
 export { default as AnimatedButton } from "./Elements/AnimatedButton";
 export { default as ButtonGroup } from "./Elements/ButtonGroup";
 export { default as DiagonalSwipeButton } from "./Elements/DiagonalSwipeButton";

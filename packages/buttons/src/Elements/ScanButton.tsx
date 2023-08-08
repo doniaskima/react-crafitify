@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const MoveBackground = keyframes`
@@ -115,7 +115,7 @@ const StyledScanButton = styled.button`
   }
 `;
 
-const ScanButton: React.FC = ({ children }) => {
+const ScanButton: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <StyledScanButton>
       <div className="progress">

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import styled from 'styled-components';
 
-interface FancyArrowButtonProps {
+interface FancyArrowButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'small' | 'medium' | 'large';
   mainBgColor?: string;
   arrowColor?: string;
@@ -55,12 +55,15 @@ const StyledButton = styled.button<FancyArrowButtonProps>`
   }
 }`;
 
-const FancyArrowButton: React.FC<FancyArrowButtonProps> = ({ children, ...props }) => {
+const FancyArrowButton: React.FC<FancyArrowButtonProps> = (props) => {
   return (
     <StyledButton {...props}>
-      <span>{children}</span>
+      <span>{props.children}</span>
     </StyledButton>
   );
 };
 
 export default FancyArrowButton;
+
+
+

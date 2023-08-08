@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const moveBarAnimation = keyframes`
@@ -66,7 +66,7 @@ const StyledButton = styled.button`
   }
 `;
 
-const GradientBorderButton = ({ children }) => {
+const GradientBorderButton: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <StyledButton>
       {children}

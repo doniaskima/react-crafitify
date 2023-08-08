@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 interface HoverEffectButtonProps {
@@ -6,6 +6,7 @@ interface HoverEffectButtonProps {
   textColor?: string;
   backgroundColor?: string;
   hoverColor?: string;
+  children:ReactNode,
 }
 
 const StyledButton = styled.button<HoverEffectButtonProps>`

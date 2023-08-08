@@ -148,7 +148,7 @@ const CustomStyledButton: React.FC<CustomStyledButtonProps> = ({
     >
       <span className="btn-inner">
         <span className="btn-label">{children}</span>
-        <span className="btn-blur" aria-hidden=""></span>
+        <span className="btn-blur" aria-hidden="true"></span>
       </span>
     </StyledButton>
   );

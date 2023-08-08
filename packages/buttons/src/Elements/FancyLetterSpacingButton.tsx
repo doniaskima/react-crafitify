@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
-interface FancyLetterSpacingButtonProps {
+interface FancyLetterSpacingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'small' | 'medium' | 'large';
   color?: string;
   hoverColor?: string;
   activeColor?: string;
   letterSpacing?: string;
   backgroundColor?: string;
-  hoverBackgroundColor?: string; 
-  children: React.ReactNode;
+  hoverBackgroundColor?: string;
+  hoverLetterSpacing?: string; 
+  activeLetterSpacing?: string; 
 }
 
 const StyledButton = styled.button<FancyLetterSpacingButtonProps>`

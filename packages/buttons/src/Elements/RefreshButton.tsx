@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const spinAnimation = keyframes`
@@ -47,7 +47,7 @@ const StyledButton = styled.button`
   }
 `;
 
-const RefreshButton = ({ children, ...rest }) => {
+const RefreshButton: React.FC<{ children: ReactNode }> = ({ children, ...rest }) => {
   return (
     <StyledButton {...rest}>
       <svg viewBox="0 0 16 16" className="bi bi-arrow-repeat" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
