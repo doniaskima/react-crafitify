@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import CustomIconButton, { CustomIconButtonProps } from '../CustomIconButton';
 
 export default {
-  title: 'Buttons/CustomButton',
+  title: 'Buttons/CustomIconButton',
   component: CustomIconButton,
 } as Meta;
 
