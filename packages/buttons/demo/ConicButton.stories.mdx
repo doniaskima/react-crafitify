@@ -1,0 +1,30 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import ConicButton from '../src/Elements/ConicButton';
+
+<Meta title="Buttons/ConicButton" component={ConicButton} />
+
+# ConicButton
+
+The `ConicButton` component is a customizable button with a conic gradient background effect.
+
+## Usage
+
+To use the `ConicButton` component, import it from your components and provide the desired props:
+
+```jsx
+import React from 'react';
+import ConicButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <ConicButton>Conic Button</ConicButton>
+
+      {/* Customized button with a different color */}
+      <ConicButton color="#FF5733">Custom Color Button</ConicButton>
+    </div>
+  );
+};
+
+export default MyComponent;

@@ -1,0 +1,37 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import GradientGemButton, { GradientGemButtonProps } from '../src/Elements/GradientGemButton';
+
+<Meta title="Buttons/GradientGemButton" component={GradientGemButton} />
+
+# GradientGemButton
+
+GradientGemButton is a customizable button component with gradient background.
+
+## Usage
+
+To use the `GradientGemButton` component, import it and provide the desired props:
+
+```jsx
+import React from 'react';
+import GradientGemButton from 'path-to-your-component/GradientGemButton';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <GradientGemButton />
+
+      {/* Customized button with gradient background */}
+      <GradientGemButton
+        backgroundColor="linear-gradient(144deg, #FF6347, #1E90FF 50%, #32CD32)"
+        textColor="#FFFFFF"
+        spanBackgroundColor="rgb(5, 6, 45)"
+        spanBackgroundHover="none"
+      >
+        Custom Button
+      </GradientGemButton>
+    </div>
+  );
+};
+
+export default MyComponent;
