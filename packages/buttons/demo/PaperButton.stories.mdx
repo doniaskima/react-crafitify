@@ -1,0 +1,30 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import PaperButton, { PaperButtonProps } from '../src/Elements/PaperButton'; 
+
+<Meta title="Buttons/PaperButton" component={PaperButton} />
+
+# PaperButton
+
+The `PaperButton` component is a button with a paper-like style.
+
+## Usage
+
+To use the `PaperButton` component, import it from your components directory and provide the desired props:
+
+```jsx
+import React from 'react';
+import PaperButton from `react-craft-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <PaperButton>Default Paper Button</PaperButton>
+
+      {/* Customized button with background color */}
+      <PaperButton backgroundColor="#FF5733">Custom Paper Button</PaperButton>
+    </div>
+  );
+};
+
+export default MyComponent;
