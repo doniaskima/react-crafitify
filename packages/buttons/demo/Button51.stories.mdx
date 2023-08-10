@@ -1,0 +1,42 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import Button51 from '../src/Elements/Button51';  
+
+<Meta title="Buttons/Button51" component={Button51} />
+
+# Button51
+
+The `Button51` component from the `react-craft-buttons` library is a customizable button with a pseudo-element background.
+
+## Usage
+
+To use the `Button51` component, import it from the `react-craft-buttons` package and provide the desired props:
+
+```jsx
+import React from 'react';
+import Button51 from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <Button51>Default Button</Button51>
+
+      {/* Customized button with background color and text color */}
+      <Button51
+        backgroundColor="#FF5733"
+        textColor="#FFF"
+      >
+        Custom Button
+      </Button51>
+
+      {/* Customized button with pseudo-element background color */}
+      <Button51
+        pseudoBackgroundColor="#F2C249"
+      >
+        Button with Custom Pseudo-Background
+      </Button51>
+    </div>
+  );
+};
+
+export default MyComponent;

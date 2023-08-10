@@ -5,7 +5,7 @@ interface StyledButtonProps {
   backgroundColor?: string;
   borderColor?: string;
   textColor?: string;
-  pseudoBackgroundColor?: string; // Add a prop for pseudo-element background color
+  pseudoBackgroundColor?: string;  
 }
 
 const StyledButton = styled.button<StyledButtonProps>`

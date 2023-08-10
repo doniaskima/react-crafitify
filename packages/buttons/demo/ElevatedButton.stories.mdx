@@ -1,0 +1,36 @@
+
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import ElevatedButton from '../src/Elements/ElevatedButton';
+
+<Meta title="Buttons/ElevatedButton" component={ElevatedButton} />
+
+# ElevatedButton
+
+The `ElevatedButton` component from the `react-craft-buttons` library is a customizable button with elevated styles and hover effects.
+
+## Usage
+
+To use the `ElevatedButton` component, import it from the `react-craft-buttons` package and provide the desired props:
+
+```jsx
+import React from 'react';
+import ElevatedButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <ElevatedButton>Default Button</ElevatedButton>
+
+      {/* Customized button with background color and text color */}
+      <ElevatedButton
+        backgroundColor="#FF5733"
+        textColor="#FFF"
+      >
+        Custom Button
+      </ElevatedButton>
+    </div>
+  );
+};
+
+export default MyComponent;
