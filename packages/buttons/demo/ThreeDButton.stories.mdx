@@ -1,0 +1,36 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import ThreeDButton from '../src/Elements/ThreeDButton';
+
+<Meta title="Buttons/ThreeDButton" component={ThreeDButton} />
+
+# ThreeDButton
+
+The `ThreeDButton` component is a customizable 3D-style button.
+
+## Usage
+
+To use the `ThreeDButton` component, import it from your components directory and provide the desired props:
+
+```jsx
+import React from 'react';
+import ThreeDButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <ThreeDButton>Default Button</ThreeDButton>
+
+      {/* Customized button with colors */}
+      <ThreeDButton
+        backgroundColor="#FF5733"
+        borderColor="#FF5733"
+        textColor="#FFF"
+      >
+        Custom Button
+      </ThreeDButton>
+    </div>
+  );
+};
+
+export default MyComponent;
