@@ -1,0 +1,68 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import PinturaButton  from '../src/Elements/PinturaButton';
+
+<Meta
+  title="Buttons/PinturaButton"
+  component={PinturaButton}
+/>
+
+## PinturaButton
+
+You can use the `PinturaButton` component to create stylish buttons.
+
+### Default Button
+
+```jsx
+import React from 'react';
+import PinturaButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+     <PinturaButton>Pintura Button</PinturaButton>
+    </div>
+  );
+};
+```
+
+### Disabled Button
+
+```jsx
+import React from 'react';
+import PinturaButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+     <<PinturaButton disabled>Disabled Pintura Button</PinturaButton>
+    </div>
+  );
+};
+```
+### Customized Button
+
+```jsx
+import React from 'react';
+import PinturaButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+ <div>
+   <PinturaButton
+    background="linear-gradient(to bottom right, #EF4765, #FF9A5A)"
+    borderColor="#FF9A5A"
+    textColor="#FFFFFF"
+    fontSize="20px"
+    width="200px"
+    height="60px"
+    boxShadow="0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5)"
+    boxShadowColor="#FF9A5A" // Specify the box shadow color
+  >
+    Customized Pintura Button
+  </PinturaButton>
+    </div>
+  );
+};
+```
+

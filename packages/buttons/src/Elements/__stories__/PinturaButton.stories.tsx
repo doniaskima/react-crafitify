@@ -53,7 +53,7 @@ Disabled.args = {
 
 export const Customized = Template.bind({});
 Customized.args = {
-  children: 'Customized Pintura Button',
+  children: 'Customized',
   background: 'linear-gradient(to bottom right, #EF4765, #FF9A5A)',
   hoverBackground: '#FF9A5A',
   borderColor: '#FF9A5A',
