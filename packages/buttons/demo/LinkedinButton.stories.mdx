@@ -1,0 +1,78 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { LinkedinButton } from '../src/Elements/LinkedinButton'; 
+
+<Meta title="Buttons/LinkedinButton" component={LinkedinButton} />
+
+# LinkedinButton
+
+The `LinkedinButton` component is used for rendering a customizable button with LinkedIn-like styling.
+
+## Default
+
+This section demonstrates the default rendering of the `LinkedinButton` component.
+
+```jsx
+import React from 'react';
+import LinkedinButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <LinkedinButton>Linkedin Button</LinkedinButton>
+    </div>
+  );
+};
+
+```
+
+## Disabled
+
+This section demonstrates the rendering of a disabled LinkedinButton component.
+
+```jsx
+import React from 'react';
+import LinkedinButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <LinkedinButton disabled>
+     Disabled Linkedin Button
+    </LinkedinButton>
+  );
+};
+
+
+
+```
+
+
+## Customized
+
+This section demonstrates the rendering of a customized LinkedinButton component with specific background color, hover background color, active background color, text color, font size, height, and minimum width values.
+
+```jsx
+import React from 'react';
+import LinkedinButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <LinkedinButton
+      backgroundColor="#FF5733"
+      hoverBackgroundColor="#FF734D"
+      activeBackgroundColor="#FF5733"
+      textColor="#FFF"
+      fontSize={18}
+      height={50}
+      minWidth={150}
+    >
+      Custom Linkedin Button
+    </LinkedinButton>
+  );
+};
+
+
+
+
+
+```

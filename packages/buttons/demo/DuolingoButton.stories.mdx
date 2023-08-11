@@ -1,0 +1,83 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { DuolingoButton, DuolingoButtonProps } from '../src/Elements/DuolingoButton';
+
+<Meta
+  title="Buttons/DuolingoButton"
+  component={DuolingoButton}
+  argTypes={{
+    children: { control: 'text' },
+    disabled: { control: 'boolean' },
+    backgroundColor: { control: 'color' },
+    hoverBackgroundColor: { control: 'color' },
+    textColor: { control: 'color' },
+    fontSize: { control: 'number' },
+    height: { control: 'number' },
+    width: { control: 'number' },
+  }}
+/>
+
+# DuolingoButton
+
+The `DuolingoButton` component is used for rendering a customizable button with Duolingo-like styling.
+
+## Default
+
+This section demonstrates the default rendering of the `DuolingoButton` component.
+
+```jsx
+import React from 'react';
+import DuolingoButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <DuolingoButton>Duolingo Button</DuolingoButton>
+    </div>
+  );
+};
+
+```
+
+
+## Disabled
+
+This section demonstrates the rendering of a disabled DuolingoButton component.
+
+```jsx
+import React from 'react';
+import DuolingoButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <DuolingoButton disabled>
+     Disabled Duolingo Button
+    </DuolingoButton>
+  );
+};
+
+```
+
+## Customized
+
+This section demonstrates the rendering of a customized DuolingoButton component with specific background color, hover background color, text color, font size, height, and width values.
+
+```jsx
+import React from 'react';
+import DuolingoButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <DuolingoButton
+      backgroundColor="#FF5733"
+      hoverBackgroundColor="#FF734D"
+      textColor="#FFF"
+      fontSize={18}
+      height={50}
+      width={100}
+    >
+      Custom Duolingo Button
+    </DuolingoButton>
+  );
+};
+```
