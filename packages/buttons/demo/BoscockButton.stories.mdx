@@ -1,0 +1,46 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import BoscockButton from '../src/Elements/BoscockButton';
+
+<Meta title="Buttons/Boscock" component={BoscockButton} />
+
+# BoscockButton
+
+You can customize the BoscockButton component using various props.
+
+## Default
+
+```jsx
+import React from 'react';
+import BoscockButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <BoscockButton>Conic Button</BoscockButton>
+    </div>
+  );
+};
+```
+
+## Customized
+
+```jsx
+import React from 'react';
+import BoscockButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+     <BoscockButton
+       backgroundColor="blue"
+       fontSize="18px"
+       width="200px"
+       height="60px"
+      >
+       Custom Button
+    </BoscockButton>
+    </div>
+  );
+};
+```
