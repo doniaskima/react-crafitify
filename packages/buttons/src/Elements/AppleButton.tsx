@@ -8,9 +8,11 @@ interface AppleButtonProps {
   borderColor?: string;
   hoverBackgroundColor?: string;
   hoverBorderColor?: string;
+  activeBackgroundColor?: string;
+  activeBorderColor?: string;
   textColor?: string;
   fontSize?: number;
-  height?: number;
+  height?: number | string;
   borderWidth?: number;
   size?: 'small' | 'medium' | 'large';
 }
@@ -72,11 +74,11 @@ const StyledAppleButton = styled.button<AppleButtonProps>`
   }
   
   &:active {
-    background-image: linear-gradient(#3D94D9, #0067B9);
-    border-color: #006DBC;
+    background-image: linear-gradient(${props => props.activeBackgroundColor || '#3D94D9'}, ${props => props.activeBackgroundColor || '#0067B9'});
+    border-color: ${props => props.activeBorderColor || '#006DBC'};
     outline: none;
   }
-  
+
   &:focus {
     box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
     outline: none;

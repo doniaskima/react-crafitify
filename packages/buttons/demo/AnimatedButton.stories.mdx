@@ -1,13 +1,89 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import AnimatedButton  from '../src/Elements/AnimatedButton';
+import { Meta } from '@storybook/addon-docs/blocks';
+import { AnimatedButton } from '../src/Elements/AnimatedButton';  
 
 <Meta title="Buttons/AnimatedButton" component={AnimatedButton} />
 
 # AnimatedButton
 
-A button with animated hover and active effects.
+The `AnimatedButton` component is a button with animated hover and active effects.
 
-## Usage
+## Default
+
+This section demonstrates the default rendering of the `AnimatedButton` component.
 
 ```jsx
-<AnimatedButton>Hover Me!</AnimatedButton>
+import React from 'react';
+import AnimatedButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <AnimatedButton>
+         Hover Me!
+      </AnimatedButton>
+    </div>
+  );
+};
+```
+## Large Button
+
+This section demonstrates a large AnimatedButton with customized font size, width, and height.
+
+```jsx
+import React from 'react';
+import AnimatedButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+     <AnimatedButton fontSize="1.3em" width="160px" height="50px">
+       Large Hover Me!
+    </AnimatedButton>
+
+    </div>
+  );
+};
+```
+
+## Rounded Button
+
+This section demonstrates a rounded AnimatedButton.
+
+```jsx
+import React from 'react';
+import AnimatedButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <AnimatedButton style={{ borderRadius: '10px' }}>
+        Rounded Hover Me!
+      </AnimatedButton>
+    </div>
+  );
+};
+```
+
+## Custom Color Button
+
+This section demonstrates a AnimatedButton with custom background, text, hover, and active colors.
+
+```jsx
+import React from 'react';
+import AnimatedButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <AnimatedButton
+        bgColor="#ff9900"
+        textColor="#fff"
+        hoverColor="#ff0000"
+        activeColor="#00ff00"
+    >
+            Custom Color Hover Me!
+     </AnimatedButton>
+    </div>
+  );
+};```

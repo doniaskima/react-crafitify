@@ -38,6 +38,6 @@ Customized.args = {
   children: 'Custom Button',
   backgroundColor: 'blue',
   fontSize: '18px',
-  width: '40px',
+  width: '150px',
   height: '40px',
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Button51 from '../Button51';
+import Button51, { Button51Props } from '../Button51';
 
 export default {
   title: 'Buttons/Button51',
@@ -22,7 +22,7 @@ const CenteredStory: React.FC = ({ children }) => {
   );
 };
 
-const Template: Story = (args) => (
+const Template: Story<Button51Props> = (args) => (
   <CenteredStory>
     <Button51 {...args} />
   </CenteredStory>
@@ -31,5 +31,18 @@ const Template: Story = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   children: 'Button 51',
-  pseudoBackgroundColor: '#D5EDF6', 
+  pseudoBackgroundColor: '#D5EDF6',
+};
+
+export const Customized = Template.bind({});
+Customized.args = {
+  children: 'Customized Button',
+  backgroundColor: '#FC6C85',
+  borderColor: '#FF5733',
+  textColor: '#FFFFFF',
+  pseudoBackgroundColor: '#FFD1DC',
+  hoverPseudoBackgroundColor: '#ef66d8', 
+  fontSize: '20px',
+  height: '',
+  fontWeight: 100,
 };

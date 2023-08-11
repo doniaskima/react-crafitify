@@ -13,28 +13,43 @@ The `AmazonButton` component is used for rendering a customizable button with Am
 This section demonstrates the default rendering of the `AmazonButton` component.
 
 ```jsx
+import React from 'react';
+import AmazonButton from 'react-craft-buttons';
 
-{/* Default */}
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <AmazonButton>
+       AmazonButton
+      </AmazonButton>
+    </div>
+  );
+};
+```
 
-<AmazonButton>
-  Button 13
-</AmazonButton> 
-
-{/* Customized button with background color and text color */}
+## Customized
 
 This section demonstrates a customized rendering of the AmazonButton component.
 
 You can customize the appearance of the button using props.
 
-<AmazonButton
-  backgroundColor="#ff9900"
-  borderColor="#ff9900"
-  textColor="#ffffff"
-  fontSize={16}
-  width="150px"
->
-  Custom Button
-</AmazonButton>
+```jsx
+import React from 'react';
+import AmazonButton from 'react-craft-buttons';
 
-
-
+const MyComponent = () => {
+  return (
+   <AmazonButton
+    backgroundColor="#ff9900"
+    borderColor="#ff9900"
+    textColor="#ffffff"
+    fontSize={16}
+    width="150px"
+   >
+     Custom Button
+   </AmazonButton>
+  );
+};
+ 
+```

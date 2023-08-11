@@ -1,5 +1,5 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import Button51 from '../src/Elements/Button51';  
+import { Meta } from '@storybook/addon-docs/blocks';
+import Button51 from '../src/Elements/Button51';
 
 <Meta title="Buttons/Button51" component={Button51} />
 
@@ -21,19 +21,18 @@ const MyComponent = () => {
       {/* Default usage */}
       <Button51>Default Button</Button51>
 
-      {/* Customized button with background color and text color */}
+      {/* Customized button with various props */}
       <Button51
-        backgroundColor="#FF5733"
-        textColor="#FFF"
+        backgroundColor="#FC6C85"
+        borderColor="#FF5733"
+        textColor="#FFFFFF"
+        pseudoBackgroundColor="#FFD1DC"
+        hoverPseudoBackgroundColor="#ef66d8"
+        fontSize="20px"
+        height="40px"
+        fontWeight={100}
       >
-        Custom Button
-      </Button51>
-
-      {/* Customized button with pseudo-element background color */}
-      <Button51
-        pseudoBackgroundColor="#F2C249"
-      >
-        Button with Custom Pseudo-Background
+        Customized Button
       </Button51>
     </div>
   );

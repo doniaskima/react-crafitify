@@ -55,7 +55,7 @@ Customized.args = {
   backgroundColor: '#FF5733',
   borderColor: '#FF5733',
   textColor: '#FFFFFF',
-  fontSize: 18,
+  fontSize: '18px', 
   width: '200px',
   height: '50px',
 };

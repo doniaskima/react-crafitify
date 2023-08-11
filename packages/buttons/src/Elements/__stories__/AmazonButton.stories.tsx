@@ -38,7 +38,7 @@ const Template: Story<AmazonButtonProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Button 13',
+  children: 'Amazon',
 };
 
 export const Customized = Template.bind({});

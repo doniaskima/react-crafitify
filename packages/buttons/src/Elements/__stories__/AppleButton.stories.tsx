@@ -48,6 +48,8 @@ Customized.args = {
   hoverBorderColor: '#FF734D',
   textColor: '#FFF',
   fontSize: 20,
-  height: '1',
+  height: 48,
   borderWidth: 2,
+  activeBackgroundColor: '#0067B9',  
+  activeBorderColor: '#006DBC',  
 };

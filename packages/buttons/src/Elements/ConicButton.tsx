@@ -4,6 +4,9 @@ import styled from 'styled-components';
 interface ConicButtonProps {
   children: React.ReactNode;
   color?: string;
+  fontSize?: string;
+  width?: string;
+  height?: string;
 }
 
 const StyledConicButton = styled.button<ConicButtonProps>`
@@ -20,7 +23,9 @@ const StyledConicButton = styled.button<ConicButtonProps>`
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
-  font-size: 16px;
+  font-size: ${(props) => props.fontSize || '16px'};
+  width: ${(props) => props.width || 'auto'};
+  height: ${(props) => props.height || 'auto'};
 
   border: 0;
 
@@ -41,8 +46,12 @@ const StyledConicButton = styled.button<ConicButtonProps>`
   }
 `;
 
-const ConicButton: React.FC<ConicButtonProps> = ({ children, color }) => {
-  return <StyledConicButton color={color}>{children}</StyledConicButton>;
+const ConicButton: React.FC<ConicButtonProps> = ({ children, color, fontSize, width, height }) => {
+  return (
+    <StyledConicButton color={color} fontSize={fontSize} width={width} height={height}>
+      {children}
+    </StyledConicButton>
+  );
 };
 
 export default ConicButton;

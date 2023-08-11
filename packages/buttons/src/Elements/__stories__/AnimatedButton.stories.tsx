@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import AnimatedButton, { AnimatedButtonProps } from '../AnimatedButton';
+import AnimatedButton, { ButtonProps } from '../AnimatedButton'; 
 
 export default {
   title: 'Buttons/AnimatedButton',
@@ -24,7 +24,7 @@ export default {
   },
 } as Meta;
 
-const CenteredTemplate: Story<AnimatedButtonProps> = (args) => (
+const CenteredTemplate: Story<ButtonProps> = (args) => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <AnimatedButton {...args} />
   </div>
@@ -37,21 +37,23 @@ Default.args = {
 
 export const Large = CenteredTemplate.bind({});
 Large.args = {
-  children: 'Large Hover Me!',
-  style: { fontSize: '1.3em', width: '160px', height: '50px' },
+  children: ' Hover Me!',
+  fontSize: '1.3em',  
+  width: '160px',
+  height: '50px',
 };
 
 export const Rounded = CenteredTemplate.bind({});
 Rounded.args = {
-  children: 'Rounded Hover Me!',
+  children: ' Hover Me!',
   style: { borderRadius: '10px' },
 };
 
 export const CustomColor = CenteredTemplate.bind({});
 CustomColor.args = {
-  children: 'Custom Color Hover Me!',
-  bgColor: '#ff9900', // Change the background color
-  textColor: '#fff', // Change the text color
-  hoverColor: '#ff0000', // Change the hover color
-  activeColor: '#00ff00', // Change the active color
+  children: '  Hover Me!',
+  bgColor: '#ff9900', 
+  textColor: '#fff', 
+  hoverColor: '#ff0000',
+  activeColor: '#00ff00', 
 };

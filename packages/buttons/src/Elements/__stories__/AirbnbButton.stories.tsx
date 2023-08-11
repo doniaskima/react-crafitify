@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import AirbnbButton, { AirbnbButtonProps } from '../AirbnbButton';
 
 export default {
@@ -55,7 +55,7 @@ Disabled.args = {
 
 export const Customized = Template.bind({});
 Customized.args = {
-  children: 'Customized ',
+  children: 'Customized',
   backgroundColor: '#542dc9',
   borderColor: '#222222',
   hoverBackgroundColor: '#6d5cc5',
