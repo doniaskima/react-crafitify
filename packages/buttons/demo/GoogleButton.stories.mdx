@@ -1,0 +1,41 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { GoogleButton } from '../src/Elements/GoogleButton';  
+
+<Meta title="Buttons/GoogleButton" component={GoogleButton} />
+
+# GoogleButton
+
+The `GoogleButton` component is used to create a button with styling reminiscent of Google's design.
+
+## Default Appearance
+
+By default, the `GoogleButton` component is rendered with its default styling.
+
+
+```jsx
+import React from 'react';
+import GoogleButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <GoogleButton>Google Button</GoogleButton>
+
+      {/* Customized button with background color and text color */}
+      <GoogleButton
+        backgroundColor="#4285f4"      // Set the background color
+        borderColor="#4285f4"          // Set the border color
+        hoverBorderColor="#357ae8"     // Set the border color on hover
+        textColor="#ffffff"            // Set the text color
+        size="custom"                  // Customize the size
+        customSize="20px"              // Set the custom font size
+        borderWidth={2}                // Set the border width
+      >
+         Custom Google Button
+      </GoogleButton>
+    </div>
+  );
+};
+
+export default MyComponent;

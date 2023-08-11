@@ -1,0 +1,117 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { AppleButton } from '../src/Elements/AppleButton'; 
+
+<Meta title="Buttons/AppleButton" component={AppleButton} />
+
+# AppleButton
+
+The `AppleButton` component is used for rendering a customizable button with Apple-like styling.
+
+## Default
+
+This section demonstrates the default rendering of the `AppleButton` component.
+
+```jsx
+import React from 'react';
+import AppleButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <AppleButton>Conic Button</AppleButton>
+    </div>
+  );
+};
+
+```
+## Disabled
+
+This section demonstrates the rendering of a disabled AppleButton component.
+
+```jsx
+import React from 'react';
+import AppleButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <AppleButton disabled>
+     Disabled Apple Button
+    </AppleButton>
+  );
+};
+
+```
+
+## Small
+
+This section demonstrates the rendering of a small-sized AppleButton component.
+
+```jsx
+import React from 'react';
+import AppleButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+   <AppleButton size="small">
+      Small Apple Button
+    </AppleButton>
+
+  );
+};
+
+```
+
+## Medium
+
+This section demonstrates the rendering of a medium-sized AppleButton component.
+
+```jsx
+import React from 'react';
+import AppleButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+   <AppleButton size="medium">
+     Medium Apple Button
+   </AppleButton>
+  );
+};
+
+```
+
+## Large
+
+This section demonstrates the rendering of a large-sized AppleButton component.
+
+```jsx
+import React from 'react';
+import AppleButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+  <AppleButton size="large">
+    Large Apple Button
+  </AppleButton>
+  );
+};
+
+```
+
+## Custom Size
+
+This section demonstrates the rendering of a custom-sized AppleButton component with specific width, height, and customSize values.
+
+```jsx
+import React from 'react';
+import AppleButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+  <AppleButton customSize={25} width={150} height={50}>
+    Custom Size Apple Button
+  </AppleButton>
+  );
+};
+
+```
