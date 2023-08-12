@@ -10,9 +10,50 @@ A button with a fancy outline design.
 
 ## Usage
 
-To use the `FancyOutlineButton` component, follow these steps:
-
-1. Import the `FancyOutlineButton` component :
+To use the `FancyOutlineButton` component, import it and include it in your JSX:
 
 ```jsx
-  <FancyOutlineButton>Click Me!</FancyOutlineButton>
+import React from 'react';
+import FancyOutlineButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <FancyOutlineButton>Click Me</FancyOutlineButton>
+    </div>
+  );
+}; 
+```
+
+
+## Props
+
+The FancyOutlineButton component accepts the following props:
+- `color`  (string, optional): The color of the button's text and outline. Default: #DAA06D.
+- `hoverColor`(string, optional): The color of the button's text on hover. Default: #FFA500.
+- `activeColor` (string, optional): The color of the button's text when active. Default: #FF4500.
+- `size` (string | number, optional): The size of the button. You can provide a string value ('small', 'medium', 'large') or a custom number value in pixels. Default: 'medium'.
+- `children` (ReactNode, required): The content of the button.
+
+## Customized
+
+```jsx
+import React from 'react';
+import FancyOutlineButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <FancyOutlineButton
+       color="#0074D9"
+       hoverColor="#FF4136"
+       activeColor="#2ECC40"
+       size={40}
+      >
+          Custom Button
+      </FancyOutlineButton>
+    </div>
+  );
+}; 
+```

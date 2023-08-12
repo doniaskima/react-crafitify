@@ -1,0 +1,57 @@
+
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import FlushButton from '../src/Elements/FlushButton';  
+
+<Meta title="Buttons/FlushButton" component={FlushButton}   />
+
+# FlushButton
+
+A button with a flush design.
+
+## Usage
+
+To use the `FlushButton` component, import it and include it in your JSX:
+
+
+```jsx
+import React from 'react';
+import FlushButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <FlushButton>BUTTON</FlushButton>
+    </div>
+  );
+};
+
+```
+
+## Customized 
+
+
+```jsx
+import React from 'react';
+import FlushButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+        <FlushButton
+         content="Custom Button" // Change to the desired content
+         textColor="hsla(210, 50%, 85%, 1)" // Change to the desired text color
+         shadowColor="hsla(210, 40%, 52%, 0.4)" // Change to the desired shadow color
+         btnColor="hsl(210, 80%, 42%)" // Change to the desired button background color
+         bgColor="#141218" // Change to the desired button container background color
+         fontSize="30px" // Change to the desired font size
+         width="300px" // Change to the desired width
+         height="60px" // Change to the desired height
+        >
+          Custom Button
+        </FlushButton> 
+    </div>
+  );
+};
+
+```

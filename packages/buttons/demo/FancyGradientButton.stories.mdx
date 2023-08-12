@@ -1,34 +1,53 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
-import CustomStyledButton, { FancyGradientButtonProps } from '../src/Elements/FancyGradientButton.tsx';
+import FancyGradientButton, { FancyGradientButtonProps } from '../src/Elements/FancyGradientButton';
 
-<Meta title="Buttons/FancyGradientButton" component={CustomStyledButton} />
+<Meta title="Buttons/FancyGradientButton" component={FancyGradientButton} />
 
-# FancyGradientButton
+# FancyArrowButton
 
-A button with a fancy gradient design.
+The `FancyArrowButton` component is used for rendering a customizable button with fancy styling and gradient effects.
 
-## Usage
+## Default
+
+This section demonstrates the default rendering of the `FancyArrowButton` component.
 
 ```jsx
 import React from 'react';
-import CustomStyledButton from '../FancyGradientButton';
+import FancyArrowButton from 'react-craft-buttons';
 
-const CenteredTemplate = ({ children }) => (
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    {children}
-  </div>
-);
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <FancyArrowButton>Click Me</FancyArrowButton>
+    </div>
+  );
+}; 
+```
+## Customized
 
-export const Default = CenteredTemplate.bind({});
-Default.args = {
-  size: 'medium',
-  mainBgColor: '#814fd1',
-  gradientBgColor1: 'rgb(222, 203, 226)',
-  gradientBgColor2: 'rgb(79, 131, 209)',
-  ringColor: '#6f00ff',
-  shadowColor: 'rgba(79, 99, 209, 0.64)',
-  hoverShadowColor: 'rgba(79, 99, 209, 0.64)',
-  mainFgColor: '#313133',
-  hoverFgColor: 'rgb(38, 11, 53)',
-  children: 'Button',
+This section demonstrates the rendering of a customized FancyArrowButton component with specific colors, sizes, and other properties.
+
+```jsx
+import React from 'react';
+import FancyArrowButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <FancyArrowButton
+      size={180}
+      mainBgColor="#814fd1"
+      gradientBgColor1="rgb(222, 203, 226)"
+      gradientBgColor2="rgb(79, 131, 209)"
+      ringColor="#6f00ff"
+      shadowColor="rgba(79, 99, 209, 0.64)"
+      hoverShadowColor="rgba(79, 99, 209, 0.64)"
+      mainFgColor="#313133"
+      hoverFgColor="rgb(38, 11, 53)"
+    >
+      Customized Button
+    </FancyArrowButton>
+  );
 };
+
+ ```

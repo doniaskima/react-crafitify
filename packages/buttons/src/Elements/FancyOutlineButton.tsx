@@ -11,6 +11,7 @@ interface FancyOutlineButtonProps {
 
 const StyledButton = styled.button<FancyOutlineButtonProps>`
   outline: none;
+  cursor:pointer;
   color: ${(props) => props.color || '#DAA06D'};
   padding: ${(props) => {
     if (props.size === 'large') return '1.5rem';

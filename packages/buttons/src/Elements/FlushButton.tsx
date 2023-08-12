@@ -7,7 +7,9 @@ const FlushButtonWrapper = styled.button`
   --shadow-color: ${props => props.shadowColor || 'hsla(210, 40%, 52%, .4)'};
   --btn-color: ${props => props.btnColor || 'hsl(210, 80%, 42%)'};
   --bg-color: ${props => props.bgColor || '#141218'};
-  
+  display:flex;
+  justify-content:center;
+  align-items:center;
   position: relative;
   padding: 10px 20px;
   border: none;
