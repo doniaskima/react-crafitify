@@ -1,6 +1,6 @@
 {
   "name": "react-craft-buttons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Collection of components and render prop containers relating to buttons in the React Donia Craft  Design System",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

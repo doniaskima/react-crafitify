@@ -22,3 +22,42 @@ Install the package using npm:
 
 ```bash
 npm install react-craft-buttons
+
+Usage
+Import the desired button components from the library and use them in your React components. Here are some examples:
+
+AirbnbButton
+The AirbnbButton component is used for rendering a customizable button with Airbnb-like styling.
+
+Default
+
+ 
+```
+import React from 'react';
+import AirbnbButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <AirbnbButton>Airbnb Button</AirbnbButton>
+    </div>
+  );
+};
+
+```
+Disabled
+
+```
+import React from 'react';
+import AirbnbButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <AirbnbButton disabled>
+      Disabled Airbnb Button
+    </AirbnbButton>
+  );
+};
+
+```
