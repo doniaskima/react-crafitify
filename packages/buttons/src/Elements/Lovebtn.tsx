@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 interface LovebtnProps {
   children: ReactNode;
   size?: 'small' | 'medium' | 'large';
+  className?: string;
 }
 
 const StyledButton = styled.button<LovebtnProps>`

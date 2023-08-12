@@ -11,6 +11,7 @@ interface FancyLetterSpacingButtonProps extends ButtonHTMLAttributes<HTMLButtonE
   hoverBackgroundColor?: string;
   hoverLetterSpacing?: string; 
   activeLetterSpacing?: string; 
+  className?: string;
 }
 
 const StyledButton = styled.button<FancyLetterSpacingButtonProps>`

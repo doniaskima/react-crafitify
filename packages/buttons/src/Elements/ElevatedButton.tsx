@@ -9,6 +9,7 @@ interface StyledButtonProps {
   boxShadow?: string;
   hoverTransform?: string;
   boxShadowBase?: string; 
+  className?: string;
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
@@ -66,6 +67,7 @@ const ElevatedButton: React.FC<ElevatedButtonProps> = ({
   boxShadow,
   hoverTransform,
   boxShadowBase, 
+  className,
 }) => {
   return (
     <StyledButton
@@ -75,7 +77,8 @@ const ElevatedButton: React.FC<ElevatedButtonProps> = ({
       hoverEffect={hoverEffect}
       boxShadow={boxShadow}
       hoverTransform={hoverTransform}
-      boxShadowBase={boxShadowBase}  
+      boxShadowBase={boxShadowBase}
+      className={className}  
     >
       {children}
     </StyledButton>

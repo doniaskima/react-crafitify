@@ -128,6 +128,7 @@ const BlobButton = ({
   innerBackgroundColor,
   blobColor,
   blobWidth,
+  className
 }) => {
   return (
     <BlobButtonContainer
@@ -138,6 +139,7 @@ const BlobButton = ({
       borderColor={borderColor}
       borderSize={borderSize}
       borderRadius={borderRadius}
+      className={className}
     >
       {children}
       <BlobButtonInner borderRadius={borderRadius} innerBackgroundColor={innerBackgroundColor}>

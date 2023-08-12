@@ -7,6 +7,8 @@ interface CustomStyledButtonProps {
     hoverColor?: string;
     activeColor?: string;
     children: React.ReactNode;
+    width?: string;
+    height?: string;
 }
 declare const CustomStyledButton: React.FC<CustomStyledButtonProps>;
 export default CustomStyledButton;

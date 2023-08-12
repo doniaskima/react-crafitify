@@ -7,9 +7,10 @@ export interface GradientGemButtonProps {
   spanBackgroundColor?: string;
   spanBackgroundHover?: string;
   fontSize?: string;
-  height?: string; // New prop for changing the height
-  width?: string;  // New prop for changing the width
-  padding?: string; // New prop for changing the padding
+  height?: string; 
+  width?: string; 
+  padding?: string;  
+  className?: string;
 }
 
 const ButtonWrapper = styled.button<GradientGemButtonProps>`
@@ -72,6 +73,7 @@ const GradientGemButton: React.FC<GradientGemButtonProps> = ({
   height,
   width,
   padding,
+  className,
 }) => {
   return (
     <ButtonWrapper
@@ -82,6 +84,7 @@ const GradientGemButton: React.FC<GradientGemButtonProps> = ({
       fontSize={fontSize}
       height={height}
       width={width}
+      className={className}
       padding={padding}
     >
       <span className="text">GradientGemButton</span>

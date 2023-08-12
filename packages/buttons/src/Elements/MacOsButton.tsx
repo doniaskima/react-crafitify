@@ -11,6 +11,7 @@ interface MacOsButtonProps {
   boxShadow?: string;
   width?: number | string;
   height?: number | string;
+  className?: string;
 }
 
 const StyledMacOsButton = styled.button<MacOsButtonProps>`

@@ -7,6 +7,7 @@ interface ConicButtonProps {
   fontSize?: string;
   width?: string;
   height?: string;
+  className?: string;
 }
 
 const StyledConicButton = styled.button<ConicButtonProps>`
@@ -46,9 +47,9 @@ const StyledConicButton = styled.button<ConicButtonProps>`
   }
 `;
 
-const ConicButton: React.FC<ConicButtonProps> = ({ children, color, fontSize, width, height }) => {
+const ConicButton: React.FC<ConicButtonProps> = ({ children,className, color, fontSize, width, height }) => {
   return (
-    <StyledConicButton color={color} fontSize={fontSize} width={width} height={height}>
+    <StyledConicButton color={color} fontSize={fontSize} className={className} width={width} height={height}>
       {children}
     </StyledConicButton>
   );

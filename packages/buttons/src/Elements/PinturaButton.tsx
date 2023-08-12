@@ -13,6 +13,7 @@ interface PinturaButtonProps {
   boxShadow?: string;
   boxShadowColor?: string;
   disabled?: boolean;
+  className?: string;
 }
 
 const StyledPinturaButton = styled.button<PinturaButtonProps>`

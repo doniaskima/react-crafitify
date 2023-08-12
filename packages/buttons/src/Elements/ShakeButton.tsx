@@ -47,10 +47,11 @@ const StyledButton = styled.button`
 
 interface ShakeButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+  className?: string;
 }
 
-const ShakeButton: React.FC<ShakeButtonProps> = ({ children, ...rest }) => {
-  return <StyledButton {...rest}>{children}</StyledButton>;
+const ShakeButton: React.FC<ShakeButtonProps> = ({ children,className, ...rest }) => {
+  return <StyledButton className={className} {...rest}>{children}</StyledButton>;
 };
 
 export default ShakeButton;

@@ -8,6 +8,7 @@ export interface AmazonButtonProps {
   textColor?: string;
   fontSize?: number;
   width?: string;
+  className?: string;
 }
 
 const StyledAmazonButton = styled.button<AmazonButtonProps>`
@@ -45,7 +46,7 @@ const StyledAmazonButton = styled.button<AmazonButtonProps>`
 `;
 
 const AmazonButton: React.FC<AmazonButtonProps> = (props) => {
-  return <StyledAmazonButton {...props}>{props.children}</StyledAmazonButton>;
+  return <StyledAmazonButton  {...props}>{props.children}</StyledAmazonButton>;
 };
 
 export default AmazonButton;

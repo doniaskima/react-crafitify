@@ -11,6 +11,7 @@ interface DuolingoButtonProps {
   fontSize?: number;
   width?: string; 
   height?: string;  
+  className?: string;
 }
 
 const StyledDuolingoButton = styled.button<DuolingoButtonProps>`

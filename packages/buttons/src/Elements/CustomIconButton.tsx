@@ -9,6 +9,7 @@ interface CustomIconButtonProps {
   activeColor?: string;
   width?: string;
   height?: string;
+  className?: string;
 }
 const StyledButton = styled.button<CustomIconButtonProps>`
   position: relative;

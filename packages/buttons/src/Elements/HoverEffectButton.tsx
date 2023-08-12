@@ -7,6 +7,7 @@ interface HoverEffectButtonProps {
   backgroundColor?: string;
   hoverColor?: string;
   children:ReactNode,
+  className?: string;
 }
 
 const StyledButton = styled.button<HoverEffectButtonProps>`

@@ -7,6 +7,7 @@ interface FancyOutlineButtonProps {
   hoverColor?: string;
   activeColor?: string;
   children: React.ReactNode;
+  className?: string;
 }
 
 const StyledButton = styled.button<FancyOutlineButtonProps>`

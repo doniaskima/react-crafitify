@@ -14,6 +14,7 @@ type PrimaryButtonProps<T extends TagsByButton = 'button'> = {
   loading?: boolean;
   color?: ButtonColor;
   outline?: boolean;
+    className?: string;
 } & ButtonPropsWithAs<T>;
 
 function Button<T extends TagsByButton = 'button'>(
@@ -27,6 +28,7 @@ function Button<T extends TagsByButton = 'button'>(
     href,
     disabled,
     color = 'primary',
+    className,
     ...otherPrimaryButtonProps
   }: PropsWithChildren<PrimaryButtonProps<T>>,
   ref: ButtonRefsByTag[T]

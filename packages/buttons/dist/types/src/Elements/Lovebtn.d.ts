@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
-declare const Lovebtn: React.FC<{
+interface LovebtnProps {
     children: ReactNode;
-}>;
+    size?: 'small' | 'medium' | 'large';
+}
+declare const Lovebtn: React.FC<LovebtnProps>;
 export default Lovebtn;

@@ -9,7 +9,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   hoverColor?: string;
   width?: string; 
   fontSize?: string;
-  height?: string; 
+  height?: string;
+  className?: string; 
   
 }
 

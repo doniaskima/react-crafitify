@@ -10,6 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   width?: string;
   height?: string;
   fontSize?: string;
+  className?: string;
 }
 
 const StyledButton = styled.button<ButtonProps>`
@@ -42,8 +43,8 @@ const StyledButton = styled.button<ButtonProps>`
   }
 };`
 
-const AnimatedButton: React.FC<ButtonProps> = ({ children, ...rest }) => {
-  return <StyledButton {...rest}>{children}</StyledButton>;
+const AnimatedButton: React.FC<ButtonProps> = ({className, children, ...rest }) => {
+  return <StyledButton className={className} {...rest}>{children}</StyledButton>;
 };
 
 export default AnimatedButton;

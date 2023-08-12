@@ -6,6 +6,7 @@ interface TertiaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   borderColor?: string;
   bgColor?: string;
   shadowColor?: string;
+  className?: string;
 }
 
 const StyledButton = styled.button<TertiaryButtonProps>`
@@ -40,8 +41,8 @@ user-select: none;
 }
 `;
  
-const TertiaryButton: React.FC<TertiaryButtonProps> = ({ children, ...rest }) => {
-  return <StyledButton {...rest}>{children}</StyledButton>;
+const TertiaryButton: React.FC<TertiaryButtonProps> = ({ children, className,...rest }) => {
+  return <StyledButton className={className} {...rest}>{children}</StyledButton>;
 };
 
 export default TertiaryButton;

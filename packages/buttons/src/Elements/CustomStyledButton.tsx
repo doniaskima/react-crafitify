@@ -11,6 +11,7 @@ interface CustomStyledButtonProps {
   children: React.ReactNode;
   width?: string;
   height?: string;
+  className?: string;
 }
 
 const StyledButton = styled.button<CustomStyledButtonProps>`
@@ -141,6 +142,7 @@ const CustomStyledButton: React.FC<CustomStyledButtonProps> = ({
   hoverColor,
   activeColor,
   children,
+  className,
 }) => {
   return (
     <StyledButton
@@ -152,6 +154,7 @@ const CustomStyledButton: React.FC<CustomStyledButtonProps> = ({
       height={height}
       activeColor={activeColor}
       width={width}
+      className={className}
     >
       <span className="btn-inner">
         <span className="btn-label">{children}</span>

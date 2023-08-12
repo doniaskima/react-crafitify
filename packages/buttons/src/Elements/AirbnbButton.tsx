@@ -14,6 +14,7 @@ interface AirbnbButtonProps {
   height?: number;
   borderRadius?: number;
   borderWidth?: number;
+  className?: string;
 }
 
 const calculateFontSize = (width?: number, height?: number) => {
@@ -71,9 +72,9 @@ const StyledAirbnbButton = styled.button<AirbnbButtonProps>`
   }
 `;
 
-const AirbnbButton: React.FC<AirbnbButtonProps> = ({ children, disabled, ...props }) => {
+const AirbnbButton: React.FC<AirbnbButtonProps> = ({ children, className , disabled, ...props }) => {
   return (
-    <StyledAirbnbButton disabled={disabled} {...props}>
+    <StyledAirbnbButton disabled={disabled} className={className} {...props}>
       {children}
     </StyledAirbnbButton>
   );

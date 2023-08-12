@@ -7,6 +7,7 @@ interface FancyShadowButtonProps {
   hoverColor?: string;
   bgColor?: string;
   children: React.ReactNode;
+  className?: string;
 }
 
 const StyledButton = styled.button<FancyShadowButtonProps>`

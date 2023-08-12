@@ -10,6 +10,7 @@ interface GenerateBtnProps {
   height?: string;
   backgroundColor?: string;  
   hoverGradient?: string;  
+  className?: string;
 }
 
 const StyledButton = styled.button`

@@ -10,6 +10,7 @@ interface StripeButtonProps {
     fontSize?: number | string;
     height?: number;
     width?: number;
+    className?: string;
   }
 const StyledStripeButton = styled.button<StripeButtonProps>`
   appearance: button;

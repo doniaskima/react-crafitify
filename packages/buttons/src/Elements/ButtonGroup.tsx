@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 interface ButtonGroupProps {
   vertical?: boolean;
-  children?: React.ReactNode; // Add the 'children' prop here
+  children?: React.ReactNode;  
 }
 
 const ButtonGroupWrapper = styled.div<ButtonGroupProps>`

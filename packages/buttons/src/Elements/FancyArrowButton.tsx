@@ -7,6 +7,7 @@ interface FancyArrowButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> 
   arrowColor?: string;
   height?: string;
   width?:string;
+  className?: string;
 }
 
 const StyledButton = styled.button<FancyArrowButtonProps>`

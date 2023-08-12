@@ -6,6 +6,7 @@ export interface ThreeDButtonProps {
   backgroundColor?: string;
   borderColor?: string;
   textColor?: string;
+  className?: string;
 }
 
 const StyledButton = styled.button<ThreeDButtonProps>`
@@ -57,8 +58,8 @@ const StyledButton = styled.button<ThreeDButtonProps>`
   }
 `;
 
-const ThreeDButton: React.FC<ThreeDButtonProps> = ({ children, ...props }) => {
-  return <StyledButton {...props}>{children}</StyledButton>;
+const ThreeDButton: React.FC<ThreeDButtonProps> = ({ children,className, ...props }) => {
+  return <StyledButton className={className} {...props}>{children}</StyledButton>;
 };
 
 export default ThreeDButton;

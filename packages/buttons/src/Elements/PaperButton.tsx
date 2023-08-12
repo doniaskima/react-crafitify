@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 interface StyledButtonProps {
   backgroundColor?: string;
-  textColor?: string; // Add textColor prop
+  textColor?: string; 
   size?: 'small' | 'medium' | 'large'; 
+  className?: string;
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
@@ -60,6 +61,7 @@ interface PaperButtonProps {
   backgroundColor?: string;
   textColor?: string; 
   size?: 'small' | 'medium' | 'large';  
+  className?: string;
 }
 
 const PaperButton: React.FC<PaperButtonProps> = ({
@@ -67,12 +69,14 @@ const PaperButton: React.FC<PaperButtonProps> = ({
   backgroundColor,
   textColor, 
   size, 
+  className,
 }) => {
   return (
     <StyledButton
       backgroundColor={backgroundColor}
       textColor={textColor}  
       size={size} 
+      className={className}
     >
       {children}
     </StyledButton>

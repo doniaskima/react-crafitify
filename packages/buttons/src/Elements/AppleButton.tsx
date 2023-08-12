@@ -15,6 +15,7 @@ interface AppleButtonProps {
   height?: number | string;
   borderWidth?: number;
   size?: 'small' | 'medium' | 'large';
+  className?: string;
 }
 
 const StyledAppleButton = styled.button<AppleButtonProps>`
@@ -85,9 +86,9 @@ const StyledAppleButton = styled.button<AppleButtonProps>`
   }
 `;
 
-const AppleButton: React.FC<AppleButtonProps> = ({ children, disabled, ...props }) => {
+const AppleButton: React.FC<AppleButtonProps> = ({className, children, disabled, ...props }) => {
   return (
-    <StyledAppleButton disabled={disabled} {...props}>
+    <StyledAppleButton className={className} disabled={disabled} {...props}>
       {children}
     </StyledAppleButton>
   );

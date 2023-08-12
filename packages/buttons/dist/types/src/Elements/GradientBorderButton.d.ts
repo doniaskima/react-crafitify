@@ -1,5 +1,10 @@
 import React, { ReactNode } from 'react';
-declare const GradientBorderButton: React.FC<{
+interface GradientBorderButtonProps {
     children: ReactNode;
-}>;
+    borderColor?: string;
+    color?: string;
+    hoverBackgroundColor?: string;
+    hoverBoxShadow?: string;
+}
+declare const GradientBorderButton: React.FC<GradientBorderButtonProps>;
 export default GradientBorderButton;

@@ -8,6 +8,7 @@ interface CoinbaseButtonProps {
   textColor?: string;
   fontSize?: number | string;
   width?: number | string;
+  className?: string;
   height?: number | string;
   disabled?: boolean;
 }

@@ -118,6 +118,7 @@ interface FancyGradientButtonProps extends ButtonHTMLAttributes<HTMLButtonElemen
   hoverShadowColor?: string;
   mainFgColor?: string;
   hoverFgColor?: string;
+  className?: string;
 }
 
 const FancyGradientButton: React.FC<FancyGradientButtonProps> = ({ children, ...props }) => {

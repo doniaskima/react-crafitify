@@ -7,6 +7,7 @@ interface GradientBorderButtonProps {
   color?: string;
   hoverBackgroundColor?: string;
   hoverBoxShadow?: string;
+  className?: string;
 }
 
 const moveBarAnimation = keyframes`
@@ -80,6 +81,7 @@ const GradientBorderButton: React.FC<GradientBorderButtonProps> = ({
   color,
   hoverBackgroundColor,
   hoverBoxShadow,
+  className,
 }) => {
   return (
     <StyledButton
@@ -87,6 +89,7 @@ const GradientBorderButton: React.FC<GradientBorderButtonProps> = ({
       color={color}
       hoverBackgroundColor={hoverBackgroundColor}
       hoverBoxShadow={hoverBoxShadow}
+      className={className}
     >
       {children}
     </StyledButton>

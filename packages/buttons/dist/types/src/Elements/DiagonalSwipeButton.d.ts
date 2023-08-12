@@ -4,6 +4,9 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     borderColor?: string;
     borderRadius?: string;
     hoverColor?: string;
+    width?: string;
+    fontSize?: string;
+    height?: string;
 }
 declare const DiagonalSwipeButton: React.FC<ButtonProps>;
 export default DiagonalSwipeButton;

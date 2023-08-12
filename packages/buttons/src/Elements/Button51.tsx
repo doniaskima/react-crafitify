@@ -10,6 +10,7 @@ interface StyledButtonProps {
   height?: string;
   fontWeight?: number;
   hoverPseudoBackgroundColor?:string,
+  className?: string;
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
@@ -76,6 +77,7 @@ const Button51: React.FC<Button51Props> = ({
   height,
   fontWeight,
   hoverPseudoBackgroundColor,  
+  className
 }) => {
   return (
     <StyledButton
@@ -86,6 +88,7 @@ const Button51: React.FC<Button51Props> = ({
       fontSize={fontSize}
       height={height}
       fontWeight={fontWeight}
+      className={className}
       hoverPseudoBackgroundColor={hoverPseudoBackgroundColor} 
     >
       {children}

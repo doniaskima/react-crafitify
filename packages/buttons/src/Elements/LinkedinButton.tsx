@@ -11,6 +11,7 @@ interface LinkedinButtonProps {
   fontSize?: number;
   height?: number;
   minWidth?: number;
+  className?: string;
 }
 
 const StyledLinkedinButton = styled.button<LinkedinButtonProps>`

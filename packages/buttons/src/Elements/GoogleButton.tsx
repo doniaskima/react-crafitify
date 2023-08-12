@@ -15,6 +15,7 @@ interface GoogleButtonProps {
     minWidth?: string;
   };
   borderWidth?: number;
+  className?: string;
 }
 
 const StyledGoogleButton = styled.button<GoogleButtonProps>`
