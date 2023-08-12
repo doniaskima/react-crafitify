@@ -16,6 +16,9 @@ const CenteredTemplate: Story<DiagonalSwipeButtonProps> = (args) => (
 export const Default = CenteredTemplate.bind({});
 Default.args = {
   children: 'Diagonal Swipe',
+  width: '200px', 
+  height: '60px',
+  fontSize: '20px',
 };
 
 export const CustomColors = CenteredTemplate.bind({});

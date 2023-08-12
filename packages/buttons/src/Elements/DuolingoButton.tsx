@@ -9,6 +9,8 @@ interface DuolingoButtonProps {
   hoverBackgroundColor?: string;
   textColor?: string;
   fontSize?: number;
+  width?: string; 
+  height?: string;  
 }
 
 const StyledDuolingoButton = styled.button<DuolingoButtonProps>`
@@ -17,6 +19,9 @@ const StyledDuolingoButton = styled.button<DuolingoButtonProps>`
   border-radius: 16px;
   border-width: 0 0 4px;
   box-sizing: border-box;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   color: ${(props) => props.textColor || '#FFFFFF'};
   cursor: ${(props) => (props.disabled ? 'auto' : 'pointer')};
   display: inline-block;
@@ -39,6 +44,8 @@ const StyledDuolingoButton = styled.button<DuolingoButtonProps>`
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
+  width: ${(props) => props.width || 'auto'};  
+  height: ${(props) => props.height || 'auto'}; 
 
   &:before {
     content: '';

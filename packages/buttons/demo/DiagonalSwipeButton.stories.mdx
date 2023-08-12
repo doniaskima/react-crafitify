@@ -1,15 +1,126 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
-import DiagonalSwipeButton from '../src/Elements/DiagonalSwipeButton.tsx';
+import  DiagonalSwipeButton  from '../src/Elements/DiagonalSwipeButton';
 
 <Meta title="Buttons/DiagonalSwipeButton" component={DiagonalSwipeButton} />
 
-# DiagonalSwipeButton
+ # DiagonalSwipeButton
 
-A button with diagonal swipe animation on hover.
+The `DiagonalSwipeButton` component is a customizable button with various options such as size, colors, and more.
 
 ## Usage
 
-```jsx
-<DiagonalSwipeButton>Click Me!</DiagonalSwipeButton>
+To use the `DiagonalSwipeButton` component, import it and provide the desired props:
 
- 
+```jsx
+import React from 'react';
+import DiagonalSwipeButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <DiagonalSwipeButton>
+         Hover Me! 
+      </DiagonalSwipeButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Properties
+
+-textColor (string): The color of the button text. Defaults to purple.
+
+-borderColor (string): The color of the button border. Defaults to purple.
+
+-borderRadius (string): The border radius of the button. Defaults to 0.
+
+-hoverColor (string): The background color of the button on hover. Defaults to purple.
+
+-width (string): The width of the button. Defaults to auto.
+
+-height (string): The height of the button. Defaults to auto.
+
+-fontSize (string): The font size of the button text. Defaults to 17px.
+
+
+## Default
+
+
+```jsx
+import React from 'react';
+import DiagonalSwipeButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <DiagonalSwipeButton>
+        Hover Me!
+      </DiagonalSwipeButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Custom Colors
+
+
+```jsx
+import React from 'react';
+import DiagonalSwipeButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+        <DiagonalSwipeButton textColor="green" borderColor="green" hoverColor="lightgreen">
+          Custom Colors
+        </DiagonalSwipeButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Custom Border Radius
+
+
+```jsx
+import React from 'react';
+import DiagonalSwipeButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+    <DiagonalSwipeButton borderRadius="50px">
+        Custom Border Radius
+    </DiagonalSwipeButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Custom Hover Design
+
+```jsx
+import React from 'react';
+import DiagonalSwipeButton from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+    <DiagonalSwipeButton textColor="blue" borderColor="blue" hoverColor="lightblue">
+       Custom Hover Design
+    </DiagonalSwipeButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+```

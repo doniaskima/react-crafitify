@@ -46,6 +46,6 @@ Customized.args = {
   hoverBackgroundColor: '#FF734D',
   textColor: '#FFF',
   fontSize: 18,
-  height: 50,
-  width: 100, 
+  height: '50px', 
+  width: '100px',  
 };

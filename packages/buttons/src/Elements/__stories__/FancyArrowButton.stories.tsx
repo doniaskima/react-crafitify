@@ -2,7 +2,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 
-import FancyArrowButton from '../FancyArrowButton';
+import FancyArrowButton , { FancyArrowButtonProps } from '../FancyArrowButton';
 
 export default {
   title: 'Buttons/FancyArrowButton',
@@ -24,7 +24,7 @@ const CenteredStory: React.FC = ({ children }) => {
   );
 };
 
-const Template: Story = (args) => (
+const Template: Story<FancyArrowButtonProps> = (args) => (
   <CenteredStory>
     <FancyArrowButton {...args} />
   </CenteredStory>
@@ -33,4 +33,14 @@ const Template: Story = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   children: 'Button',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  children: 'Small Button',
+  size: 'small',
+  mainBgColor: '#FF5733',
+  arrowColor: '#FFF',
+  width: '100px',
+  height: '30px',
 };

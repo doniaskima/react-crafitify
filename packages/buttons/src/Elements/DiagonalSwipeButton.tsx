@@ -7,6 +7,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   borderColor?: string;
   borderRadius?: string;
   hoverColor?: string;
+  width?: string; 
+  fontSize?: string;
+  height?: string; 
+  
 }
 
 // Use the defined interface in the styled component
@@ -16,7 +20,7 @@ const StyledButton = styled.button<ButtonProps>`
   text-decoration: none;
   border: 2px solid ${(props) => props.borderColor || 'purple'};
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: ${(props) => props.fontSize || '17px'};
   font-weight: bold;
   background: transparent;
   position: relative;
@@ -24,7 +28,8 @@ const StyledButton = styled.button<ButtonProps>`
   overflow: hidden;
   border-radius: ${(props) => props.borderRadius || '0'};
   cursor: pointer;
-
+  width: ${(props) => props.width || 'auto'}; 
+  height: ${(props) => props.height || 'auto'};  
   &:hover {
     color: white;
   }

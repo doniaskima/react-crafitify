@@ -9,6 +9,8 @@ interface CustomStyledButtonProps {
   hoverColor?: string;
   activeColor?: string;
   children: React.ReactNode;
+  width?: string;
+  height?: string;
 }
 
 const StyledButton = styled.button<CustomStyledButtonProps>`
@@ -29,7 +31,6 @@ const StyledButton = styled.button<CustomStyledButtonProps>`
   box-shadow: 0 0 2px 2px var(--btn-shadow), 0 0 4px 4px var(--btn-shadow), 0 0 8px 8px var(--btn-shadow);
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
-
   &:hover,
   &:active {
     transform: translateY(-1px);
@@ -50,8 +51,6 @@ const StyledButton = styled.button<CustomStyledButtonProps>`
           return '1.2rem';
       }
     }};
-    display: flex;
-    align-items: center;
     min-width: ${(props) => {
       switch (props.size) {
         case 'small':
@@ -74,6 +73,10 @@ const StyledButton = styled.button<CustomStyledButtonProps>`
           return '1.5rem 2.5rem';
       }
     }};
+    width: ${(props) => props.width || 'auto'};
+    height: ${(props) => props.height || 'auto'};
+    display: flex;
+    align-items: center;
     overflow: hidden;
     color: var(--btn-text-color);
 
@@ -131,6 +134,8 @@ const StyledButton = styled.button<CustomStyledButtonProps>`
 const CustomStyledButton: React.FC<CustomStyledButtonProps> = ({
   design = 'primary',
   size = 'medium',
+  width,
+  height,
   backgroundColor,
   textColor,
   hoverColor,
@@ -144,7 +149,9 @@ const CustomStyledButton: React.FC<CustomStyledButtonProps> = ({
       backgroundColor={backgroundColor}
       textColor={textColor}
       hoverColor={hoverColor}
+      height={height}
       activeColor={activeColor}
+      width={width}
     >
       <span className="btn-inner">
         <span className="btn-label">{children}</span>

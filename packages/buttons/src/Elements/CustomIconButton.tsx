@@ -7,10 +7,17 @@ interface CustomIconButtonProps {
   backgroundColor?: string;
   hoverColor?: string;
   activeColor?: string;
+  width?: string;
+  height?: string;
 }
-
 const StyledButton = styled.button<CustomIconButtonProps>`
   position: relative;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+  justify-content: center;
+  width: ${props => props.width || 'auto'};
+  height: ${props => props.height || 'auto'};
   background: ${props => props.backgroundColor || '#6a92ef'};
   color: ${props => props.textColor || 'white'};
   padding: ${props => {

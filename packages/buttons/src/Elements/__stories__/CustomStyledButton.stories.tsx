@@ -61,3 +61,11 @@ CustomColorButton.args = {
   activeColor: '#ff1a1a',
   children: 'Custom Color Button',
 };
+
+export const CustomSizeButton = Template.bind({});
+CustomSizeButton.args = {
+  size: 'medium',
+  width: '150px',
+  height: '50px',
+  children: 'Custom Size Button',
+};

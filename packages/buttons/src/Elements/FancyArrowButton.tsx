@@ -5,10 +5,15 @@ interface FancyArrowButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> 
   size?: 'small' | 'medium' | 'large';
   mainBgColor?: string;
   arrowColor?: string;
+  height?: string;
+  width?:string;
 }
 
 const StyledButton = styled.button<FancyArrowButtonProps>`
-  display: inline-block;
+   
+  display:flex;
+  justify-content:center;
+  align-items:center;
   border-radius: 4px;
   background-color: ${(props) => props.mainBgColor || '#560af0'};
   border: none;
@@ -17,7 +22,8 @@ const StyledButton = styled.button<FancyArrowButtonProps>`
   font-size: ${(props) => (props.size === 'large' ? '18px' : props.size === 'small' ? '12px' : '14px')};
   font-weight: bold;
   padding: ${(props) => (props.size === 'large' ? '20px' : props.size === 'small' ? '10px' : '16px')};
-  width: ${(props) => (props.size === 'large' ? '180px' : props.size === 'small' ? '100px' : '130px')};
+  width: ${(props) => props.width || (props.size === 'large' ? '180px' : props.size === 'small' ? '100px' : '130px')};
+  height: ${(props) => props.height || (props.size === 'large' ? '50px' : props.size === 'small' ? '30px' : '40px')};
   transition: all 0.2s;
   cursor: pointer;
   margin: 5px;

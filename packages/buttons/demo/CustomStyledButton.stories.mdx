@@ -1,13 +1,133 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import CustomStyledButton, { CustomStyledButtonProps } from '../src/Elements/CustomStyledButton.tsx';
+import { Meta } from '@storybook/addon-docs/blocks';
+import { CustomStyledButton, CustomStyledButtonProps } from '../src/Elements/CustomStyledButton';
 
 <Meta title="Buttons/CustomStyledButton" component={CustomStyledButton} />
 
 # CustomStyledButton
 
-A button with customizable styles and animated effects.
+A custom styled button component.
 
+ 
 ## Usage
 
 ```jsx
-<CustomStyledButton>Click Me!</CustomStyledButton>
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <CustomStyledButton>Default Button</CustomStyledButton>
+    </div>
+  );
+};
+
+```
+
+## Primary Button
+
+```jsx
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+     
+      <CustomStyledButton design="primary">Primary Button</CustomStyledButton>
+    </div>
+  );
+};
+
+```
+
+## Secondary Button
+
+```jsx
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <CustomStyledButton design="secondary">Secondary Button</CustomStyledButton>
+    </div>
+  );
+};
+
+```
+
+## Large Button
+
+```jsx
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+        <CustomStyledButton size="large">Large Button</CustomStyledButton>
+    </div>
+  );
+};
+
+```
+
+
+## Small Button
+
+```jsx
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+       <CustomStyledButton size="small">Small Button</CustomStyledButton>
+    </div>
+  );
+};
+
+```
+
+## Custom Color Button
+
+```jsx
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+        <CustomStyledButton
+          backgroundColor="#ff6600"
+          textColor="#ffffff"
+          hoverColor="#ff8c1a"
+          activeColor="#ff1a1a"
+         >
+           Custom Color Button
+        </CustomStyledButton>
+    </div>
+  );
+};
+
+```
+
+## Custom Size Button
+
+```jsx
+import React from 'react';
+import CustomStyledButton from  'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+        <CustomStyledButton size="medium" width="150px" height="50px">
+           Custom Size Button
+        </CustomStyledButton>
+    </div>
+  );
+};
+
+```

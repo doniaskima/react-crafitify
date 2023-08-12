@@ -31,25 +31,29 @@ const Template: Story<CustomIconButtonProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  children: <span className="text">Hover Me!</span>,
+  children: 'Hover me',
 };
 
 export const LargeSize = Template.bind({});
 LargeSize.args = {
-  children: <span className="text">Hover Me!</span>,
+  children: 'Hover me',
   size: 'large',
   backgroundColor: '#6a92ef',
   textColor: 'white',
   hoverColor: 'hsl(217, 77%, 71%)',
   activeColor: 'hsl(218, 76%, 84%)',
+  width: '200px',   
+  height: '60px',   
 };
 
 export const SmallSize = Template.bind({});
 SmallSize.args = {
-  children: <span className="text">Hover Me!</span>,
+  children: 'Hover me',
   size: 'small',
   backgroundColor: '#3c3c3c',
   textColor: '#fff',
   hoverColor: 'hsl(180, 77%, 71%)',
   activeColor: 'hsl(218, 76%, 84%)',
+  width: '120px',  
+  height: '30px',   
 };
