@@ -9,6 +9,7 @@ interface FancyGradientButtonProps extends ButtonHTMLAttributes<HTMLButtonElemen
     hoverShadowColor?: string;
     mainFgColor?: string;
     hoverFgColor?: string;
+    className?: string;
 }
 declare const FancyGradientButton: React.FC<FancyGradientButtonProps>;
 export default FancyGradientButton;

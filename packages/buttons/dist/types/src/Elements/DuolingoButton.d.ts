@@ -9,6 +9,7 @@ interface DuolingoButtonProps {
     fontSize?: number;
     width?: string;
     height?: string;
+    className?: string;
 }
 declare const DuolingoButton: React.FC<DuolingoButtonProps>;
 export default DuolingoButton;

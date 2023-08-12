@@ -1,10 +1,24 @@
-# My Button Package
+# react-creaft-buttons
 
-My Button Package is a collection of reusable React components and containers related to buttons in the React Donia Craft Design System.
+
+[![npm version](https://img.shields.io/npm/v/react-creaft-buttons)](https://www.npmjs.com/package/react-craft-buttons)
+[![Build Status](https://travis-ci.com/doniaskima/react-creaft-buttons.svg?branch=main)](https://travis-ci.com/doniaskima/react-creaft-buttons)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/doniaskima/react-creaft-buttons/blob/main/CONTRIBUTING.md)
+
+A collection of creative and customizable button components for React applications.
+
+![Library Preview](./preview.png)
+
+## Features
+
+- 🎨 Beautifully designed buttons
+- 🛠️ Easily customizable with CSS classes
+- ⚙️ Flexible configuration options
+- 📦 Lightweight and dependency-free
 
 ## Installation
 
-You can install the package using npm or yarn:
+Install the package using npm:
 
 ```bash
-npm i react-craft-buttons
+npm install react-craft-buttons

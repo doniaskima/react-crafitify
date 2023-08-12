@@ -4,6 +4,7 @@ export interface ThreeDButtonProps {
     backgroundColor?: string;
     borderColor?: string;
     textColor?: string;
+    className?: string;
 }
 declare const ThreeDButton: React.FC<ThreeDButtonProps>;
 export default ThreeDButton;

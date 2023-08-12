@@ -8,6 +8,7 @@ export interface GradientGemButtonProps {
     height?: string;
     width?: string;
     padding?: string;
+    className?: string;
 }
 declare const GradientGemButton: React.FC<GradientGemButtonProps>;
 export default GradientGemButton;

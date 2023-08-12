@@ -7,6 +7,7 @@ type PrimaryButtonProps<T extends TagsByButton = 'button'> = {
     loading?: boolean;
     color?: ButtonColor;
     outline?: boolean;
+    className?: string;
 } & ButtonPropsWithAs<T>;
 declare const _default: React.ForwardRefExoticComponent<React.PropsWithChildren<PrimaryButtonProps<TagsByButton>> & React.RefAttributes<HTMLButtonElement>>;
 export default _default;

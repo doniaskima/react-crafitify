@@ -11,6 +11,7 @@ interface PinturaButtonProps {
     boxShadow?: string;
     boxShadowColor?: string;
     disabled?: boolean;
+    className?: string;
 }
 declare const PinturaButton: React.FC<PinturaButtonProps>;
 export default PinturaButton;

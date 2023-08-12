@@ -1,5 +1,5 @@
 import React from 'react';
-declare const BlobButton: ({ children, padding, fontSize, textColor, hoverTextColor, borderColor, borderSize, borderRadius, innerBackgroundColor, blobColor, blobWidth, }: {
+declare const BlobButton: ({ children, padding, fontSize, textColor, hoverTextColor, borderColor, borderSize, borderRadius, innerBackgroundColor, blobColor, blobWidth, className }: {
     children: any;
     padding: any;
     fontSize: any;
@@ -11,5 +11,6 @@ declare const BlobButton: ({ children, padding, fontSize, textColor, hoverTextCo
     innerBackgroundColor: any;
     blobColor: any;
     blobWidth: any;
+    className: any;
 }) => React.JSX.Element;
 export default BlobButton;

@@ -8,6 +8,7 @@ interface StyledButtonProps {
     height?: string;
     fontWeight?: number;
     hoverPseudoBackgroundColor?: string;
+    className?: string;
 }
 interface Button51Props extends StyledButtonProps {
     children: ReactNode;

@@ -5,6 +5,7 @@ interface FancyArrowButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> 
     arrowColor?: string;
     height?: string;
     width?: string;
+    className?: string;
 }
 declare const FancyArrowButton: React.FC<FancyArrowButtonProps>;
 export default FancyArrowButton;

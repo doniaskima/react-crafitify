@@ -6,6 +6,7 @@ export interface AmazonButtonProps {
     textColor?: string;
     fontSize?: number;
     width?: string;
+    className?: string;
 }
 declare const AmazonButton: React.FC<AmazonButtonProps>;
 export default AmazonButton;

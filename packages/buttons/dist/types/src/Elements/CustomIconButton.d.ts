@@ -7,6 +7,7 @@ interface CustomIconButtonProps {
     activeColor?: string;
     width?: string;
     height?: string;
+    className?: string;
 }
 declare const CustomIconButton: React.FC<CustomIconButtonProps>;
 export default CustomIconButton;

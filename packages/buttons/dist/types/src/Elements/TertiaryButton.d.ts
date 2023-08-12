@@ -4,6 +4,7 @@ interface TertiaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     borderColor?: string;
     bgColor?: string;
     shadowColor?: string;
+    className?: string;
 }
 declare const TertiaryButton: React.FC<TertiaryButtonProps>;
 export default TertiaryButton;

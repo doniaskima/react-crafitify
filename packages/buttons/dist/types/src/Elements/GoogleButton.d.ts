@@ -13,6 +13,7 @@ interface GoogleButtonProps {
         minWidth?: string;
     };
     borderWidth?: number;
+    className?: string;
 }
 declare const GoogleButton: React.FC<GoogleButtonProps>;
 export default GoogleButton;

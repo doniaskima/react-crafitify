@@ -12,6 +12,7 @@ interface AirbnbButtonProps {
     height?: number;
     borderRadius?: number;
     borderWidth?: number;
+    className?: string;
 }
 declare const AirbnbButton: React.FC<AirbnbButtonProps>;
 export default AirbnbButton;

@@ -8,6 +8,7 @@ interface StripeButtonProps {
     fontSize?: number | string;
     height?: number;
     width?: number;
+    className?: string;
 }
 declare const StripeButton: React.FC<StripeButtonProps>;
 export default StripeButton;

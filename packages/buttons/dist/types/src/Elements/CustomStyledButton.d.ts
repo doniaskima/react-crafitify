@@ -9,6 +9,7 @@ interface CustomStyledButtonProps {
     children: React.ReactNode;
     width?: string;
     height?: string;
+    className?: string;
 }
 declare const CustomStyledButton: React.FC<CustomStyledButtonProps>;
 export default CustomStyledButton;

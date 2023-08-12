@@ -5,6 +5,7 @@ interface GradientBorderButtonProps {
     color?: string;
     hoverBackgroundColor?: string;
     hoverBoxShadow?: string;
+    className?: string;
 }
 declare const GradientBorderButton: React.FC<GradientBorderButtonProps>;
 export default GradientBorderButton;

@@ -5,6 +5,7 @@ interface ConicButtonProps {
     fontSize?: string;
     width?: string;
     height?: string;
+    className?: string;
 }
 declare const ConicButton: React.FC<ConicButtonProps>;
 export default ConicButton;

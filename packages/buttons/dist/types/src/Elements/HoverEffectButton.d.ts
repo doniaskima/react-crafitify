@@ -5,6 +5,7 @@ interface HoverEffectButtonProps {
     backgroundColor?: string;
     hoverColor?: string;
     children: ReactNode;
+    className?: string;
 }
 declare const HoverEffectButton: React.FC<HoverEffectButtonProps>;
 export default HoverEffectButton;

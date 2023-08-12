@@ -8,6 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     width?: string;
     height?: string;
     fontSize?: string;
+    className?: string;
 }
 declare const AnimatedButton: React.FC<ButtonProps>;
 export default AnimatedButton;

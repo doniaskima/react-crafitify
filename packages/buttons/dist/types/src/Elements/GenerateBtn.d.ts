@@ -8,6 +8,7 @@ interface GenerateBtnProps {
     height?: string;
     backgroundColor?: string;
     hoverGradient?: string;
+    className?: string;
 }
 declare const GenerateBtn: React.FC<GenerateBtnProps>;
 export default GenerateBtn;

@@ -9,6 +9,7 @@ interface MacOsButtonProps {
     boxShadow?: string;
     width?: number | string;
     height?: number | string;
+    className?: string;
 }
 declare const MacOsButton: React.FC<MacOsButtonProps>;
 export default MacOsButton;

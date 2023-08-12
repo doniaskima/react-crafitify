@@ -13,6 +13,7 @@ interface AppleButtonProps {
     height?: number | string;
     borderWidth?: number;
     size?: 'small' | 'medium' | 'large';
+    className?: string;
 }
 declare const AppleButton: React.FC<AppleButtonProps>;
 export default AppleButton;

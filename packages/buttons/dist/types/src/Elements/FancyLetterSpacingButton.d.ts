@@ -9,6 +9,7 @@ interface FancyLetterSpacingButtonProps extends ButtonHTMLAttributes<HTMLButtonE
     hoverBackgroundColor?: string;
     hoverLetterSpacing?: string;
     activeLetterSpacing?: string;
+    className?: string;
 }
 declare const FancyLetterSpacingButton: React.FC<FancyLetterSpacingButtonProps>;
 export default FancyLetterSpacingButton;
