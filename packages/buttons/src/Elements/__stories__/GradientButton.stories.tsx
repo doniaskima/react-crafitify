@@ -33,9 +33,9 @@ Default.args = {};
 
 export const Customized = Template.bind({});
 Customized.args = {
-  textColor: '#000',
-  bgColor: '#FF5733',
-  hoverBgColor: '#E82C0C',
+  textColor: '#ffffff',
+  bgColor: '#bd0fae',
+  hoverBgColor: '#531b5c',
   fontSize: '20px',
   width: '200px',
   height: '50px',

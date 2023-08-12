@@ -1,15 +1,82 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
-import GradientBorderButton from '../src/Elements/GradientBorderButton.tsx';
+import GradientBorderButton, { GradientBorderButtonProps } from '../src/Elements/GradientBorderButton';
 
 <Meta title="Buttons/GradientBorderButton" component={GradientBorderButton} />
 
-# GradientBorderButton
+# Gradient Border Button
 
-A button with a gradient border animation on hover.
+The `GradientBorderButton` is a customizable button component with gradient border effects and hover animations.
 
-## Usage
-
-```jsx
-<GradientBorderButton>Click Me!</GradientBorderButton>
-
+## Default
  
+ ```jsx
+import React from 'react';
+import GradientBorderButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <GradientBorderButton>Click Me</GradientBorderButton>
+    </div>
+  );
+}; 
+```
+
+
+## Custom Colors & Hover
+
+ ```jsx
+import React from 'react';
+import GradientBorderButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+       <GradientBorderButton
+         borderColor="#e63946"
+         color="#e63946"
+         hoverBackgroundColor="radial-gradient(#e63946, #f38181)"
+         hoverBoxShadow="0px 0px 0.3rem #e63946"
+        >
+          Custom Colors & Hover
+       </GradientBorderButton>
+    </div>
+  );
+}; 
+```
+
+
+## Large Size
+
+ ```jsx
+import React from 'react';
+import GradientBorderButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+        <GradientBorderButton size="large">
+           Large Button
+        </GradientBorderButton>
+    </div>
+  );
+}; 
+```
+
+## Small Size
+
+ ```jsx
+import React from 'react';
+import GradientBorderButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+         <GradientBorderButton size="small">
+            Small Button
+          </GradientBorderButton>
+    </div>
+  );
+}; 
+```

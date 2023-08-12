@@ -12,6 +12,39 @@ A button component with a refresh icon that rotates on focus and a hover effect.
 The `RefreshButton` component is designed to provide a visual refresh action with an animated rotating icon. To use it:
 
 ```jsx
-<RefreshButton>Click Me!</RefreshButton>
+import React from 'react';
+import RefreshButton from  'react-craft-buttons';  
 
+const MyComponent = () => {
+  return (
+    <div>
+      <RefreshButton design="primary">Primary Button</RefreshButton>
+    </div>
+  );
+};
+
+```
+
+## Customized
  
+```jsx
+import React from 'react';
+import RefreshButton from  'react-craft-buttons';  
+
+
+const CustomizedRefreshButton = () => {
+  return (
+    <div>
+      <RefreshButton>Default Refresh</RefreshButton>
+
+      <RefreshButton
+        backgroundColor="#be3a3a"
+        iconColor="yellow"
+        fontSize="18px"
+      >
+        Customized Refresh
+      </RefreshButton>
+    </div>
+  );
+};
+```

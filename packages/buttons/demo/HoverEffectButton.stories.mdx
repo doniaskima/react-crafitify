@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
-import HoverEffectButton from '../src/Elements/HoverEffectButton.tsx';
+import HoverEffectButton from '../src/Elements/HoverEffectButton';
 
 <Meta title="Buttons/HoverEffectButton" component={HoverEffectButton} />
 
@@ -15,6 +15,39 @@ The `HoverEffectButton` component provides a visually appealing hover effect on 
 ## Usage
 
 ```jsx
-<HoverEffectButton>Click Me!</HoverEffectButton>
+import React from 'react';
+import HoverEffectButton from 'react-craft-buttons';
 
+const MyComponent = () => {
+  return (
+    <div>
+       <HoverEffectButton>
+        Custom Text
+      </HoverEffectButton>
+    </div>
+  );
+};
+```
+ 
+##  Customized button with hover effect 
+
+```jsx
+import React from 'react';
+import HoverEffectButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+        <HoverEffectButton
+        size="large"
+        textColor="#ffffff"
+        backgroundColor="#007bff"
+        hoverColor="#0056b3"
+      >
+        Custom Text
+      </HoverEffectButton>
+    </div>
+  );
+};
+```
  

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import ScottButton from '../ScottButton';
+import ScottButton, { ScottButtonProps } from '../ScottButton'; // Make sure to import the correct path
 
 export default {
   title: 'Buttons/ScottButton',
@@ -22,7 +22,7 @@ const CenteredStory: React.FC = ({ children }) => {
   );
 };
 
-const Template: Story = (args) => (
+const Template: Story<ScottButtonProps> = (args) => (
   <CenteredStory>
     <ScottButton {...args}>Scott Button</ScottButton>
   </CenteredStory>
@@ -34,4 +34,6 @@ Default.args = {
   textColor: '#18181a',
   hoverBgColor: 'black',
   hoverTextColor: 'white',
+  altText: 'Alternate text',
+ 
 };

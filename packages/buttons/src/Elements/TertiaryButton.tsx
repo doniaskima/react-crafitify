@@ -11,6 +11,7 @@ interface TertiaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const StyledButton = styled.button<TertiaryButtonProps>`
 padding: 10px 20px;
 text-transform: uppercase;
+cursor:pointer;
 border-radius: 8px;
 font-size: 17px;
 font-weight: 500;

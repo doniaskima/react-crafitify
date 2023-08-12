@@ -1,7 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ScottButtonWrapper = styled.button`
+interface ScottButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  altText: string;
+  size?: 'small' | 'medium' | 'large';
+  borderColor?: string;
+  textColor?: string;
+  hoverBgColor?: string;
+  hoverTextColor?: string;
+}
+
+const ScottButtonWrapper = styled.button<ScottButtonProps>`
   --border-color: ${props => props.borderColor || '#18181a'};
   --text-color: ${props => props.textColor || '#18181a'};
   --hover-bg-color: ${props => props.hoverBgColor || 'black'};
@@ -12,7 +21,12 @@ const ScottButtonWrapper = styled.button`
   border: 1px solid var(--border-color);
   color: var(--text-color);
   display: inline-block;
-  font-size: 15px;
+  font-size: ${props => {
+    if (props.size === 'small') return '12px';
+    if (props.size === 'medium') return '15px';
+    if (props.size === 'large') return '18px';
+    return '15px';
+  }};
   line-height: 15px;
   padding: 18px 18px 17px;
   text-decoration: none;
@@ -69,11 +83,11 @@ const ScottButtonWrapper = styled.button`
   }
 `;
 
-const ScottButton = ({ children, ...props }) => {
+const ScottButton: React.FC<ScottButtonProps> = ({ children, altText, ...props }) => {
   return (
     <ScottButtonWrapper {...props}>
       <span className="text">{children}</span>
-      <span>Alternate text</span>
+      <span>{altText}</span>
     </ScottButtonWrapper>
   );
 };

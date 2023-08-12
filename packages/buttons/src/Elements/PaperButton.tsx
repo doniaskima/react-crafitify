@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 interface StyledButtonProps {
   backgroundColor?: string;
+  textColor?: string; // Add textColor prop
+  size?: 'small' | 'medium' | 'large'; 
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
@@ -17,14 +19,22 @@ const StyledButton = styled.button<StyledButtonProps>`
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
-  color: #41403e;
+  color: ${(props) => props.textColor || '#41403e'}; // Use the textColor prop
   cursor: pointer;
   display: inline-block;
   font-family: Neucha, sans-serif;
-  font-size: 1rem;
+  font-size: ${(props) => {
+    if (props.size === 'small') return '0.75rem';
+    if (props.size === 'medium') return '1rem';
+    return '1.25rem';
+  }}; // Use the size prop
   line-height: 23px;
   outline: none;
-  padding: 0.75rem;
+  padding: ${(props) => {
+    if (props.size === 'small') return '0.5rem';
+    if (props.size === 'medium') return '0.75rem';
+    return '1rem';
+  }}; // Use the size prop
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -48,13 +58,25 @@ const StyledButton = styled.button<StyledButtonProps>`
 interface PaperButtonProps {
   children: ReactNode;
   backgroundColor?: string;
+  textColor?: string; 
+  size?: 'small' | 'medium' | 'large';  
 }
 
 const PaperButton: React.FC<PaperButtonProps> = ({
   children,
   backgroundColor,
+  textColor, 
+  size, 
 }) => {
-  return <StyledButton backgroundColor={backgroundColor}>{children}</StyledButton>;
+  return (
+    <StyledButton
+      backgroundColor={backgroundColor}
+      textColor={textColor}  
+      size={size} 
+    >
+      {children}
+    </StyledButton>
+  );
 };
 
 export default PaperButton;

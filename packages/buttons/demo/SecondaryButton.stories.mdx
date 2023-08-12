@@ -12,6 +12,16 @@ A secondary button component with customizable styles.
 
 The `SecondaryButton` component provides a secondary button with customizable styling options. To use it:
 
-
 ```jsx
-<SecondaryButton>Click Me!</SecondaryButton>
+import SecondaryButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <SecondaryButton
+      onClick={() => console.log('Button clicked')}
+      disabled={false}
+    >
+      Secondary Button
+    </SecondaryButton>
+  );
+};

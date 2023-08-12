@@ -1,6 +1,14 @@
 import React, { ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
 
+interface GradientBorderButtonProps {
+  children: ReactNode;
+  borderColor?: string;
+  color?: string;
+  hoverBackgroundColor?: string;
+  hoverBoxShadow?: string;
+}
+
 const moveBarAnimation = keyframes`
   0% {
     width: 0;
@@ -26,11 +34,11 @@ const moveBarAnimation = keyframes`
   }
 `;
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<GradientBorderButtonProps>`
   background-color: transparent;
-  border: 1px solid #00b4d8;
+  border: 1px solid ${(props) => props.borderColor || '#00b4d8'};
   border-radius: 0.2rem;
-  color: #00b4d8;
+  color: ${(props) => props.color || '#00b4d8'};
   font-weight: bold;
   padding: 0.8rem 1.5rem;
   position: relative;
@@ -38,8 +46,8 @@ const StyledButton = styled.button`
   transition: ease-in 0.3s;
 
   &:hover, &:active, &:focus {
-    background: radial-gradient(#00b4d8, #4cc9f0);
-    box-shadow: 0px 0px 0.3rem #00b4d8;
+    background: ${(props) => props.hoverBackgroundColor || 'radial-gradient(#00b4d8, #4cc9f0)'};
+    box-shadow: ${(props) => props.hoverBoxShadow || '0px 0px 0.3rem #00b4d8'};
     color: #001219;
   }
 
@@ -66,9 +74,20 @@ const StyledButton = styled.button`
   }
 `;
 
-const GradientBorderButton: React.FC<{ children: ReactNode }> = ({ children }) => {
+const GradientBorderButton: React.FC<GradientBorderButtonProps> = ({
+  children,
+  borderColor,
+  color,
+  hoverBackgroundColor,
+  hoverBoxShadow,
+}) => {
   return (
-    <StyledButton>
+    <StyledButton
+      borderColor={borderColor}
+      color={color}
+      hoverBackgroundColor={hoverBackgroundColor}
+      hoverBoxShadow={hoverBoxShadow}
+    >
       {children}
     </StyledButton>
   );

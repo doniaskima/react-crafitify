@@ -39,3 +39,54 @@ const MyComponent = () => {
 };
 
 export default MyComponent;
+```
+
+## Customization
+
+The `GoogleButton` component supports the following properties for customization:
+
+- `children` (required): Content to display inside the button.
+
+- `backgroundColor`: Background color of the button. Defaults to `#f8f9fa`.
+
+- `borderColor`: Border color of the button. Defaults to `#f8f9fa`.
+
+- `hoverBorderColor`: Border color of the button on hover. Defaults to `#dadce0`.
+
+- `textColor`: Text color of the button. Defaults to `#3c4043`.
+
+- `size`: Size of the button. Choose from `'small'`, `'medium'`, `'large'`, or `'custom'`. Defaults to `'medium'`.
+
+  - `'small'`: Renders a small-sized button.
+  - `'medium'`: Renders a medium-sized button.
+  - `'large'`: Renders a large-sized button.
+
+- `customSize`: Custom size configuration for the button. An object that can include the following properties:
+  - `fontSize`: Font size of the button.
+  - `height`: Height of the button.
+  - `lineHeight`: Line height of the button.
+  - `minWidth`: Minimum width of the button.
+
+- `borderWidth`: Border width of the button. Defaults to no border (`0`).
+
+### Example: Customized Button
+
+You can customize the appearance of the `GoogleButton` component by passing the desired properties.
+
+```jsx
+<GoogleButton
+  backgroundColor="#f8f9fa"
+  borderColor="#dadce0"
+  hoverBorderColor="#dadce0"
+  textColor="#3c4043"
+  size="medium"
+  customSize={{
+    fontSize: '14px',
+    height: '36px',
+    lineHeight: '27px',
+    minWidth: '54px',
+  }}
+  borderWidth={1}
+>
+  Customized Google Button
+</GoogleButton>

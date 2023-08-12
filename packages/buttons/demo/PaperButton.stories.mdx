@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
-import PaperButton, { PaperButtonProps } from '../src/Elements/PaperButton'; 
+import PaperButton, { PaperButtonProps } from '../src/Elements/PaperButton';
 
 <Meta title="Buttons/PaperButton" component={PaperButton} />
 
@@ -13,7 +13,7 @@ To use the `PaperButton` component, import it from your components directory and
 
 ```jsx
 import React from 'react';
-import PaperButton from `react-craft-buttons`;  
+import PaperButton from 'react-craft-buttons';
 
 const MyComponent = () => {
   return (
@@ -23,6 +23,11 @@ const MyComponent = () => {
 
       {/* Customized button with background color */}
       <PaperButton backgroundColor="#FF5733">Custom Paper Button</PaperButton>
+
+      {/* Different sizes */}
+      <PaperButton size="small">Small Paper Button</PaperButton>
+      <PaperButton size="medium">Medium Paper Button</PaperButton>
+      <PaperButton size="large">Large Paper Button</PaperButton>
     </div>
   );
 };

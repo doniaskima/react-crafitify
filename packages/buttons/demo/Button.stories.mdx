@@ -1,0 +1,66 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import Button from '../src/Elements/Button/Button';
+
+<Meta title="Buttons/Button" component={Button} />
+
+# Button
+
+The Button component is a customizable button that can be configured with various props.
+
+## Default
+
+You can use the Button component with its default props:
+
+
+```jsx
+import Button from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div style={{ display: 'flex', width: '100%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '150px' }}>
+      <Button label="Click me!" />
+      <br />
+      <Button label="Click me!" disabled />
+    </div>
+  );
+};
+
+```
+
+# Customization
+
+You can customize the Button component using the following props:
+
+-`loading`: State of loading for the button.
+-`full`: Full width for the button.
+-`size`: Size of the button (options: 'sm', 'm', 'lg').
+-`disabled`: Disabled for the button.
+-`outline`: Outline for the button.
+-`label`: Text to display in the button.
+-`color`: Color of the button (options: 'primary', 'secondary', 'error').
+-`as`: The type of element to render (options: 'a', 'button').
+-`href`: The URL to the button.
+
+
+```jsx
+import Button from 'react-craft-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div style={{ display: 'flex', width: '100%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '150px' }}>
+     <Button
+     loading={true}
+     full={true}
+     size="lg"
+     disabled={true}
+     outline={true}
+     label="Custom Disabled Button"
+     color="secondary"
+     as="a"
+     href="https://example.com"
+   />
+    </div>
+  );
+};
+
+```

@@ -34,9 +34,13 @@ Default.args = {
   children: 'Click Me',
 };
 
-export const CustomText = Template.bind({});
-CustomText.args = {
-  children: 'Custom Text',
+export const CustomColorsAndHover = Template.bind({});
+CustomColorsAndHover.args = {
+  children: 'Custom Colors & Hover',
+  borderColor: '#e63946',
+  color: '#e63946',
+  hoverBackgroundColor: 'radial-gradient(#e63946, #f38181)',
+  hoverBoxShadow: '0px 0px 0.3rem #e63946',
 };
 
 export const LargeSize = Template.bind({});

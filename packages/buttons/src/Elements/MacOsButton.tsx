@@ -15,7 +15,7 @@ interface MacOsButtonProps {
 
 const StyledMacOsButton = styled.button<MacOsButtonProps>`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 6px 14px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;

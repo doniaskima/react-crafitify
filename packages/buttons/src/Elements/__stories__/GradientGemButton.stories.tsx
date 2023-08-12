@@ -38,3 +38,14 @@ CustomColor.args = {
   spanBackgroundColor: 'rgb(5, 6, 45)',
   spanBackgroundHover: 'none',
 };
+
+export const CustomFontSize = Template.bind({});
+CustomFontSize.args = {
+  fontSize: '24px',
+};
+
+export const CustomWidthAndHeight = Template.bind({});
+CustomWidthAndHeight.args = {
+  width: '200px',
+  height: '60px',
+};

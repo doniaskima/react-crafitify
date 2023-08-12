@@ -6,10 +6,17 @@ export interface GradientGemButtonProps {
   textColor?: string;
   spanBackgroundColor?: string;
   spanBackgroundHover?: string;
+  fontSize?: string;
+  height?: string; // New prop for changing the height
+  width?: string;  // New prop for changing the width
+  padding?: string; // New prop for changing the padding
 }
 
 const ButtonWrapper = styled.button<GradientGemButtonProps>`
   align-items: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background-image: ${(props) => props.backgroundColor || 'linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB)'};
   border: 0;
   border-radius: 8px;
@@ -18,12 +25,13 @@ const ButtonWrapper = styled.button<GradientGemButtonProps>`
   color: ${(props) => props.textColor || '#FFFFFF'};
   display: flex;
   font-family: Phantomsans, sans-serif;
-  font-size: 20px;
+  font-size: ${(props) => props.fontSize || '20px'};
   justify-content: center;
   line-height: 1em;
   max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
+  min-width: ${(props) => props.width || '140px'}; // Use the width prop, default to 140px
+  height: ${(props) => props.height || 'auto'}; // Use the height prop, default to auto
+  padding: ${(props) => props.padding || '3px'}; // Use the padding prop, default to 3px
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -50,8 +58,8 @@ const ButtonWrapper = styled.button<GradientGemButtonProps>`
   }
 
   @media (min-width: 768px) {
-    font-size: 24px;
-    min-width: 196px;
+    font-size: ${(props) => props.fontSize || '24px'};
+    min-width: ${(props) => props.width || '196px'};
   }
 };`
 
@@ -60,6 +68,10 @@ const GradientGemButton: React.FC<GradientGemButtonProps> = ({
   textColor,
   spanBackgroundColor,
   spanBackgroundHover,
+  fontSize,
+  height,
+  width,
+  padding,
 }) => {
   return (
     <ButtonWrapper
@@ -67,6 +79,10 @@ const GradientGemButton: React.FC<GradientGemButtonProps> = ({
       textColor={textColor}
       spanBackgroundColor={spanBackgroundColor}
       spanBackgroundHover={spanBackgroundHover}
+      fontSize={fontSize}
+      height={height}
+      width={width}
+      padding={padding}
     >
       <span className="text">GradientGemButton</span>
     </ButtonWrapper>

@@ -1,18 +1,32 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import Lovebtn from '../src/Elements/Lovebtn.tsx';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Lovebtn, { LovebtnProps } from '../src/Elements/Lovebtn';
 
 <Meta title="Buttons/LoveButton" component={Lovebtn} />
 
 # LoveButton
 
-A heart-themed button with interactive hover and animation effects.
-
-
-The `Lovebtn` component is a heart-themed button that features an animated heart and interactive hover effects. To use it:
+The `LoveButton` component is a customizable button with a heart animation.
 
 ## Usage
 
-```jsx
-<Lovebtn>Click Me!</Lovebtn>
+To use the `LoveButton` component, import it and provide the desired props:
 
- 
+```jsx
+import React from 'react';
+import Lovebtn from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <Lovebtn>Hover Me!</Lovebtn>
+
+      {/* Customized button with different sizes */}
+      <Lovebtn size="small">Small Button</Lovebtn>
+      <Lovebtn size="medium">Medium Button</Lovebtn>
+      <Lovebtn size="large">Large Button</Lovebtn>
+    </div>
+  );
+};
+
+export default MyComponent;

@@ -10,8 +10,27 @@ A reusable primary button component with customizable styles and disabled state.
 ## Usage
 
 The `PrimaryButton` component is a versatile button that allows you to easily create primary call-to-action buttons in your application. To use it:
- 
-```jsx
-<PrimaryButton>Click Me!</PrimaryButton>
 
- 
+```jsx
+import React from 'react';
+import PrimaryButton from 'react-craft-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default primary button */}
+      <PrimaryButton>Click Me!</PrimaryButton>
+
+      {/* Disabled primary button */}
+      <PrimaryButton disabled>Disabled Button</PrimaryButton>
+
+      {/* Primary button with custom style */}
+      <PrimaryButton className="custom-button">Custom Style</PrimaryButton>
+
+      {/* Primary button with custom onClick */}
+      <PrimaryButton onClick={() => alert('Button Clicked!')}>Custom OnClick</PrimaryButton>
+    </div>
+  );
+};
+
+export default MyComponent;

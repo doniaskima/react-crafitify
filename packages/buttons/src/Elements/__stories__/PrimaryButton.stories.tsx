@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { PrimaryButton, PrimaryButtonProps } from '../PrimaryButton';
 
 export default {
-  title: 'Buttons/PrimaryButton', 
+  title: 'Buttons/PrimaryButton',
   component: PrimaryButton,
 } as Meta;
 

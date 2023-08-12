@@ -21,13 +21,13 @@ Default.args = {
 export const Small = CenteredTemplate.bind({});
 Small.args = {
   children: 'Small Refresh',
-  style: { fontSize: '14px' },
+  fontSize: '14px',
 };
 
 export const Large = CenteredTemplate.bind({});
 Large.args = {
   children: 'Large Refresh',
-  style: { fontSize: '20px' },
+  fontSize: '20px',
 };
 
 export const Rounded = CenteredTemplate.bind({});
