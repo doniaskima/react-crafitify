@@ -1,0 +1,43 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { CircleLoader } from '../src/Elements/CircleLoader';  
+
+<Meta title="Spinners/CircleLoader" component={CircleLoader} />
+
+## Default
+
+
+## Custom Color
+
+You can customize the color of the spinner by using the `color` prop.
+
+```jsx
+import React from 'react';
+import CircleLoader from 'react-craftify-spinners/CircleLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CircleLoader />
+    </div>
+  );
+};
+
+```
+
+## Custom Color
+
+You can customize the color of the spinner by using the `color` prop.
+
+```jsx
+import React from 'react';
+import CircleLoader from 'react-craftify-spinners/CircleLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CircleLoader color="#ff0000" />
+    </div>
+  );
+};

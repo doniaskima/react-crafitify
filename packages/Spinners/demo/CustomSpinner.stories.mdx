@@ -1,0 +1,53 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import CustomSpinner from '../src/Elements/CustomSpinner';
+
+<Meta title="Spinners/CustomSpinner" component={CustomSpinner} />
+
+## Default
+
+```jsx
+import React from 'react';
+import CustomSpinner from 'react-craftify-spinners/CustomSpinner';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CustomSpinner />
+    </div>
+  );
+};
+```
+
+## Colored
+
+```jsx
+import React from 'react';
+import CustomSpinner from 'react-craftify-spinners/CustomSpinner';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CustomSpinner color="#ff0000" />
+    </div>
+  );
+};
+```
+
+## Centered
+
+```jsx
+import React from 'react';
+import CustomSpinner from 'react-craftify-spinners/CustomSpinner';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CustomSpinner center />
+    </div>
+  );
+};
+
+```

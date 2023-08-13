@@ -1,0 +1,56 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { CornerLoader } from '../src/Elements/CornerLoader';  
+
+<Meta title="Spinners/CornerLoader" component={CornerLoader} />
+
+## Default
+
+```jsx
+import React from 'react';
+import CornerLoader from 'react-craftify-spinners/CornerLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CornerLoader />
+    </div>
+  );
+};
+```
+
+
+## Custom Color
+
+You can customize the color of the loader by using the color prop.
+
+```jsx
+import React from 'react';
+import CornerLoader from 'react-craftify-spinners/CornerLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+       <CornerLoader color="#ff0000" />
+    </div>
+  );
+};
+```
+## With Custom Class
+
+You can customize the color of the loader by using the color prop.
+
+```jsx
+import React from 'react';
+import CornerLoader from 'react-craftify-spinners/CornerLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CornerLoader className="custom-class" />
+    </div>
+  );
+};
+```
