@@ -1,0 +1,91 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import CustomLoader from '../src/Elements/CustomLoader';
+
+<Meta title="Spinners/CustomLoader" component={CustomLoader} />
+
+# Custom Loader
+
+A customizable loader component that displays a loading animation with customizable text.
+
+## Usage
+
+To use the `CustomLoader` component, import it and render it in your React application. You can customize the appearance of the loader using the following props:
+
+- `text`: The text to be displayed along with the loading animation.
+- `textColor`: Change the color of the loading text.
+- `className`: Add a custom className to the component.
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={{}} />
+</Canvas>
+
+```jsx
+import React from 'react';
+import CustomLoader from 'react-craftify-spinners/CustomLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CustomLoader />
+    </div>
+  );
+};
+```
+
+## Custom Text
+
+You can change the loading text by using the text prop.
+
+```jsx
+import React from 'react';
+import CustomLoader from 'react-craftify-spinners/CustomLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <CustomLoader text="Please wait..." />
+    </div>
+  );
+};
+```
+
+
+## Custom Color
+
+You can change the text color by using the textColor prop.
+
+```jsx
+import React from 'react';
+import CustomLoader from 'react-craftify-spinners/CustomLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+       <CustomLoader textColor="#ff0000" />
+    </div>
+  );
+};
+```
+
+## With ClassName
+
+You can add a custom className to the loader component by using the className prop.
+
+```jsx
+import React from 'react';
+import CustomLoader from 'react-craftify-spinners/CustomLoader';
+
+const MyComponent = () => {
+  return (
+   <div>
+      <h1>Loading</h1>
+       <CustomLoader className="custom-style" />
+    </div>
+  );
+};
+```

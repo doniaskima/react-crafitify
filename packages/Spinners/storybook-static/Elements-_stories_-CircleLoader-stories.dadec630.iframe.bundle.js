@@ -1,0 +1,20 @@
+"use strict";(self.webpackChunkreact_craftify_spinners=self.webpackChunkreact_craftify_spinners||[]).push([[334],{"./src/Elements/_stories_/CircleLoader.stories.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{CustomColor:()=>CustomColor,Default:()=>Default,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});__webpack_require__("./node_modules/react/index.js");var _CircleLoader__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./src/Elements/CircleLoader.tsx"),react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./node_modules/react/jsx-runtime.js");const __WEBPACK_DEFAULT_EXPORT__={title:"Spinners/CircleLoader",component:_CircleLoader__WEBPACK_IMPORTED_MODULE_1__.Z,parameters:{layout:"centered"}},Template=args=>(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_CircleLoader__WEBPACK_IMPORTED_MODULE_1__.Z,{...args});Template.displayName="Template";const Default=Template.bind({});Default.args={};const CustomColor=Template.bind({});CustomColor.args={color:"#ff0000"},Default.parameters={...Default.parameters,docs:{...Default.parameters?.docs,source:{originalSource:"args => <CircleLoader {...args} />",...Default.parameters?.docs?.source}}},CustomColor.parameters={...CustomColor.parameters,docs:{...CustomColor.parameters?.docs,source:{originalSource:"args => <CircleLoader {...args} />",...CustomColor.parameters?.docs?.source}}};const __namedExportsOrder=["Default","CustomColor"]},"./src/Elements/CircleLoader.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{Z:()=>__WEBPACK_DEFAULT_EXPORT__});__webpack_require__("./node_modules/react/index.js");var styled_components__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js"),react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./node_modules/react/jsx-runtime.js");const spinnerAnimation=styled_components__WEBPACK_IMPORTED_MODULE_2__.F4`
+  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  }
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+  }
+`,SpinnerContainer=styled_components__WEBPACK_IMPORTED_MODULE_2__.ZP.div`
+  position: absolute;
+  width: 9px;
+  height: 9px;
+`,SpinnerDiv=styled_components__WEBPACK_IMPORTED_MODULE_2__.ZP.div`
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: ${props=>props.color||"#000000"};
+  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  animation: ${spinnerAnimation} 1s calc(var(--delay) * 1s) infinite ease;
+`,CircleLoader=_ref=>{let{color}=_ref;return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(SpinnerContainer,{className:"spinner",children:[...Array(10)].map(((_,index)=>(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(SpinnerDiv,{color,style:{"--delay":.1*(index+1),"--rotation":36*(index+1),"--translation":150}},index)))})};CircleLoader.displayName="CircleLoader";const __WEBPACK_DEFAULT_EXPORT__=CircleLoader;try{CircleLoader.displayName="CircleLoader",CircleLoader.__docgenInfo={description:"",displayName:"CircleLoader",props:{color:{defaultValue:null,description:"",name:"color",required:!0,type:{name:"any"}}}},"undefined"!=typeof STORYBOOK_REACT_CLASSES&&(STORYBOOK_REACT_CLASSES["src/Elements/CircleLoader.tsx#CircleLoader"]={docgenInfo:CircleLoader.__docgenInfo,name:"CircleLoader",path:"src/Elements/CircleLoader.tsx#CircleLoader"})}catch(__react_docgen_typescript_loader_error){}}}]);
+//# sourceMappingURL=Elements-_stories_-CircleLoader-stories.dadec630.iframe.bundle.js.map

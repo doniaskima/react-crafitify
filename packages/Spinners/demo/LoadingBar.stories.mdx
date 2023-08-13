@@ -1,7 +1,7 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import LoadingBar from '../src/Elements/LoadingBar';
 
-<Meta title="Spinner/LoadingBar" component={LoadingBar} />
+<Meta title="Spinners/LoadingBar" component={LoadingBar} />
 
 # Loading Bar
 
@@ -40,9 +40,7 @@ const MyComponent = () => {
 
 You can change the loading text by using the `text` prop.
 
-<Canvas>
-  <Story name="Custom Text" args={{ text: 'Please wait...' }} />
-</Canvas>
+ 
 
 ```jsx
 import React from 'react';
@@ -61,10 +59,6 @@ const MyComponent = () => {
 ## Custom Colors
 
 You can change the text color and loading bar color by using the `textColor` and `barColor` props.
-
-<Canvas>
-  <Story name="Custom Colors" args={{ textColor: '#ff0000', barColor: '#00ff00' }} />
-</Canvas>
 
 
 ```jsx
@@ -85,6 +79,16 @@ const MyComponent = () => {
 
 You can add a custom className to the loading bar component by using the `className` prop.
 
-<Canvas>
-  <Story name="With ClassName" args={{ className: 'custom-style' }} />
-</Canvas>
+ ```jsx
+import React from 'react';
+import LoadingBar from 'react-craftify-spinners/LoadingBar';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <LoadingBar className="Loader-classname" />
+    </div>
+  );
+};
+```

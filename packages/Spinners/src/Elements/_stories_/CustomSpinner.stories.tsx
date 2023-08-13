@@ -8,7 +8,7 @@ export default {
   argTypes: {
     color: { control: 'color' },
     center: { control: 'boolean' },
-    className: { control: 'text' }, // Add className control
+    className: { control: 'text' },
   },
   parameters: {
     layout: 'centered',
