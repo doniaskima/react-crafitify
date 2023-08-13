@@ -1,6 +1,6 @@
 {
   "name": "react-craftify-buttons",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Collection of components and render prop containers relating to buttons in the React Donia crafitify  Design System",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
