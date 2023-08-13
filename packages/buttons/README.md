@@ -1,4 +1,4 @@
-# react-creaft-buttons
+# react-craftify-buttons
 
 A collection of creative and customizable button components for React applications.
 

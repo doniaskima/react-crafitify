@@ -1,7 +1,7 @@
 {
-  "name": "react-craft-buttons",
-  "version": "0.0.2",
-  "description": "Collection of components and render prop containers relating to buttons in the React Donia Craft  Design System",
+  "name": "react-craftify-buttons",
+  "version": "0.0.22",
+  "description": "Collection of components and render prop containers relating to buttons in the React Donia crafitify  Design System",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -13,19 +13,33 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doniaskima/react-donia-craft.git"
+    "url": "git+https://github.com/doniaskima/react-donia-crafitify.git"
   },
   "keywords": [
-    "react-craft",
+    "react-craftify",
     "buttons",
-    "components"
-  ],
+    "components",
+    "UI elements",
+    "frontend",
+    "web development",
+    "user interface",
+    "interactive",
+    "customizable",
+    "styles",
+    "design",
+    "React library",
+    "visual",
+    "aesthetics",
+    "CSS",
+    "styling",
+    "design system"
+],
   "author": "Donia Skima",
   "license": "MIT ",
   "bugs": {
-    "url": "https://github.com/doniaskima/react-donia-craft/issues"
+    "url": "https://github.com/doniaskima/react-donia-crafitify/issues"
   },
-  "homepage": "https://github.com/doniaskima/react-donia-craft#readme",
+  "homepage": "https://github.com/doniaskima/react-donia-crafitify#readme",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
