@@ -1,0 +1,90 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import LoadingBar from '../src/Elements/LoadingBar';
+
+<Meta title="Spinner/LoadingBar" component={LoadingBar} />
+
+# Loading Bar
+
+A loading bar component that displays a loading animation along with customizable text.
+
+## Usage
+
+To use the `LoadingBar` component, import it and render it in your React application. You can customize the appearance of the loading bar using the following props:
+
+- `text`: The text to be displayed along with the loading animation.
+- `textColor`: Change the color of the loading text.
+- `barColor`: Change the color of the loading bar.
+- `className`: Add a custom className to the component.
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={{}} />
+</Canvas>
+
+```jsx
+import React from 'react';
+import LoadingBar from 'react-craftify-spinners/LoadingBar';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <LoadingBar />
+    </div>
+  );
+};
+```
+
+## Custom Text
+
+You can change the loading text by using the `text` prop.
+
+<Canvas>
+  <Story name="Custom Text" args={{ text: 'Please wait...' }} />
+</Canvas>
+
+```jsx
+import React from 'react';
+import LoadingBar from 'react-craftify-spinners/LoadingBar';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <LoadingBar text="Please wait..." />
+    </div>
+  );
+};
+```
+
+## Custom Colors
+
+You can change the text color and loading bar color by using the `textColor` and `barColor` props.
+
+<Canvas>
+  <Story name="Custom Colors" args={{ textColor: '#ff0000', barColor: '#00ff00' }} />
+</Canvas>
+
+
+```jsx
+import React from 'react';
+import LoadingBar from 'react-craftify-spinners/LoadingBar';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <LoadingBar color="#00ff00" />
+    </div>
+  );
+};
+```
+
+## With ClassName
+
+You can add a custom className to the loading bar component by using the `className` prop.
+
+<Canvas>
+  <Story name="With ClassName" args={{ className: 'custom-style' }} />
+</Canvas>

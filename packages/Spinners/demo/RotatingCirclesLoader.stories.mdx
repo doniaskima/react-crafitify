@@ -1,0 +1,68 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import RotatingCirclesLoader from '../src/Elements/RotatingCirclesLoader';
+
+<Meta title="Spinners/RotatingCirclesLoader" component={RotatingCirclesLoader} />
+
+# Rotating Circles Loader
+
+A customizable loader component with rotating circles animation.
+
+## Usage
+
+To use the `RotatingCirclesLoader` component, import it and render it in your React application. You can customize the appearance of the loader using the following props:
+
+- `color`: Change the color of the circles.
+- `className`: Add a custom className to the component.
+
+## Default
+
+ ```jsx
+import React from 'react';
+import RotatingCirclesLoader from 'react-craftify-spinners/RotatingCirclesLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <RotatingCirclesLoader />
+    </div>
+  );
+};
+```
+
+## Custom Color
+
+You can change the color of the circles by using the `color` prop.
+
+```jsx
+import React from 'react';
+import RotatingCirclesLoader from 'react-craftify-spinners/RotatingCirclesLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <RotatingCirclesLoader color="#00ff00" />
+    </div>
+  );
+};
+```
+ 
+
+## Custom ClassName
+
+You can add a custom className to the component by using the `className` prop.
+
+```jsx
+import React from 'react';
+import RotatingCirclesLoader from 'react-craftify-spinners/RotatingCirclesLoader';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <RotatingCirclesLoader className="your className" />
+    </div>
+  );
+};
+```

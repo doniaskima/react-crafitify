@@ -1,0 +1,76 @@
+ 
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import NewtonsCradle from '../src/Elements/NewtonsCradle';
+
+<Meta title="Spinners/NewtonsCradle" component={NewtonsCradle} />
+
+# Newton's Cradle
+
+A customizable Newton's Cradle component that demonstrates the physics of conservation of momentum.
+
+## Usage
+
+To use the `NewtonsCradle` component, import it and render it in your React application. You can customize the appearance of the Newton's Cradle using the following props:
+
+- `color`: Change the color of the balls.
+- `className`: Add a custom className to the component.
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={{}} />
+</Canvas>
+
+
+```jsx
+import React from 'react';
+import NewtonsCradle from 'react-craftify-spinners/NewtonsCradle';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <NewtonsCradle />
+    </div>
+  );
+};
+```
+
+## Custom Color
+
+You can change the color of the Newton's Cradle balls by using the `color` prop.
+
+
+```jsx
+import React from 'react';
+import NewtonsCradle from 'react-craftify-spinners/NewtonsCradle';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <NewtonsCradle color="#00ff00" />
+    </div>
+  );
+};
+```
+
+## Custom ClassName
+
+You can add a custom className to the Newton's Cradle component by using the `className` prop.
+
+
+```jsx
+import React from 'react';
+import NewtonsCradle from 'react-craftify-spinners/NewtonsCradle';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <NewtonsCradle className="your className" />
+    </div>
+  );
+};
+```
+
