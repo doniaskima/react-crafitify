@@ -15,7 +15,7 @@ A collection of creative and customizable button components for React applicatio
 Install the package using npm:
 
 ```bash
-npm install react-craft-buttons
+npm react-craftify-buttons
 ``` 
 ## How to use it ? 
 
