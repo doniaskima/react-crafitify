@@ -3,10 +3,31 @@ import { Story, Meta } from '@storybook/react';
 import StyledCheckbox from '../StyledCheckbox';
 
 export default {
-  title: 'Components/StyledCheckbox',
+  title: 'Checkboxes/StyledCheckbox',
   component: StyledCheckbox,
 } as Meta;
 
-const Template: Story = () => <StyledCheckbox />;
+const CenteredStory: React.FC = ({ children }) => {
+    return (
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+        }}
+      >
+        {children}
+      </div>
+    );
+  };
+  
+
+
+const Template: Story = () => (
+    <CenteredStory>
+       <StyledCheckbox />
+    </CenteredStory>
+) 
 
 export const Default = Template.bind({});
