@@ -8,4 +8,5 @@ export {default as RotatingCircleBorderLoader} from "./Elements/RotatingCircleBo
 export {default as RotatingCirclesLoader} from "./Elements/RotatingCirclesLoader";
 export {default as NewtonsCradle} from "./Elements/NewtonsCradle";
 export {default as CustomLoader} from "./Elements/CustomLoader";
+export {default as Loader} from "./Elements/Loader";
  

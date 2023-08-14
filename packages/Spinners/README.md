@@ -44,6 +44,7 @@ This library provides a variety of spinner components that you can easily integr
 ```bash
 import React from 'react';
 import {
+  Loader,
   CircleLoader,
   CornerLoader,
   CubeLoader,
@@ -54,28 +55,55 @@ import {
   NewtonsCradle,
   RotatingCircleBorderLoader,
   RotatingCirclesLoader,
-  // Add more imports for other spinners
+  // Import more spinner components here
 } from 'react-craftify-spinners';
 
 const MyComponent = () => {
   return (
     <div>
-      {/* Use the spinner components here */}
+      {/* Example usage of different spinner components */}
+
+      {/* Standard circle loader */}
       <CircleLoader />
+
+      {/* Corner loader */}
       <CornerLoader />
+
+      {/* Cube loader */}
       <CubeLoader />
+
+      {/* Custom loader with customizable properties */}
       <CustomLoader />
+
+      {/* Custom spinner with user-defined animation */}
       <CustomSpinner />
+
+      {/* Simple dot spinner */}
       <DotSpinner />
+
+      {/* Loading bar indicating progress */}
       <LoadingBar />
+
+      {/* Newtons cradle animation */}
       <NewtonsCradle />
+
+      {/* Circle loader with rotating border */}
       <RotatingCircleBorderLoader />
+
+      {/* Multiple rotating circles */}
       <RotatingCirclesLoader />
+
       {/* Add more spinner components here */}
+      {/* Remember to provide relevant descriptions for any additional spinners */}
+
+      {/* End of spinner components */}
     </div>
   );
 };
 
 export default MyComponent;
 
+
 ```
+
+Feel free to explore and experiment with different spinner components to enhance the user experience in your React applications.
