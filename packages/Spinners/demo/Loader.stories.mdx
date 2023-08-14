@@ -1,0 +1,57 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { LoaderRingContainer, LoaderRotateContainer, LoaderDotsContainder } from '../src/Elements/Loader';
+
+<Meta
+  title="Spinners/Loader"
+  component={LoaderRingContainer}  
+  parameters={{
+    controls: { expanded: true },
+  }}
+  argTypes={{
+    color: {
+      control: { type: 'color' },
+    },
+  }}
+/>
+
+# Loader
+
+The `Loader` component provides various spinner animations that can be used to indicate loading or processing in your application.
+
+## LoaderRingContainer
+
+The `LoaderRingContainer` displays a rotating ring spinner. It takes the following props:
+
+- `size` (number): The size of the spinner in pixels.
+- `borderSize` (number): The thickness of the spinner ring.
+- `color` (string): The color of the spinner.
+
+Example usage:
+
+```jsx
+<LoaderRingContainer size={32} borderSize={4} color="#007bff" />
+```
+
+## LoaderRotateContainer
+
+The LoaderRotateContainer displays a rotating bar spinner. It takes the following props:
+
+- `size` (number): The size of the spinner in pixels.
+- `borderSize` (number): The thickness of the spinner ring.
+- `color` (string): The color of the spinner.
+
+```jsx
+<LoaderRotateContainer size={32} borderSize={4} color="#007bff" />
+```
+
+## LoaderDotsContainder
+
+The LoaderRotateContainer displays a rotating bar spinner. It takes the following props:
+
+- `size` (number): The size of the spinner in pixels.
+- `color` (string): The color of the spinner.
+
+```jsx
+<LoaderDotsContainder size={32} color="#007bff" />
+```
+
