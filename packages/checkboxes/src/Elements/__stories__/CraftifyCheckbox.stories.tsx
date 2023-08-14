@@ -14,22 +14,39 @@ const CenteredWrapper = styled.div`
 export default {
   title: 'Checkboxes/CraftifyCheckbox',
   component: CraftifyCheckbox,
-  decorators: [(story) => <CenteredWrapper>{story()}</CenteredWrapper>], // Apply the centered wrapper
+  decorators: [(story) => <CenteredWrapper>{story()}</CenteredWrapper>],
+  controls: { hideNoControlsWarning: true }, 
 };
 
-export const Default = () => (
-  <CraftifyCheckbox onChange={action('Checkbox changed')} />
+const Template = ({ onChange, ...args }) => (
+  <CraftifyCheckbox onChange={onChange} {...args} />
 );
 
-export const Checked = () => (
-  <CraftifyCheckbox defaultChecked={true} onChange={action('Checkbox changed')} />
-);
+export const Default = Template.bind({});
+Default.args = {
+  onChange: action('Checkbox changed'),  
+};
 
-export const CustomColorAndSize = () => (
-  <CraftifyCheckbox
-    defaultChecked={true}
-    checkedColor="#00A9E0"  
-    checkboxSize="30px"
-    onChange={action('Checkbox changed')}
-  />
-);
+export const Checked = Template.bind({});
+Checked.args = {
+  defaultChecked: true,
+  onChange: action('Checkbox changed'), 
+};
+
+export const CustomColorAndSize = Template.bind({});
+CustomColorAndSize.args = {
+  defaultChecked: true,
+  checkboxColor: '#00A9E0',
+  checkboxSize: '30px',
+  onChange: action('Checkbox changed'), 
+};
+
+// Add a control for checkboxColor
+CustomColorAndSize.argTypes = {
+  checkboxColor: { control: 'color' },
+};
+
+// Add a control for checkboxSize
+CustomColorAndSize.argTypes = {
+  checkboxSize: { control: 'text' },
+};

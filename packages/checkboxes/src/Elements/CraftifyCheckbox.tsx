@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 interface CraftifyCheckboxProps {
-  onChange: (isChecked: boolean) => void;
-  defaultChecked?: boolean;
-  className?: string;
-  uncheckedColor?: string;
-  checkedColor?: string;
-}
+    onChange: (isChecked: boolean) => void;
+    defaultChecked?: boolean;
+    className?: string;
+    uncheckedColor?: string;
+    checkedColor?: string;
+    checkboxSize?: string;  
+  }
+  
 
 const CheckboxWrapper = styled.div`
   input[type="checkbox"] {
