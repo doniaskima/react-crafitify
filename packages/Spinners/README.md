@@ -28,7 +28,15 @@ To use the spinner components from `react-craftify-spinners`, you'll need to fol
 
 This library provides a variety of spinner components that you can easily integrate into your React projects. Here's a list of the available spinner components:
 
+- `CoffeSpinner`
+- `SmileSpinner`
+- `ScanSpinner`
+- `CartSpinner`
+- `GemoetricSpinner`
+- `CookingSpinner`
+- `BubbleSpinner`
 - `CircleLoader`
+- `PlanetSpinner`
 - `CornerLoader`
 - `CubeLoader`
 - `CustomLoader`
@@ -44,6 +52,15 @@ This library provides a variety of spinner components that you can easily integr
 ```bash
 import React from 'react';
 import {
+  BubbleSpinner,
+  CookingSpinner,
+  AnimatedCircle,
+  CartSpinner,
+  CoffeSpinner,
+  GemoetricSpinner,
+  PlanetSpinner,
+  SmileSpinner,
+  ScanSpinner,
   Loader,
   CircleLoader,
   CornerLoader,
@@ -62,6 +79,10 @@ const MyComponent = () => {
   return (
     <div>
       {/* Example usage of different spinner components */}
+
+      {/* Coffe loader */}
+      <CoffeSpinner />
+
 
       {/* Standard circle loader */}
       <CircleLoader />
