@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 export interface CubeLoaderProps {
   color?: string;
   borderColor?: string;
+  size?: string;
   className?: string;
 }
 
@@ -18,8 +19,8 @@ const spinnerAnimation = keyframes`
 `;
 
 const SpinnerContainer = styled.div<CubeLoaderProps>`
-  width: 44px;
-  height: 44px;
+  width: ${(props) => props.size || '44px'};
+  height: ${(props) => props.size || '44px'};
   animation: ${spinnerAnimation} 2s infinite ease;
   transform-style: preserve-3d;
   display: flex;
@@ -63,9 +64,9 @@ const SpinnerContainer = styled.div<CubeLoaderProps>`
   }
 `;
 
-const CubeLoader: React.FC<CubeLoaderProps> = ({ color, borderColor, className }) => {
+const CubeLoader: React.FC<CubeLoaderProps> = ({ color, borderColor, size, className }) => {
   return (
-    <SpinnerContainer color={color} borderColor={borderColor} className={className}>
+    <SpinnerContainer color={color} borderColor={borderColor} size={size} className={className}>
       {[...Array(6)].map((_, index) => (
         <div key={index}></div>
       ))}

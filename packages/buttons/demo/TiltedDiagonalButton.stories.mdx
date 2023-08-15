@@ -1,0 +1,204 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { TiltedDiagonalButton } from '../src/Elements/TiltedDiagonalButton';
+
+<Meta title="Buttons/TiltedDiagonalButton" component={TiltedDiagonalButton} />
+
+# TiltedDiagonalButton
+
+The `TiltedDiagonalButton` component provides a customizable tilted diagonal button with various options for customization.
+
+## Basic Usage
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Default usage */}
+      <TiltedDiagonalButton>MacOs Button</TiltedDiagonalButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Disabled Button
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <div>
+       <TiltedDiagonalButton disabled>Disabled Button</TiltedDiagonalButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Custom Text
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <div>
+       <TiltedDiagonalButton> Custom Text</TiltedDiagonalButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Custom Action
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <div>
+       <TiltedDiagonalButton onClick={() => console.log('Button clicked')}>
+        Click Me
+       </TiltedDiagonalButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Long Text
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <TiltedDiagonalButton>
+        A Button with a Really Long Text
+      </TiltedDiagonalButton>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Icon and Text Button
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+   <TiltedDiagonalButton>
+      <span role="img" aria-label="Star">
+       🌟
+      </span>
+      <span>Star</span>
+    </TiltedDiagonalButton>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Custom Colors
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+   <TiltedDiagonalButton
+      backgroundColor="#3498db"
+      textColor="#ffffff"
+    >
+       Custom Colors
+    </TiltedDiagonalButton>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Custom Font Size
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+   <TiltedDiagonalButton fontSize="1.5rem">
+      Custom Font Size
+   </TiltedDiagonalButton>
+  );
+};
+
+export default MyComponent;
+
+```
+
+## Custom Classes
+
+You can use the `TiltedDiagonalButton` like this:
+
+```jsx
+import React from 'react';
+import TiltedDiagonalButton from  `react-craftify-buttons`;  
+
+const MyComponent = () => {
+  return (
+    <TiltedDiagonalButton
+      className="my-custom-class"
+      backgroundColor="#FF5733"
+      textColor="#222"
+      fontSize="1.2rem"
+    >
+        Custom Classes
+    </TiltedDiagonalButton>
+  );
+};
+
+export default MyComponent;
+
+```

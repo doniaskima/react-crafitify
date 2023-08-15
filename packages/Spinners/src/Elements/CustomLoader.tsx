@@ -1,11 +1,11 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
 interface CustomLoaderProps {
-    text?: string;
-    textColor?: string;
-    className?: string;
-  }
+  text?: string;
+  textColor?: string;
+  backgroundColor?: string; 
+  className?: string;
+}
 
 const loaderTextAnimation = keyframes`
   0% {
@@ -88,13 +88,13 @@ const loading2Animation = keyframes`
   }
 `;
 
-const LoaderContainer = styled.div`
-  width: 80px;
-  height: 50px;
-  position: relative;
+const LoaderContainer = styled.div<CustomLoaderProps>`
+width: ${(props) => props.size || '80px'};
+height: ${(props) => (props.size ? `calc(${props.size} * 0.625)` : '50px')};
+position: relative;
 `;
 
-const LoaderText = styled.span`
+const LoaderText = styled.span<CustomLoaderProps>`
   position: absolute;
   top: 0;
   padding: 0;
@@ -105,8 +105,8 @@ const LoaderText = styled.span`
   letter-spacing: 1px;
 `;
 
-const Load = styled.span`
-  background-color: #9A79FF;
+const Load = styled.span<CustomLoaderProps>`  
+  background-color: ${(props) => props.backgroundColor || '#9A79FF'};  
   border-radius: 50px;
   display: block;
   height: 16px;
@@ -121,19 +121,24 @@ const Load = styled.span`
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #D1C2FF;
+    background-color: ${(props) => props.backgroundColor || '#D1C2FF'}; // Update this line
     border-radius: inherit;
     animation: ${loading2Animation} 3.5s ease both infinite;
   }
 `;
 
-const CustomLoader: React.FC<CustomLoaderProps> = ({ text, textColor, className }) => {
-    return (
-      <LoaderContainer className={className}>
-        <LoaderText textColor={textColor}>{text || 'Loading'}</LoaderText>
-        <Load></Load>
-      </LoaderContainer>
-    );
-  };
+const CustomLoader: React.FC<CustomLoaderProps> = ({
+  text,
+  textColor,
+  size,
+  className,
+}) => {
+  return (
+    <LoaderContainer size={size} className={className}>
+      <LoaderText textColor={textColor}>{text || 'Loading'}</LoaderText>
+      <Load></Load>
+    </LoaderContainer>
+  );
+};
 
 export default CustomLoader;

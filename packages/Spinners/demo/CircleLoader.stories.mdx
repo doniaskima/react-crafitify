@@ -1,23 +1,25 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import { CircleLoader } from '../src/Elements/CircleLoader';  
+import { Meta } from '@storybook/addon-docs/blocks';
+import { CircleLoader } from '../src/Elements/CircleLoader';
 
 <Meta title="Spinners/CircleLoader" component={CircleLoader} />
 
-## Default
+# CircleLoader
 
+The `CircleLoader` component provides a customizable animated loading spinner with the ability to change color, size, and add a className.
 
-## Custom Color
+## Basic Usage
 
-You can customize the color of the spinner by using the `color` prop.
+You can use the `CircleLoader` like this:
+
+## Usage
 
 ```jsx
 import React from 'react';
-import CircleLoader from 'react-craftify-spinners/CircleLoader';
+import CircleLoader from 'react-craftify-buttons';  
 
 const MyComponent = () => {
   return (
     <div>
-      <h1>Loading</h1>
       <CircleLoader />
     </div>
   );
@@ -27,17 +29,55 @@ const MyComponent = () => {
 
 ## Custom Color
 
-You can customize the color of the spinner by using the `color` prop.
+You can customize the color of the loading spinner:
 
 ```jsx
 import React from 'react';
-import CircleLoader from 'react-craftify-spinners/CircleLoader';
+import CircleLoader from 'react-craftify-buttons';  
 
 const MyComponent = () => {
   return (
     <div>
-      <h1>Loading</h1>
-      <CircleLoader color="#ff0000" />
+      <CircleLoader color="blue" />
     </div>
   );
 };
+
+```
+
+## Custom Size
+
+You can customize the size of the loading spinner:
+
+```jsx
+import React from 'react';
+import CircleLoader from 'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <CircleLoader size="20px" />
+    </div>
+  );
+};
+
+
+```
+
+## Custom Class Name
+
+You can add a custom class name to the loading spinner:
+
+```jsx
+import React from 'react';
+import CircleLoader from 'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <CircleLoader className="my-custom-class" />
+    </div>
+  );
+};
+
+```

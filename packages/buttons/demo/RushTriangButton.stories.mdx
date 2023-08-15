@@ -1,0 +1,99 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { RushTriangButton } from '../src/Elements/RushTriangButton';
+
+<Meta title="Buttons/RushTriangButton" component={RushTriangButton} />
+
+# RushTriangButton
+
+The `RushTriangButton` component provides a customizable button with a unique tilted triangle effect.
+
+## Basic Usage
+
+You can use the `RushTriangButton` like this:
+
+## Usage
+ 
+```jsx
+import React from 'react';
+import RushTriangButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <RushTriangButton>Rush Triangle Button</RushTriangButton>
+    </div>
+  );
+};
+
+```
+## Disabled Button
+ 
+```jsx
+import React from 'react';
+import RushTriangButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <RushTriangButton disabled>Disabled Button</RushTriangButton>
+    </div>
+  );
+};
+
+```
+## Custom Text
+ 
+```jsx
+import React from 'react';
+import RushTriangButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <RushTriangButton>Custom Text</RushTriangButton>
+    </div>
+  );
+};
+
+```
+
+## Custom Colors and Size
+
+You can customize the background color, text color, and font size of the button:
+ 
+```jsx
+import React from 'react';
+import RushTriangButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+     <RushTriangButton backgroundColor="#3498db" textColor="#ffffff" fontSize="1.5rem">
+       Custom Button
+     </RushTriangButton>
+    </div>
+  );
+};
+
+```
+
+
+##  Custom Class Name
+
+You can add custom class names to the button:
+
+```jsx
+import React from 'react';
+import RushTriangButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+     <RushTriangButton className="my-custom-class">
+       Button with Custom Class
+     </RushTriangButton>
+    </div>
+  );
+};
+
+```

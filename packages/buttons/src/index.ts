@@ -34,3 +34,7 @@ export { default as Button51 } from './Elements/Button51';
 export { default as ConicButton } from './Elements/ConicButton';  
 export { default as PinturaButton } from './Elements/PinturaButton';  
 export { default as ThreeDButton } from './Elements/ThreeDButton';  
+export { default as RainbowFill } from './Elements/RainbowFill';  
+export { default as TiltedDiagonalButton } from './Elements/TiltedDiagonalButton';  
+export { default as ProgressRightButton } from './Elements/ProgressRightButton'; 
+export { default as RushTriangButton } from './Elements/RushTriangButton';   

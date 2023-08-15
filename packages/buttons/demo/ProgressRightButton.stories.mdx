@@ -1,0 +1,95 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { ProgressRightButton } from '../src/Elements/ProgressRightButton';
+
+<Meta title="Buttons/ProgressRightButton" component={ProgressRightButton} />
+
+# ProgressRightButton
+
+The `ProgressRightButton` component provides a customizable button with a progress bar animation that starts from the right.
+
+## Basic Usage
+
+You can use the `ProgressRightButton` like this:
+
+## Usage
+
+```jsx
+import React from 'react';
+import ProgressRightButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+      <ProgressRightButton>Progress Right Button</ProgressRightButton>
+    </div>
+  );
+};
+```
+
+## Disabled Button
+
+```jsx
+import React from 'react';
+import ProgressRightButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+         <ProgressRightButton disabled>Disabled Button</ProgressRightButton>
+    </div>
+  );
+};
+```
+
+## Custom Text
+
+```jsx
+import React from 'react';
+import ProgressRightButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+         <ProgressRightButton>Custom Text</ProgressRightButton>
+    </div>
+  );
+};
+```
+
+## Custom Colors and Size
+
+You can customize the background color, text color, font size, and border color of the button:
+
+```jsx
+import React from 'react';
+import ProgressRightButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+    <ProgressRightButton backgroundColor="#3498db" textColor="#ffffff" fontSize="1.5rem" borderColor="#ff0000">
+       Custom Button
+    </ProgressRightButton>
+    </div>
+  );
+};
+```
+
+## Custom Class Name
+
+You can customize the background color, text color, font size, and border color of the button:
+
+```jsx
+import React from 'react';
+import ProgressRightButton from  'react-craftify-buttons';  
+
+const MyComponent = () => {
+  return (
+    <div>
+     <ProgressRightButton className="my-custom-class">
+       Button with Custom Class
+     </ProgressRightButton>
+    </div>
+  );
+};
+```

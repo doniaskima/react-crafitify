@@ -1,10 +1,10 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import CircleLoader, { CircleLoaderProps } from '../CircleLoader';
+import AnimatedCircle, { AnimatedCircleProps } from '../AnimatedCircle';
 
 export default {
-  title: 'Spinners/CircleLoader',
-  component: CircleLoader,
+  title: 'Spinners/AnimatedCircle',
+  component: AnimatedCircle,
 } as Meta;
 
 const CenteredStory: React.FC = ({ children }) => {
@@ -20,26 +20,33 @@ const CenteredStory: React.FC = ({ children }) => {
   );
 }
 
-const Template: Story<CircleLoaderProps> = (args) => (
+const Template: Story<AnimatedCircleProps> = (args) => (
   <CenteredStory>
-    <CircleLoader {...args} />
+    <AnimatedCircle {...args} />
   </CenteredStory>
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  color: 'hsl(214, 97%, 59%)',
+  size: '3.25em',
+};
 
 export const CustomColor = Template.bind({});
 CustomColor.args = {
   color: 'blue',
+  size: '3.5em',
 };
 
 export const CustomSize = Template.bind({});
 CustomSize.args = {
-  size: '20px',
+  color: 'green',
+  size: '4em',
 };
 
 export const WithClassName = Template.bind({});
 WithClassName.args = {
+  color: 'purple',
+  size: '3.75em',
   className: 'my-custom-class',
 };

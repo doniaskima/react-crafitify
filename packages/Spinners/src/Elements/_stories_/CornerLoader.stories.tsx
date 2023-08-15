@@ -1,13 +1,10 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Story, Meta } from '@storybook/react';
 import CornerLoader, { CornerLoaderProps } from '../CornerLoader';
 
 export default {
   title: 'Spinners/CornerLoader',
   component: CornerLoader,
-  parameters: {
-    layout: 'centered', 
-  },
 } as Meta;
 
 const Template: Story<CornerLoaderProps> = (args) => <CornerLoader {...args} />;
@@ -17,10 +14,15 @@ Default.args = {};
 
 export const CustomColor = Template.bind({});
 CustomColor.args = {
-  color: '#ff0000', 
+  color: 'blue',
 };
 
-export const WithClassName = Template.bind({});
-WithClassName.args = {
-  className: 'custom-class', 
+export const CustomSize = Template.bind({});
+CustomSize.args = {
+  size: '5rem',
+};
+
+export const CustomClass = Template.bind({});
+CustomClass.args = {
+  className: 'my-custom-class',
 };

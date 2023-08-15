@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 interface CornerLoaderProps {
   color?: string;
+  size?: string;
   className?: string;
 }
 
@@ -24,8 +25,8 @@ const spin988 = keyframes`
   }
 `;
 
-const LoaderContainer = styled.div`
-  --dim: 3rem;
+const LoaderContainer = styled.div<CornerLoaderProps>`
+  --dim: ${(props) => props.size || '3rem'};
   width: var(--dim);
   height: var(--dim);
   position: relative;
@@ -33,7 +34,7 @@ const LoaderContainer = styled.div`
 `;
 
 const Circle = styled.div<CornerLoaderProps>`
-  --dim: 1.2rem;
+  --dim: ${(props) => props.size || '1.2rem'};
   width: var(--dim);
   height: var(--dim);
   background-color: ${(props) => props.color || '#333'};
@@ -61,13 +62,13 @@ const BottomRightCircle = styled(Circle)`
   right: 0;
 `;
 
-const CornerLoader: React.FC<CornerLoaderProps> = ({ color, className }) => {
+const CornerLoader: React.FC<CornerLoaderProps> = ({ color, size, className }) => {
   return (
     <LoaderContainer className={className}>
-      <TopLeftCircle color={color}></TopLeftCircle>
-      <TopRightCircle color={color}></TopRightCircle>
-      <BottomLeftCircle color={color}></BottomLeftCircle>
-      <BottomRightCircle color={color}></BottomRightCircle>
+      <TopLeftCircle color={color} size={size}></TopLeftCircle>
+      <TopRightCircle color={color} size={size}></TopRightCircle>
+      <BottomLeftCircle color={color} size={size}></BottomLeftCircle>
+      <BottomRightCircle color={color} size={size}></BottomRightCircle>
     </LoaderContainer>
   );
 };

@@ -12,8 +12,8 @@ const spinnerAnimation = keyframes`
 
 const SpinnerContainer = styled.div`
   position: absolute;
-  width: 9px;
-  height: 9px;
+  width: ${(props) => props.size || '9px'};
+  height: ${(props) => props.size || '9px'};
 `;
 
 const SpinnerDiv = styled.div`
@@ -25,9 +25,15 @@ const SpinnerDiv = styled.div`
   animation: ${spinnerAnimation} 1s calc(var(--delay) * 1s) infinite ease;
 `;
 
-const CircleLoader = ({ color }) => {
+interface CircleLoaderProps {
+  color?: string;
+  size?: string;
+  className?: string;
+}
+
+const CircleLoader: React.FC<CircleLoaderProps> = ({ color, size, className }) => {
   return (
-    <SpinnerContainer className="spinner">
+    <SpinnerContainer className={`spinner ${className}`} size={size}>
       {[...Array(10)].map((_, index) => (
         <SpinnerDiv
           key={index}
