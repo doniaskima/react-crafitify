@@ -18,3 +18,7 @@ export {default as GemoetricSpinner} from "./Elements/GemoetricSpinner/Gemoetric
 export {default as PlanetSpinner} from "./Elements/PlanetSpinner/PlanetSpinner";
 export {default as SmileSpinner} from "./Elements/SmileSpinner/SmileSpinner";
 export {default as ScanSpinner} from "./Elements/ScanSpinner/ScanSpinner";
+export {default as FormsLoading} from "./Elements/FormsLoading/FormsLoading";
+export {default as PuzzleLoading} from "./Elements/PuzzleLoading/PuzzleLoading";
+export {default as SnakeLoader} from "./Elements/SnakeLoader/SnakeLoader";
+export {default as WaterLoader} from "./Elements/WaterLoader/WaterLoader";
