@@ -10,4 +10,11 @@ export {default as NewtonsCradle} from "./Elements/NewtonsCradle";
 export {default as CustomLoader} from "./Elements/CustomLoader";
 export {default as Loader} from "./Elements/Loader";
 export {default as AnimatedCircle} from "./Elements/AnimatedCircle";
- 
+export {default as BubbleSpinner} from "./Elements/BubbleSpinner/BubbleSpinner";
+export {default as CartSpinner} from "./Elements/CartSpinner/CartSpinner";
+export {default as CoffeSpinner} from "./Elements/CoffeSpinner/CoffeSpinner";
+export {default as CookingSpinner} from "./Elements/CookingSpinner/CookingSpinner";
+export {default as GemoetricSpinner} from "./Elements/GemoetricSpinner/GemoetricSpinner";
+export {default as PlanetSpinner} from "./Elements/PlanetSpinner/PlanetSpinner";
+export {default as SmileSpinner} from "./Elements/SmileSpinner/SmileSpinner";
+export {default as ScanSpinner} from "./Elements/ScanSpinner/ScanSpinner";

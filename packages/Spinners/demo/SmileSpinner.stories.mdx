@@ -1,0 +1,67 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { SmileSpinner } from '../src/Elements/SmileSpinner/SmileSpinner';
+
+<Meta title="Spinners/SmileSpinner" component={SmileSpinner} />
+
+## SmileSpinner: Adding Joyful Animation to Your UI!
+
+Introducing the *SmileSpinner* component, your gateway to infusing your user interface with a burst of happiness and playfulness. 😄🌀
+
+Whether you're designing a cheerful app or simply want to bring smiles to your UI, the SmileSpinner is your go-to solution for creating an animated atmosphere of delight.
+
+### Features:
+
+- **Instant Cheer**: The SmileSpinner sparks into life as soon as it's introduced, ensuring that your UI is instantly drenched in positive vibes.
+- **Endless Smiles**: Just like endless laughter, the SmileSpinner loops its animation endlessly, spreading its joyful energy without pause.
+- **Seamless Integration**: With a simple API, integrating the SmileSpinner into your project is as effortless as sharing a smile.
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import SmileSpinner from 'react-craftify-buttons';  
+
+function App() {
+  return (
+    <div>
+      <h1>Adding Joyful Animation to Your UI!</h1>
+      <SmileSpinner style={{ width: "200px", height: "200px" }} />
+    </div>
+  );
+}
+
+
+```
+
+### Custom backgroundColor:
+
+```jsx
+import React from 'react';
+import SmileSpinner from 'react-craftify-buttons';  
+
+function App() {
+  const spinnerStyle = {
+    width: '200px',
+    height: '200px',
+    backgroundColor: 'lightgray', // Set your desired background color here
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <SmileSpinner style={spinnerStyle} />
+    </div>
+  );
+}
+
+export default App;
+ 
+```
+
+ 
+In this added section:
+
+- I've included a step-by-step guide on how to use the component.
+- There's information about installing the necessary package.
+- Code snippets showcase importing the component and using it within a component.
+- I've added a note about customization using the `style` prop.
+
