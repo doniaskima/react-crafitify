@@ -28,7 +28,6 @@ function Button<T extends TagsByButton = 'button'>(
     href,
     disabled,
     color = 'primary',
-    className,
     ...otherPrimaryButtonProps
   }: PropsWithChildren<PrimaryButtonProps<T>>,
   ref: ButtonRefsByTag[T]

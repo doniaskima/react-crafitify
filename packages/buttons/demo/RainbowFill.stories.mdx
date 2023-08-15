@@ -1,0 +1,102 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import RainbowFill, { RainbowFillProps } from '../src/Elements/RainbowFill';
+
+<Meta title="Buttons/RainbowFill" component={RainbowFill} />
+
+# RainbowFill
+
+The `RainbowFill` component is a customizable button with a heart animation.
+
+## Usage
+
+To use the `RainbowFill` component, import it and provide the desired props:
+
+```jsx
+import React from 'react';
+import RainbowFill from 'react-craftify-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Gradient Background
+
+
+The background of the button can be customized using a gradient. You can provide a gradient prop to set the gradient colors. The gradient is defined using the start and end properties of the gradient object.
+
+```jsx
+import React from 'react';
+import RainbowFill from 'react-craftify-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <RainbowFill gradient={{ start: 'blue', end: 'red' }}>Button</RainbowFill>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Text Color
+
+You can customize the text color of the button by providing a textColor prop. This prop allows you to specify the color of the text content inside the button.
+
+```jsx
+import React from 'react';
+import RainbowFill from 'react-craftify-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+     <RainbowFill textColor="#fff">Button</RainbowFill>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Text Background
+
+The background color of the text content inside the button can be customized using the textBackground prop. This prop allows you to set the background color of the span containing the button text.
+```jsx
+import React from 'react';
+import RainbowFill from 'react-craftify-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <RainbowFill textBackground="#1e293b">Button</RainbowFill>
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+## Padding
+
+The padding of the button can be adjusted using the padding prop. This prop accepts a CSS value for setting the padding around the button's content.
+
+```jsx
+import React from 'react';
+import RainbowFill from 'react-craftify-buttons';
+
+const MyComponent = () => {
+  return (
+    <div>
+     <RainbowFill padding="2rem 4rem">Button</RainbowFill>
+    </div>
+  );
+};
+
+export default MyComponent;
+```

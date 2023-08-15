@@ -19,13 +19,14 @@ npm react-craftify-buttons
 ``` 
 ## How to use it ? 
 
-There are 35 button components listed in the provided code snippet.
+There are 36 button components listed in the provided code snippet.
 
 ## Available Button Components
 
 This library provides a wide variety of button components that you can easily integrate into your React projects. Here's a list of the available button components:
 
 - `SecondaryButton`
+- `RainbowFill` 
 - `AnimatedButton`
 - `ButtonGroup`
 - `DiagonalSwipeButton`
@@ -88,6 +89,7 @@ const MyComponent = () => {
       <ButtonGroup>Group</ButtonGroup>
       <DiagonalSwipeButton>Swipe</DiagonalSwipeButton>
       <GenerateBtn>Generate</GenerateBtn>
+      <RainbowFill>RainbowFill</RainbowFill>
       {/* Add more buttons here */}
     </div>
   );
