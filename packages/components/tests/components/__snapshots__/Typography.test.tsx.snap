@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch Should render component correctly. 1`] = `
+<div
+  class="typography typographyh2 primary normal"
+>
+  Typography
+</div>
+`;

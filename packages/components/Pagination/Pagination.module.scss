@@ -1,0 +1,28 @@
+@use "../../utility/globals";
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pagesButtonsContainer {
+  display: flex;
+  min-width: 190px;
+}
+
+.currentPageIcon {
+  background-color: rgb(160, 160, 160) !important;
+
+  &.firstPage {
+    margin-left: auto;
+  }
+
+  &.lastPage {
+    margin-right: auto;
+  }
+}
+
+.ellipse {
+  pointer-events: none;
+}

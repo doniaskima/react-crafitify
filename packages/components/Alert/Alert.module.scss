@@ -1,0 +1,122 @@
+@use "../../utility/globals";
+
+.alertContainer {
+  align-items: center;
+  border-radius: 8px;
+  column-gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+  padding: 10px 12px;
+  width: fit-content;
+
+  &.error {
+    background-color: rgb(255, 210, 210);
+    border: 3px solid red;
+  }
+
+  &.info {
+    background-color: rgb(210, 210, 255);
+    border: 3px solid blue;
+  }
+
+  &.success {
+    background-color: rgb(210, 255, 210);
+    border: 3px solid green;
+  }
+
+  &.warning {
+    background-color: rgb(255, 236, 200);
+    border: 3px solid orange;
+  }
+}
+
+.alertTitle {
+  &.error {
+    color: red !important;
+  }
+
+  &.info {
+    color: blue !important;
+  }
+
+  &.success {
+    color: green !important;
+  }
+
+  &.warning {
+    color: orange !important;
+  }
+}
+
+.alertTitleContainer {
+  align-items: center;
+  display: flex;
+  padding-bottom: 3px;
+}
+
+.alertIcon {
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  padding-right: 8px;
+}
+
+.alertCloseButton {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.exitActive {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.closeButton {
+  background-color: transparent !important;
+  color: globals.$secondary-text-color !important;
+}
+
+.errorButton {
+  &:hover,
+  &:focus {
+    background-color: rgb(255, 180, 180) !important;
+  }
+
+  &:active {
+    background-color: rgb(255, 150, 150) !important;
+  }
+}
+
+.infoButton {
+  &:hover,
+  &:focus {
+    background-color: rgb(180, 180, 255) !important;
+  }
+
+  &:active {
+    background-color: rgb(150, 150, 255) !important;
+  }
+}
+
+.successButton {
+  &:hover,
+  &:focus {
+    background-color: rgb(180, 255, 180) !important;
+  }
+
+  &:active {
+    background-color: rgb(150, 255, 150) !important;
+  }
+}
+
+.warningButton {
+  &:hover,
+  &:focus {
+    background-color: rgb(255, 225, 170) !important;
+  }
+
+  &:active {
+    background-color: rgb(255, 215, 140) !important;
+  }
+}

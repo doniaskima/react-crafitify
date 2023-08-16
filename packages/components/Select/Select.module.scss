@@ -1,0 +1,85 @@
+@use "../../utility/globals";
+
+.selectContainer {
+  font-family: globals.$font-family;
+  position: relative;
+  user-select: none;
+  width: 142px;
+}
+
+.select {
+  align-items: center;
+  border: 3px solid globals.$primary-background-color;
+  border-radius: 5px;
+  column-gap: 6px;
+  display: flex;
+  font-size: 16px;
+  outline: none !important;
+  padding: 10px 6px;
+}
+
+.selectInput {
+  align-items: center;
+  border: 2px solid globals.$primary-background-color;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  height: 46px;
+  padding: 10px;
+  transition: all 130ms ease-in;
+  width: 142px;
+
+  &.isOpen {
+    box-shadow: 0 0 5px 5px globals.$primary-box-shadow;
+  }
+}
+
+.label {
+  color: globals.$primary-background-color;
+  font-family: globals.$font-family;
+  font-size: 14px;
+  padding-left: 8px;
+  user-select: none;
+}
+
+.selectIcon {
+  background-color: transparent !important;
+  color: globals.$primary-background-color !important;
+  left: 100px;
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    background-color: globals.$primary-text-color !important;
+  }
+
+  &:active {
+    background-color: globals.$primary-background-color-active !important;
+    color: globals.$primary-text-color !important;
+  }
+}
+
+.enter {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.enterActive {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 200ms ease-in-out;
+}
+
+.exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.exitActive {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: all 200ms ease-in-out;
+}

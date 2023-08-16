@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker Should render component correctly. 1`] = `
+<div>
+  <div
+    aria-label="textbox"
+    class="container"
+    role="textbox"
+  >
+    <div
+      class="textFieldContainer"
+    >
+      <input
+        aria-label="Select a Date"
+        autocomplete="off"
+        class="textField medium customInput"
+        id="void_textfield"
+        required=""
+        spellcheck="false"
+        type="text"
+        value=""
+      />
+      <span
+        class="label labelMedium"
+      >
+        Select a Date
+      </span>
+    </div>
+    <button
+      aria-label="Icon Button"
+      class="iconButton medium primary"
+    >
+      <div
+        class="container"
+        role="presentation"
+      />
+      <svg
+        fill="currentColor"
+        height="22"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M112 880c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V460H112v420zm768-696H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v176h800V216c0-17.7-14.3-32-32-32z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

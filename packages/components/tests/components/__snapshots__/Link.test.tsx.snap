@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Should render component correctly. 1`] = `
+<a
+  class="linkContainer primary"
+  href="https://www.google.com/"
+>
+  <div
+    class="typography typographyh2 primary normal"
+  >
+    Google.com
+  </div>
+</a>
+`;

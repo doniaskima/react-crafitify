@@ -26,4 +26,3 @@ export {default as SpinnerInfinity} from "./Elements/SpinnerInfinity/SpinnerInfi
 export { SpinnerCircular} from "./Elements/SpinnerCircular";
 export { SpinnerCircularFixed} from "./Elements/SpinnerCircularFixed";
 export { SpinnerCircularSplit} from "./Elements/SpinnerCircularSplit";
-export {SpinnerDiamond} from "./Elements/SpinnerDiamond";

@@ -1,0 +1,12 @@
+@use "../../utility/globals";
+
+.container {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+}
+
+.disabled {
+  color: lightgray !important;
+}

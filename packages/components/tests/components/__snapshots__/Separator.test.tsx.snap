@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Separator Should render component correctly. 1`] = `
+<span
+  aria-label=""
+  class="separator"
+  role="separator"
+  style="border-top: 1px solid #c8c8c8; width: 100%;"
+/>
+`;

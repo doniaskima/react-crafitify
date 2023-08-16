@@ -1,0 +1,25 @@
+@use "../../utility/globals";
+
+.customInput {
+  width: 165px;
+}
+
+.datePickerIconContainer {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  color: globals.$primary-background-color;
+  cursor: pointer;
+  outline: none;
+  padding: 4px;
+
+  &:hover,
+  &:focus {
+    border: 3px solid
+      globals.$primary-background-color-hover-and-focus;
+  }
+
+  &:active {
+    border: 3px solid globals.$primary-background-color-active;
+    color: globals.$primary-background-color-active;
+  }
+}

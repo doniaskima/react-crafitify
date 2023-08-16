@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Should render component correctly. 1`] = `
+<button
+  class="button medium primary"
+  type="button"
+>
+  <div
+    class="container"
+    role="presentation"
+  />
+  <div
+    class="typography typography typographyh2 primary normal"
+  >
+    Button
+  </div>
+</button>
+`;

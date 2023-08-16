@@ -1,0 +1,37 @@
+@use "../../utility/globals";
+
+.typography {
+  font-family: globals.$font-family;
+
+  &.primary {
+    color: globals.$primary-text-color;
+  }
+
+  &.secondary {
+    color: globals.$secondary-text-color;
+  }
+
+  &.typographyh1 {
+    font-size: 20px;
+  }
+
+  &.typographyh2 {
+    font-size: 16px;
+  }
+
+  &.typographyh3 {
+    font-size: 12px;
+  }
+
+  &.light {
+    font-weight: 100;
+  }
+
+  &.normal {
+    font-weight: 400;
+  }
+
+  &.bold {
+    font-weight: 700;
+  }
+}

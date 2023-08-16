@@ -1,0 +1,16 @@
+.buttonSet {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &.buttonSetColumn {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.buttonSetItem {
+  list-style: none;
+}

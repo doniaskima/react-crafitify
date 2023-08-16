@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Should render component correctly. 1`] = `
+<span
+  class="bottom container"
+>
+  <button
+    class="isOpen trigger button medium primary"
+    role="button"
+    tabindex="0"
+    type="button"
+  >
+    <div
+      class="container"
+      role="presentation"
+    />
+    <div
+      class="typography typography typographyh2 primary normal"
+    >
+      Trigger
+    </div>
+  </button>
+  <div
+    class="bottom layoutContainer"
+    style="transform: translate3d(0px, 2px, 0);"
+  >
+    <div
+      class="baseMenu"
+    >
+      <div
+        role="menu"
+      >
+        <div
+          class="menuItemContainer typography typographyh2 primary normal"
+          role="menuitem"
+          tabindex="0"
+        >
+          One
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;

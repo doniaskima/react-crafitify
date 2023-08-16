@@ -1,0 +1,53 @@
+@use "../../utility/globals";
+
+.container {
+  box-sizing: inherit;
+  display: inline-block;
+  position: relative;
+}
+
+.enter {
+  opacity: 0;
+
+  .top & {
+    transform: translateY(-50px);
+  }
+
+  .bottom & {
+    transform: translateY(50px);
+  }
+}
+
+.enterActive {
+  opacity: 1;
+  transition: all 150ms;
+
+  .container & {
+    transform: none;
+  }
+}
+
+.exit {
+  opacity: 1;
+}
+
+.exitActive {
+  opacity: 0;
+  transition: all 150ms;
+
+  .top & {
+    transform: translateY(-50px);
+  }
+
+  .bottom & {
+    transform: translateY(50px);
+  }
+}
+
+.trigger {
+  transition: all 150ms ease-in;
+
+  &.isOpen {
+    transform: scale(0.95);
+  }
+}

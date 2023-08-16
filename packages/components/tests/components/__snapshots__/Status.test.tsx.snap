@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status Should render component correctly. 1`] = `
+<div
+  class="statusContainer"
+  role="status"
+  title="Offline"
+>
+  <span
+    class="status offline"
+  />
+</div>
+`;

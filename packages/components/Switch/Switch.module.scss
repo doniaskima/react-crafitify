@@ -1,0 +1,74 @@
+@use "../../utility/globals";
+
+.switchContainer {
+  align-items: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+.switchPill {
+  background: gray;
+  border-radius: 999px;
+  height: 22px;
+  position: relative;
+  transition: all 0.15s ease-in;
+  width: 42px;
+  z-index: 1;
+
+  &.on {
+    background: globals.$secondary-border-color-hover-and-focus;
+  }
+}
+
+.switchIndicator {
+  background: white;
+  border-radius: 999px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  position: absolute;
+  right: 23px;
+  top: 3px;
+  transition: all 0.15s ease-in;
+  width: 16px;
+  z-index: 3;
+
+  &.on {
+    background-color: globals.$secondary-background-color-active;
+    transform: translateX(20px);
+  }
+}
+
+.switchRipple {
+  background: transparent;
+  border-radius: 999px;
+  content: "";
+  display: inline-block;
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  right: 16px;
+  top: -4px;
+  transition: all 0.15s ease-in;
+  width: 30px;
+  z-index: 4;
+
+  &.on {
+    transform: translateX(20px);
+  }
+}
+
+.switchLabel {
+  color: gray !important;
+  margin-left: 8px;
+  transition: all 0.15s ease-in;
+
+  &.on {
+    color: globals.$secondary-text-color-hover-and-focus !important;
+  }
+}

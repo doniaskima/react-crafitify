@@ -1,0 +1,94 @@
+@use "../../utility/globals";
+
+.button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+}
+
+.primary {
+  background-color: globals.$primary-background-color;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: globals.$primary-background-color-hover-and-focus;
+  }
+
+  &:active {
+    background-color: globals.$primary-background-color-active;
+  }
+}
+
+.secondary {
+  background-color: white;
+  border: 2px solid globals.$secondary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: globals.$secondary-background-color-hover-and-focus;
+    border: 2px solid globals.$secondary-border-color-hover-and-focus;
+    color: globals.$secondary-text-color-hover-and-focus;
+  }
+
+  &:active {
+    background-color: globals.$secondary-background-color-active;
+  }
+}
+
+.small {
+  border-radius: 6px;
+  height: 25.8px;
+  padding: 4px 6px;
+}
+
+.medium {
+  border-radius: 8px;
+  height: 34.5px;
+  padding: 6px 9px;
+}
+
+.large {
+  border-radius: 10px;
+  height: 43px;
+  padding: 8px 12px;
+}
+
+.leadingIcon,
+.trailingIcon {
+  align-items: center;
+  display: flex;
+}
+
+.smallRipple {
+  border-radius: 6px;
+}
+
+.mediumRipple {
+  border-radius: 8px;
+}
+
+.largeRipple {
+  border-radius: 10px;
+}
+
+.typography {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+.disableRipple {
+  pointer-events: none !important;
+}
+
+.disabled {
+  background-color: lightgray !important;
+  border: 2px solid lightgray !important;
+  cursor: default !important;
+  user-select: none !important;
+}

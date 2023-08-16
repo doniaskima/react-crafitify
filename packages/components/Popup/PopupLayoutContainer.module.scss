@@ -1,0 +1,38 @@
+.layoutContainer {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 200;
+}
+
+.bottom {
+  padding-top: 8px;
+
+  &.hasIndicator {
+    padding-top: 13px;
+  }
+}
+
+.top {
+  padding-bottom: 8px;
+
+  &.hasIndicator {
+    padding-bottom: 13px;
+  }
+}
+
+.left {
+  padding-right: 8px;
+
+  &.hasIndicator {
+    padding-right: 13px;
+  }
+}
+
+.right {
+  padding-left: 8px;
+
+  &.hasIndicator {
+    padding-left: 13px;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../../utility/globals";
+
+.container {
+  align-items: center;
+  background-color: globals.$primary-background-color;
+  border-radius: 1000px;
+  display: flex;
+  gap: 8px;
+  padding: 4px 4px 4px 12px;
+  width: fit-content;
+}
+
+.snippetColor {
+  color: globals.$secondary-background-color-active !important;
+}

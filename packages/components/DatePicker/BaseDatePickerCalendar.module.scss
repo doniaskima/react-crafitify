@@ -1,0 +1,93 @@
+@use "../../utility/globals";
+
+.datePickerCalendarContainer {
+  background: globals.$primary-background-color;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+  color: globals.$primary-text-color;
+  display: flex;
+  flex-direction: column;
+  font-family: globals.$font-family;
+  margin-top: 2px;
+  position: absolute;
+  width: 360px;
+}
+
+.datePickerCalendarNavigationContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.datePickerCalendarNavigationMonth {
+  align-items: center;
+  display: flex;
+  user-select: none;
+}
+
+.datePickerCalendarHeaderContainer {
+  display: flex;
+  padding: 2px 12px;
+}
+
+.datePickerCalendarHeaderLabel {
+  flex: 1 1 0px;
+  text-align: center;
+  user-select: none;
+}
+
+.datePickerCalendarBodyContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12px;
+}
+
+.datePickerCalendarDayContainer {
+  flex: 1 0 13%;
+}
+
+.datePickerCalendarDay {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 1000px;
+  color: globals.$primary-text-color;
+  cursor: pointer;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  margin: auto;
+  outline: none;
+  user-select: none;
+  width: 34px;
+
+  &.selected {
+    background-color: globals.$primary-border-color;
+    border-color: globals.$primary-border-color !important;
+  }
+
+  &.today {
+    border: 2px solid globals.$primary-text-color !important;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: globals.$primary-background-color-hover-and-focus;
+    border: 2px solid
+      globals.$primary-background-color-hover-and-focus;
+  }
+
+  &:active {
+    background-color: globals.$primary-background-color-active;
+    border: 2px solid globals.$primary-background-color-active;
+  }
+}
+
+.buttonContainer {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 6px 4px;
+  width: 100%;
+}

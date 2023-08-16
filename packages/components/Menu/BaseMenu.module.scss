@@ -1,0 +1,11 @@
+@use "../../utility/globals";
+
+.baseMenu {
+  background-color: globals.$primary-background-color;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 6px 0;
+}

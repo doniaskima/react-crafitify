@@ -1,0 +1,114 @@
+@use "../../utility/globals";
+
+.container {
+  align-items: center;
+  display: flex;
+  font-family: globals.$font-family;
+}
+
+.textFieldContainer {
+  display: flex;
+  flex-direction: column;
+
+  .disabled {
+    background-color: rgb(220 220 220);
+    border: 3px solid rgb(220 220 220) !important;
+    cursor: default !important;
+  }
+}
+
+.textField {
+  border: 3px solid globals.$primary-background-color;
+  color: globals.$primary-background-color;
+  font-family: globals.$font-family;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: 3px solid
+      globals.$primary-background-color-hover-and-focus;
+  }
+
+  &:active {
+    border: 3px solid globals.$primary-background-color-active;
+  }
+
+  &.small {
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 2px;
+
+    &:focus ~ .label,
+    &:valid ~ .label {
+      color: globals.$primary-background-color-hover-and-focus;
+      font-size: 10px;
+      font-weight: 700;
+      margin-left: 6px;
+      transform: translateY(-13px);
+    }
+  }
+
+  &.medium {
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 4px;
+
+    &:focus ~ .label,
+    &:valid ~ .label {
+      color: globals.$primary-background-color-hover-and-focus;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 8px;
+      transform: translateY(-18px);
+    }
+  }
+
+  &.large {
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 6px;
+
+    &:focus ~ .label,
+    &:valid ~ .label {
+      color: globals.$primary-background-color-hover-and-focus;
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 10px;
+      transform: translateY(-24px);
+    }
+  }
+}
+
+.label {
+  background-color: white;
+  color: rgb(115 115 115);
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.2s ease-in;
+  transition: all 0.15s ease-in;
+
+  &.labelSmall {
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 6px;
+    padding: 0 1px;
+  }
+
+  &.labelMedium {
+    font-size: 18px;
+    margin-left: 6px;
+    margin-top: 8px;
+    padding: 0 2px;
+  }
+
+  &.labelLarge {
+    font-size: 24px;
+    margin-left: 12px;
+    margin-top: 10px;
+    padding: 0 2px;
+  }
+
+  &.disabledLabel {
+    background-color: rgb(220 220 220);
+  }
+}

@@ -1,0 +1,51 @@
+@use "../../utility/globals";
+
+.basePopup {
+  background: globals.$primary-background-color;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  width: 150px;
+
+  &.indicator {
+    &::before {
+      background-color: globals.$primary-background-color;
+      content: "";
+      height: 10px;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 10px;
+      z-index: 2;
+    }
+  }
+}
+
+.bottom {
+  &::before {
+    left: 50%;
+    top: 0;
+  }
+}
+
+.top {
+  &::before {
+    left: 50%;
+    top: 100%;
+  }
+}
+
+.left {
+  &::before {
+    left: 100%;
+    top: 50%;
+  }
+}
+
+.right {
+  &::before {
+    left: 0%;
+    top: 50%;
+  }
+}

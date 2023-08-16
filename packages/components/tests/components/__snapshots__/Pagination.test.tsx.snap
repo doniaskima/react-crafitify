@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination Should render component correctly. 1`] = `
+<nav
+  class="paginationContainer"
+  role="navigation"
+>
+  <button
+    aria-label="Icon Button"
+    class="paginationIconButton iconButton medium secondary"
+  >
+    <div
+      class="container"
+      role="presentation"
+    />
+    <svg
+      fill="currentColor"
+      height="22"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+      />
+    </svg>
+  </button>
+  <div
+    class="pagesButtonsContainer"
+  >
+    <div
+      style="height: 38px; width: 38px;"
+    />
+    <button
+      aria-label="Icon Button"
+      class="paginationIconButton children iconButton medium secondary"
+    >
+      <div
+        class="container"
+        role="presentation"
+      />
+      1
+    </button>
+    <button
+      aria-label="Icon Button"
+      class="paginationIconButton currentPageIcon children iconButton medium secondary"
+      tabindex="-1"
+    >
+      <div
+        class="container"
+        role="presentation"
+      />
+      2
+    </button>
+    <button
+      aria-label="Icon Button"
+      class="paginationIconButton children iconButton medium secondary"
+    >
+      <div
+        class="container"
+        role="presentation"
+      />
+      3
+    </button>
+    <div
+      style="height: 38px; width: 38px;"
+    />
+  </div>
+  <button
+    aria-label="Icon Button"
+    class="paginationIconButton iconButton medium secondary"
+  >
+    <div
+      class="container"
+      role="presentation"
+    />
+    <svg
+      fill="currentColor"
+      height="22"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+      />
+    </svg>
+  </button>
+</nav>
+`;

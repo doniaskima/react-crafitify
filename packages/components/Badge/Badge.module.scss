@@ -1,0 +1,14 @@
+@use "../../utility/globals";
+
+.icon {
+  cursor: default;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: rotate(180deg) scale(1.1);
+  }
+}

@@ -1,0 +1,37 @@
+@use "../../utility/globals";
+
+.linkContainer {
+  position: relative;
+  text-decoration: none;
+
+  &.primary::after {
+    background-color: globals.$primary-text-color;
+    bottom: 0;
+    content: "";
+    height: 1.5px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    width: 100%;
+  }
+
+  &.secondary::after {
+    background-color: globals.$secondary-text-color;
+    bottom: 0;
+    content: "";
+    height: 1.5px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    width: 100%;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

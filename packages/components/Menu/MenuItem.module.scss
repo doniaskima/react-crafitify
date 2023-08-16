@@ -1,0 +1,20 @@
+@use "../../utility/globals";
+
+.menuItemContainer {
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1px 5px;
+  outline: none;
+  padding: 2px 5px;
+  user-select: none;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: globals.$primary-background-color-hover-and-focus;
+  }
+
+  &:active {
+    background-color: globals.$primary-background-color-active;
+  }
+}

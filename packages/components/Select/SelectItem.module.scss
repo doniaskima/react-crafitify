@@ -1,0 +1,33 @@
+@use "../../utility/globals";
+
+.selectItem {
+  color: white;
+  cursor: pointer;
+  font-family: globals.$font-family;
+  font-size: 16px;
+  outline: none;
+  padding: 5px 5px 5px 12px;
+  text-align: left;
+
+  &.selected {
+    background-color: rgb(97 70 109);
+
+    &:hover,
+    &:focus {
+      background-color: rgb(110 97 115);
+    }
+
+    &:active {
+      background-color: globals.$primary-background-color-active;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: globals.$primary-background-color-hover-and-focus;
+  }
+
+  &:active {
+    background-color: globals.$primary-background-color-active;
+  }
+}

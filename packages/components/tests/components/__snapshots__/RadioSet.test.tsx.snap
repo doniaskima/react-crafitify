@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioSet Should render component correctly. 1`] = `
+<ul
+  class="radioSet"
+  role="list"
+>
+  <li
+    class="radioSetItem"
+    role="listitem"
+  >
+    <div
+      class="container"
+    >
+      <button
+        aria-label="Icon Button"
+        class="iconButton medium secondary"
+        role="radio"
+      >
+        <div
+          class="container"
+          role="presentation"
+        />
+        <svg
+          fill="currentColor"
+          height="22"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+          />
+        </svg>
+      </button>
+      <div
+        class="typography typographyh2 secondary normal"
+      >
+        Radio
+      </div>
+    </div>
+  </li>
+</ul>
+`;

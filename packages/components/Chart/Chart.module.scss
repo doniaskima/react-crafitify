@@ -1,0 +1,5 @@
+@use "../../utility/globals";
+
+.font {
+  font-family: globals.$font-family;
+}

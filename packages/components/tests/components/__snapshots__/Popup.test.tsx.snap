@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popup Should render component correctly. 1`] = `
+<div
+  class="bottom container"
+>
+  <button
+    class="button medium primary"
+    role="button"
+    tabindex="0"
+    type="button"
+  >
+    <div
+      class="container"
+      role="presentation"
+    />
+    <div
+      class="typography typography typographyh2 primary normal"
+    >
+      Trigger
+    </div>
+  </button>
+</div>
+`;
