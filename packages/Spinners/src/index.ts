@@ -22,3 +22,8 @@ export {default as FormsLoading} from "./Elements/FormsLoading/FormsLoading";
 export {default as PuzzleLoading} from "./Elements/PuzzleLoading/PuzzleLoading";
 export {default as SnakeLoader} from "./Elements/SnakeLoader/SnakeLoader";
 export {default as WaterLoader} from "./Elements/WaterLoader/WaterLoader";
+export {default as SpinnerInfinity} from "./Elements/SpinnerInfinity/SpinnerInfinity";
+export { SpinnerCircular} from "./Elements/SpinnerCircular";
+export { SpinnerCircularFixed} from "./Elements/SpinnerCircularFixed";
+export { SpinnerCircularSplit} from "./Elements/SpinnerCircularSplit";
+export {SpinnerDiamond} from "./Elements/SpinnerDiamond";

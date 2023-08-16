@@ -1,0 +1,35 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { SpinnerCircular, SpinnerCircularProps } from '../src/Elements/SpinnerCircular';
+
+<Meta title="Spinners/SpinnerCircular" component={SpinnerCircular} />
+
+# SpinnerCircular
+
+A circular spinner component.
+
+ 
+### How to Use:
+
+```jsx
+import React from 'react';
+import { SpinnerCircular } from 'your-library'; // Replace 'your-library' with the actual path
+
+function App() {
+  return (
+    <div>
+      <h1>Adding Joyful Animation to Your UI!</h1>
+      <SpinnerCircular
+        secondaryColor="#1BFD9C" // Customize the secondary color
+        speed={1.2} // Adjust the animation speed
+        still={false} // Set to true to stop the animation
+        thickness={5} // Customize the thickness of the spinner
+        style={{ width: "200px", height: "200px" }} // Set the size of the spinner
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+```

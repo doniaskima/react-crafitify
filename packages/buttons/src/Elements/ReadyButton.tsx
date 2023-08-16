@@ -7,7 +7,7 @@ export interface ReadyButtonProps {
   shadowColor?: string;
   hoverColor?: string;
   boxShadowColor?: string;
-  size?: string; // Add the size prop
+  size?: string; 
 }
 
 const StyledButton = styled.button<ReadyButtonProps>`
