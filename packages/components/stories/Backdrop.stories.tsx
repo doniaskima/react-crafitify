@@ -1,8 +1,8 @@
-import { Backdrop } from "./Backdrop";
+import { Backdrop } from "../Backdrop";
 
 export default {
   component: Backdrop,
-  title: "Components/Utilities/Backdrop",
+  title: "Components/Backdrop",
 };
 
 export const Default = () => <Backdrop />;

@@ -1,5 +1,5 @@
 import { Button } from "../Button/Button";
-import { ButtonSet } from "./ButtonSet";
+import { ButtonSet } from "../ButtonSet/ButtonSet";
 
 export default {
   component: ButtonSet,

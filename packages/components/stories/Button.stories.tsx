@@ -1,10 +1,11 @@
 import { Story } from "@storybook/react";
-import { Button, ButtonProps } from "./Button";
+import { Button, ButtonProps } from "../Button/Button";
 import {
   MdOutlineArrowBack,
   MdOutlineArrowForward,
 } from "react-icons/md";
-import { FlexRowContainer } from "../../../.storybook/components/FlexRowContainer";
+import { FlexRowContainer } from "../.storybook/components/FlexRowContainer";
+
 
 export default {
   component: Button,

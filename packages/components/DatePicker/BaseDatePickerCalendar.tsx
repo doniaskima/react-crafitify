@@ -2,7 +2,7 @@
 import * as React from "react";
 import styles from "./BaseDatePickerCalendar.module.scss";
 import classNames from "classnames";
-import { useOnClickOutside, useOnKeyDown } from "../../hooks";
+import { useOnClickOutside, useOnKeyDown } from "../hooks";
 import {
   TfiAngleLeft,
   TfiAngleRight,
@@ -15,7 +15,7 @@ import {
   getNextWeek,
   getPreviousDay,
   getPreviousWeek,
-} from "../../utility/getDatePickerCalendarUtilities";
+} from "../utility/getDatePickerCalendarUtilities";
 import { DatePickerContext } from "./DatePickerContext";
 import { Button } from "../Button";
 import { FocusTrap } from "../FocusTrap/FocusTrap";

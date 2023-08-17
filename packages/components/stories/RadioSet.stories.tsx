@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Radio } from "../Radio/Radio";
-import { RadioSet } from "./RadioSet";
+import { RadioSet } from "../RadioSet/RadioSet";
 
 export default {
   component: RadioSet,

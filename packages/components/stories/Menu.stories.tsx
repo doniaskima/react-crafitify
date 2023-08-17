@@ -1,12 +1,12 @@
 import { Story } from "@storybook/react";
 import * as React from "react";
 import { within, userEvent } from "@storybook/testing-library";
-import { Menu, MenuProps } from "./Menu";
-import { MenuItem } from "./MenuItem";
+import { Menu, MenuProps } from "../Menu/Menu";
+import { MenuItem } from "../Menu/MenuItem";
 import { Button } from "../Button/Button";
-import { MenuSeparator } from "./MenuSeparator";
-import { MenuHeader } from "./MenuHeader";
-import { allowLayoutCalculations } from "../../../.storybook/utilities/allowLayoutCalculations";
+import { MenuSeparator } from "../Menu/MenuSeparator";
+import { MenuHeader } from "../Menu/MenuHeader";
+import { allowLayoutCalculations } from "../.storybook/utilities/allowLayoutCalculations";
 
 export default {
   component: Menu,

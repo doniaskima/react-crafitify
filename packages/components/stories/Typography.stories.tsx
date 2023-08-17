@@ -1,4 +1,4 @@
-import { Typography, TypographyProps } from "./Typography";
+import { Typography, TypographyProps } from "../Typography/Typography";
 import { Story } from "@storybook/react";
 
 export default {

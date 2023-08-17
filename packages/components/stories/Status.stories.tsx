@@ -1,5 +1,5 @@
-import { FlexColumnContainer } from "../../../.storybook/components/FlexColumnContainer";
-import { Status } from "./Status";
+import { FlexColumnContainer } from "../.storybook/components/FlexColumnContainer";
+import { Status } from "../Status/Status";
 
 export default {
   component: Status,

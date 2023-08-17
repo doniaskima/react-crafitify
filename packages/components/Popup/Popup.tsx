@@ -7,7 +7,7 @@ import {
   useOnFocusOut,
   useOnHover,
   useOnHoverOut,
-} from "../../hooks";
+} from "../hooks";
 import {
   BasePopup,
   BasePopupPosition as PopupPosition,

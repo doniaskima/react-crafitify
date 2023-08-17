@@ -1,5 +1,5 @@
 import * as React from "react";
-import { MenuItem } from "../components/Menu/MenuItem";
+import { MenuItem } from "../Menu/MenuItem";
 
 const getNextMenuItem = (
   currentIndex: number,

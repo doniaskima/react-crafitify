@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Typography } from "../Typography";
-import { Pagination } from "./Pagination";
+import { Pagination } from "../Pagination/Pagination";
 
 export default {
   component: Pagination,

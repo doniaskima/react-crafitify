@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "./Dialog.module.scss";
 import { Backdrop } from "../Backdrop/Backdrop";
 import { BaseDialog, BaseDialogProps } from "./BaseDialog";
-import { useLockBodyScroll } from "../../hooks/useLockBodyScroll";
+import { useLockBodyScroll } from "../hooks/useLockBodyScroll";
 import { CSSTransition } from "react-transition-group";
 import classNames from "classnames";
 

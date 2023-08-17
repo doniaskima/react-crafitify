@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Dialog } from "./Dialog";
+import { Dialog } from "../Dialog/Dialog";
 import { Button } from "../Button/Button";
 import { ButtonSet } from "../ButtonSet";
 

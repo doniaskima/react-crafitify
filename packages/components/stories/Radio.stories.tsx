@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Radio } from "./Radio";
+import { Radio } from "../Radio/Radio";
 
 export default {
   component: Radio,

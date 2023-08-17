@@ -1,4 +1,4 @@
-import { FocusTrap } from "./FocusTrap";
+import { FocusTrap } from "../FocusTrap/FocusTrap";
 import { Button } from "../Button";
 import { ButtonSet } from "../ButtonSet";
 

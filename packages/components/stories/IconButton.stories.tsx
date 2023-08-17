@@ -1,6 +1,6 @@
-import { IconButton } from "./IconButton";
+import { IconButton } from "../IconButton/IconButton";
 import { FaReact } from "react-icons/fa";
-import { FlexRowContainer } from "../../../.storybook/components/FlexRowContainer";
+import { FlexRowContainer } from "../.storybook/components/FlexRowContainer";
 
 export default {
   component: IconButton,

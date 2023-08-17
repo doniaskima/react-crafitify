@@ -1,6 +1,6 @@
 import { FaReact } from "react-icons/fa";
-import { Badge } from "./Badge";
-import { FlexRowContainer } from "../../../.storybook/components/FlexRowContainer";
+import { Badge } from "../Badge/Badge";
+import { FlexRowContainer } from "../.storybook/components/FlexRowContainer";
 
 export default {
   component: Badge,

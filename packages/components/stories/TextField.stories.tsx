@@ -5,7 +5,7 @@ import {
   TextField,
   TextFieldProps,
   TextFieldType,
-} from "./TextField";
+} from "../TextField/TextField";
 
 export default {
   component: TextField,

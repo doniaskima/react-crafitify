@@ -1,4 +1,4 @@
-import { Ripple } from "./Ripple";
+import { Ripple } from "../Ripple/Ripple";
 
 export default {
   component: Ripple,

@@ -1,9 +1,9 @@
 import { Story } from "@storybook/react";
 import * as React from "react";
-import { Select, SelectProps } from "./Select";
-import { SelectItem } from "./SelectItem";
+import { Select, SelectProps } from "../Select/Select";
+import { SelectItem } from "../Select/SelectItem";
 import { within, userEvent } from "@storybook/testing-library";
-import { allowLayoutCalculations } from "../../../.storybook/utilities/allowLayoutCalculations";
+import { allowLayoutCalculations } from "../.storybook/utilities/allowLayoutCalculations";
 
 export default {
   component: Select,

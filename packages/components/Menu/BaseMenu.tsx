@@ -3,7 +3,7 @@ import {
   useMenuFocus,
   useOnClickOutside,
   useOnKeyDown,
-} from "../../hooks";
+} from "../hooks";
 import styles from "./BaseMenu.module.scss";
 
 export type BaseMenuAlignment =

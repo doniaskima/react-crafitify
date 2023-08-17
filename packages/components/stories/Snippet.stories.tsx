@@ -1,4 +1,4 @@
-import { Snippet } from "./Snippet";
+import { Snippet } from "../Snippet/Snippet";
 
 export default {
   component: Snippet,

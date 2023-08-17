@@ -1,9 +1,9 @@
-import { Alert } from "./Alert";
-import { FlexColumnContainer } from "../../../.storybook/components/FlexColumnContainer";
-
+import { Alert } from "../Alert/Alert";
+import {FlexColumnContainer} from "../.storybook/components/FlexColumnContainer"
+ 
 export default {
   component: Alert,
-  title: "Components/Feedback/Alert",
+  title: "Components/Alert",
 };
 
 export const Default = () => <Alert>Default Alert!</Alert>;

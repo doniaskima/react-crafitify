@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./MenuLayoutContainer.module.scss";
-import { getMenuAlignmentStyle } from "../../utility/getMenuAlignmentStyle";
+import { getMenuAlignmentStyle } from "../utility/getMenuAlignmentStyle";
 import { BaseMenuAlignment } from "./BaseMenu";
 import classNames from "classnames";
 

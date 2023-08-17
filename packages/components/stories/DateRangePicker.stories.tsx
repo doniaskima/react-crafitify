@@ -2,9 +2,10 @@ import { Story } from "@storybook/react";
 import {
   DateRangePicker,
   DateRangePickerProps,
-} from "./DateRangePicker";
+} from "../DateRangePicker/DateRangePicker";
 import { within, userEvent } from "@storybook/testing-library";
-import { allowLayoutCalculations } from "../../../.storybook/utilities/allowLayoutCalculations";
+import { allowLayoutCalculations } from "../.storybook/utilities/allowLayoutCalculations";
+ 
 
 export default {
   component: DateRangePicker,

@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 import * as React from "react";
 import styles from "./BaseDateRangePickerCalendars.module.scss";
-import { useOnClickOutside } from "../../hooks/useOnClickOutside";
+import { useOnClickOutside } from "../hooks/useOnClickOutside";
 import { FocusTrap } from "../FocusTrap/FocusTrap";
 import {
   TfiAngleLeft,

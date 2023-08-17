@@ -3,9 +3,9 @@ import * as React from "react";
 import { SelectProps } from "./Select";
 import styles from "./SelectContainer.module.scss";
 import itemStyles from "./SelectItem.module.scss";
-import { useOnClickOutside, useOnKeyDown } from "../../hooks";
+import { useOnClickOutside, useOnKeyDown } from "../hooks";
 import { SelectItem } from "./SelectItem";
-import { useSelectFocus } from "../../hooks/useSelectFocus";
+import { useSelectFocus } from "../hooks/useSelectFocus";
 
 export interface SelectContainerProps extends SelectProps {
   /**

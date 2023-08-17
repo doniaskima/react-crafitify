@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./BaseDialog.module.scss";
 import { IconButton } from "../IconButton/IconButton";
-import { useOnClickOutside, useOnKeyDown } from "../../hooks";
+import { useOnClickOutside, useOnKeyDown } from "../hooks";
 import { TbX } from "react-icons/tb";
 import { FocusTrap } from "../FocusTrap/FocusTrap";
 import { Separator } from "../Separator/Separator";

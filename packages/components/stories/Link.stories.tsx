@@ -1,5 +1,5 @@
-import { FlexRowContainer } from "../../../.storybook/components/FlexRowContainer";
-import { Link } from "./Link";
+import { FlexRowContainer } from "../.storybook/components/FlexRowContainer";
+import { Link } from "../Link/Link";
 
 export default {
   component: Link,

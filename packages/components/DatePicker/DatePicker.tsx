@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 import * as React from "react";
 import { AiFillCalendar } from "react-icons/ai";
-import { getDateString } from "../../utility/getDatePickerCalendarUtilities";
+import { getDateString } from "../utility/getDatePickerCalendarUtilities";
 import { DatePickerCalendar } from "./DatePickerCalendar";
 import { TextField } from "../TextField/TextField";
 import styles from "./DatePicker.module.scss";

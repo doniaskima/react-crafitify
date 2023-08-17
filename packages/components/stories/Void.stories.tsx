@@ -1,4 +1,4 @@
-import { Void } from "./Void";
+import { Void } from "../Void/Void";
 
 export default {
   component: Void,

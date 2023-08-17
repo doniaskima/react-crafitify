@@ -1,5 +1,5 @@
-import { FlexColumnContainer } from "../../../.storybook/components/FlexColumnContainer";
-import { Separator } from "./Separator";
+import { FlexColumnContainer } from "../.storybook/components/FlexColumnContainer";
+import { Separator } from "../Separator/Separator";
 
 export default {
   component: Separator,

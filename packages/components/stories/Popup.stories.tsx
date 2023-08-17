@@ -1,9 +1,9 @@
 import { Story } from "@storybook/react";
 import * as React from "react";
 import { within, userEvent } from "@storybook/testing-library";
-import { Popup, PopupProps } from "./Popup";
+import { Popup, PopupProps } from "../Popup/Popup";
 import { Button } from "../Button/Button";
-import { allowLayoutCalculations } from "../../../.storybook/utilities/allowLayoutCalculations";
+import { allowLayoutCalculations } from "../.storybook/utilities/allowLayoutCalculations";
 
 export default {
   component: Popup,

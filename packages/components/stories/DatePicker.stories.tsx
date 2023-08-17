@@ -1,8 +1,8 @@
 import { Story } from "@storybook/react";
 import * as React from "react";
-import { DatePicker, DatePickerProps } from "./DatePicker";
+import { DatePicker, DatePickerProps } from "../DatePicker/DatePicker";
 import { within, userEvent } from "@storybook/testing-library";
-import { allowLayoutCalculations } from "../../../.storybook/utilities/allowLayoutCalculations";
+import { allowLayoutCalculations } from "../../components/.storybook/utilities/allowLayoutCalculations";
 
 export default {
   component: DatePicker,

@@ -1,8 +1,8 @@
 import { Story } from "@storybook/react";
 import * as React from "react";
-import { Switch, SwitchProps } from "./Switch";
+import { Switch, SwitchProps } from "../Switch/Switch";
 import { within, userEvent } from "@storybook/testing-library";
-import { allowLayoutCalculations } from "../../../.storybook/utilities/allowLayoutCalculations";
+import { allowLayoutCalculations } from "../.storybook/utilities/allowLayoutCalculations";
 
 export default {
   component: Switch,

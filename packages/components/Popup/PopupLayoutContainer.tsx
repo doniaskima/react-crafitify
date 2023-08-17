@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./PopupLayoutContainer.module.scss";
-import { getPopupPositionStyle } from "../../utility/getPopupPositionStyle";
+import { getPopupPositionStyle } from "../utility/getPopupPositionStyle";
 import { BasePopupPosition } from "./BasePopup";
 import classNames from "classnames";
 
