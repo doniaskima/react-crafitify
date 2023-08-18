@@ -5,10 +5,7 @@
 
 The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.
 
-[![NPM version]][npm-url] [![NPM downloads]][download-url]
-
-[npm-url]: https://www.npmjs.com/package/react-craftify-spinners
-[download-url]: https://www.npmjs.org/package/react-craftify-spinners
+ 
 
 </div>
 
@@ -27,6 +24,10 @@ The react-craftify-spinners package provides a collection of customizable and vi
 - 📦 Lightweight and dependency-free
 - 🛡 Written entirely in TypeScript with predictable static types.
 - ⚙️ A full suite of design resources and tools to facilitate development.
+
+## Author
+
+Author: Donia Skima 😊
 
 ## 📦 Install
 
