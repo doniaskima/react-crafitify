@@ -2,7 +2,7 @@ import { Backdrop } from "../Backdrop";
 
 export default {
   component: Backdrop,
-  title: "Components/Backdrop",
+  title: "Components/Utilities/Backdrop",
 };
 
 export const Default = () => <Backdrop />;

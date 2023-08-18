@@ -93,7 +93,8 @@
     "react-ripples": "^2.2.1",
     "react-spinners": "^0.13.8",
     "react-transition-group": "^4.4.5",
-    "recharts": "^2.7.3"
+    "recharts": "^2.7.3",
+    "styled-components": "^6.0.7"
   },
   "eslintConfig": {
     "extends": [
