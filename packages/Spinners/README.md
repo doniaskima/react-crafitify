@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./craftify.png" alt="Logo" width="100" height="100" style="border-radius: 50%;" />
+  <img src="./logo-craftify.png" alt="Logo" width="100" height="100" style="border-radius: 50%;" />
 </div>
 
 <h1 align="center">react-craftify-spinners</h1>
@@ -8,14 +8,19 @@
   <p>The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.</p>
 </div>
 
+<div align="center">
+  <a href="https://www.npmjs.com/package/react-craftify-spinners">
+    <img src="https://img.shields.io/npm/v/react-craftify-spinners.svg?style=flat-square" alt="npm version" />
+  </a>
+</div>
 
-## 📚 Homepage
+## 📚 Documentation and Storybook
 
-- Visit [here](https://react-crafitify-website.vercel.app/)
+- Check out the Storybook documentation [here](https://react-crafitify-website.vercel.app/)
 
 | Screenshot 1 | Screenshot 2 | Screenshot 3 | Screenshot 4 |
 |--------------|--------------|--------------|--------------|
-| ![Screenshot 1](./Screenshots/loader-1.png) | ![Screenshot 2](./Screenshots/loader-2.png) | ![Screenshot 3](./Screenshots/loader-3.png) | ![Screenshot 4](./Screenshots/loader-4.png) |
+| ![Screenshot 1](./Screenshots/loader-1.png) | ![Screenshot 2](./Screenshots/Loader-2.png) | ![Screenshot 3](./Screenshots/loader-3.png) | ![Screenshot 4](./Screenshots/Loader-4.png) |
 
 
 ## ✨ Features
