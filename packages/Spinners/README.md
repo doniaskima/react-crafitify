@@ -5,7 +5,7 @@
 
 A modern library for reactJS components
 
-[![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url]
+[![NPM version]][npm-url] [![NPM downloads]][download-url]
 
 [npm-url]: https://www.npmjs.com/package/react-craftify-spinners
 [download-url]: https://www.npmjs.org/package/react-craftify-spinners
