@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo-craftify.png" alt="Logo" width="150" height="150" style="border-radius: 50%;" />
+  <img src="./assets/logo-craftify.png" alt="Logo" width="150" height="150" style="border-radius: 50%;" />
 </div>
 
 <h1 align="center">react-craftify-spinners</h1>

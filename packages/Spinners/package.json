@@ -1,6 +1,7 @@
 {
   "name": "react-craftify-spinners",
   "version": "0.0.23",
+  "files": ["assets"],
   "description": "The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.",
   "main": "index.js",
   "module": "dist/index.esm.js",
@@ -102,7 +103,6 @@
     "size-limit": "^8.2.6",
     "size-plugin": "^3.0.0",
     "storybook": "^7.2.3",
-    "styled-components": "^6.0.7",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
@@ -123,5 +123,8 @@
     "rc-util": "^5.36.0",
     "react-dom": "^18.2.0",
     "styled-component": "^2.8.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^6.0.7"
   }
 }
