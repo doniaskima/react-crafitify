@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo-craftify.png" alt="Logo" width="150" height="150" style="border-radius: 50%;" />
+  <img src="./logo-craftify.png" alt="Logo" width="200" height="200" style="border-radius: 50%;" />
 </div>
 
 <h1 align="center">react-craftify-components</h1>
@@ -16,11 +16,7 @@
 
 ## 📚 Documentation and Storybook
 
-- Check out the Storybook documentation [here](https://react-crafitify-website.vercel.app/)
-
-| Screenshot 1 | Screenshot 2 | Screenshot 3 | Screenshot 4 |
-|--------------|--------------|--------------|--------------|
-| ![Screenshot 1](./Screenshots/loader-1.png) | ![Screenshot 2](./Screenshots/Loader-2.png) | ![Screenshot 3](./Screenshots/loader-3.png) | ![Screenshot 4](./Screenshots/Loader-4.png) |
+- Check out the Storybook documentation [here](https://react-crafitify-mjw5.vercel.app/)
 
 
 ## ✨ Features
