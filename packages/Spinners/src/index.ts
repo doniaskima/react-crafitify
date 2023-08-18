@@ -26,3 +26,5 @@ export {default as SpinnerInfinity} from "./Elements/SpinnerInfinity/SpinnerInfi
 export { SpinnerCircular} from "./Elements/SpinnerCircular";
 export { SpinnerCircularFixed} from "./Elements/SpinnerCircularFixed";
 export { SpinnerCircularSplit} from "./Elements/SpinnerCircularSplit";
+export {default as CatLoader} from "./Elements/CatLoader/CatLoader";
+export {default as MessageLoader} from "./Elements/MessageLoader/MessageLoader";
