@@ -1,0 +1,28 @@
+"use strict";(self.webpackChunkreact_craftify_spinners=self.webpackChunkreact_craftify_spinners||[]).push([[8255],{"./src/Elements/_stories_/LoadingBar.stories.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{CustomColors:()=>CustomColors,CustomText:()=>CustomText,Default:()=>Default,WithClassName:()=>WithClassName,__namedExportsOrder:()=>__namedExportsOrder,default:()=>__WEBPACK_DEFAULT_EXPORT__});__webpack_require__("./node_modules/react/index.js");var _LoadingBar__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./src/Elements/LoadingBar.tsx"),react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./node_modules/react/jsx-runtime.js");const __WEBPACK_DEFAULT_EXPORT__={title:"Spinners/LoadingBar",component:_LoadingBar__WEBPACK_IMPORTED_MODULE_1__.Z,argTypes:{text:{control:"text"},textColor:{control:"color"},barColor:{control:"color"},className:{control:"text"}},parameters:{layout:"centered"}},Template=args=>(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_LoadingBar__WEBPACK_IMPORTED_MODULE_1__.Z,{...args});Template.displayName="Template";const Default=Template.bind({});Default.args={};const CustomText=Template.bind({});CustomText.args={text:"Please wait..."};const CustomColors=Template.bind({});CustomColors.args={textColor:"#ff0000",barColor:"#00ff00"};const WithClassName=Template.bind({});WithClassName.args={className:"custom-style"},Default.parameters={...Default.parameters,docs:{...Default.parameters?.docs,source:{originalSource:"args => <LoadingBar {...args} />",...Default.parameters?.docs?.source}}},CustomText.parameters={...CustomText.parameters,docs:{...CustomText.parameters?.docs,source:{originalSource:"args => <LoadingBar {...args} />",...CustomText.parameters?.docs?.source}}},CustomColors.parameters={...CustomColors.parameters,docs:{...CustomColors.parameters?.docs,source:{originalSource:"args => <LoadingBar {...args} />",...CustomColors.parameters?.docs?.source}}},WithClassName.parameters={...WithClassName.parameters,docs:{...WithClassName.parameters?.docs,source:{originalSource:"args => <LoadingBar {...args} />",...WithClassName.parameters?.docs?.source}}};const __namedExportsOrder=["Default","CustomText","CustomColors","WithClassName"]},"./src/Elements/LoadingBar.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{Z:()=>__WEBPACK_DEFAULT_EXPORT__});__webpack_require__("./node_modules/react/index.js");var prop_types__WEBPACK_IMPORTED_MODULE_3__=__webpack_require__("./node_modules/prop-types/index.js"),prop_types__WEBPACK_IMPORTED_MODULE_3___default=__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__),styled_components__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js"),react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__("./node_modules/react/jsx-runtime.js");const loaderBarAnimation=styled_components__WEBPACK_IMPORTED_MODULE_2__.F4`
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`,LoaderContainer=styled_components__WEBPACK_IMPORTED_MODULE_2__.ZP.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`,LoaderText=styled_components__WEBPACK_IMPORTED_MODULE_2__.ZP.div`
+  font-size: 24px;
+  color: ${props=>props.textColor||"rgb(0, 0, 0)"};
+  margin-bottom: 20px;
+  align-self: center;
+`,LoaderBar=styled_components__WEBPACK_IMPORTED_MODULE_2__.ZP.div`
+  width: 30%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: ${props=>props.barColor||"rgb(0, 0, 0)"};
+  animation: ${loaderBarAnimation} 2s ease-in-out infinite;
+`,LoadingBar=_ref=>{let{text,textColor,barColor,className}=_ref;return(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(LoaderContainer,{className:`loader ${className||""}`,children:[(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(LoaderText,{className:"loader-text",textColor,children:text||"Loading..."}),(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(LoaderBar,{className:"loader-bar",barColor})]})};LoadingBar.displayName="LoadingBar",LoadingBar.propTypes={text:prop_types__WEBPACK_IMPORTED_MODULE_3___default().string,textColor:prop_types__WEBPACK_IMPORTED_MODULE_3___default().string,barColor:prop_types__WEBPACK_IMPORTED_MODULE_3___default().string,className:prop_types__WEBPACK_IMPORTED_MODULE_3___default().string};const __WEBPACK_DEFAULT_EXPORT__=LoadingBar;try{LoadingBar.displayName="LoadingBar",LoadingBar.__docgenInfo={description:"",displayName:"LoadingBar",props:{text:{defaultValue:null,description:"",name:"text",required:!0,type:{name:"any"}},textColor:{defaultValue:null,description:"",name:"textColor",required:!0,type:{name:"any"}},barColor:{defaultValue:null,description:"",name:"barColor",required:!0,type:{name:"any"}},className:{defaultValue:null,description:"",name:"className",required:!0,type:{name:"any"}}}},"undefined"!=typeof STORYBOOK_REACT_CLASSES&&(STORYBOOK_REACT_CLASSES["src/Elements/LoadingBar.tsx#LoadingBar"]={docgenInfo:LoadingBar.__docgenInfo,name:"LoadingBar",path:"src/Elements/LoadingBar.tsx#LoadingBar"})}catch(__react_docgen_typescript_loader_error){}}}]);
+//# sourceMappingURL=Elements-_stories_-LoadingBar-stories.5474da19.iframe.bundle.js.map
