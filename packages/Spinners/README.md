@@ -1,20 +1,22 @@
+<div align="center">
+  <img src="./craftify.png" alt="Logo" width="100" height="100" style="border-radius: 50%;" />
+</div>
 
 <h1 align="center">react-craftify-spinners</h1>
 
 <div align="center">
-
-The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.
-
- 
-
+  <p>The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.</p>
 </div>
 
 
 ## 📚 Homepage
 
-- Visit [here](https://thxmx-ui.netlify.app/)
+- Visit [here](https://react-crafitify-website.vercel.app/)
 
-![s2](<./public/assets/Screenshot%20(185).png>)
+| Screenshot 1 | Screenshot 2 | Screenshot 3 | Screenshot 4 |
+|--------------|--------------|--------------|--------------|
+| ![Screenshot 1](./Screenshots/loader-1.png) | ![Screenshot 2](./Screenshots/loader-2.png) | ![Screenshot 3](./Screenshots/loader-3.png) | ![Screenshot 4](./Screenshots/loader-4.png) |
+
 
 ## ✨ Features
 
