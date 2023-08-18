@@ -10,53 +10,15 @@ export type ButtonType = "button" | "submit" | "reset";
 
 export interface ButtonProps
   extends React.ComponentPropsWithoutRef<"button"> {
-  /**
-   * The content for the Button
-   */
   children: string;
-  /**
-   * If the Button is disabled
-   *
-   * @default false
-   */
   disabled?: boolean;
-  /**
-   * The leading icon for the Button
-   */
   leadingIcon?: React.ReactNode;
-  /**
-   * The callback fired when the Button is clicked
-   */
   onClick?: () => void;
-  /**
-   * The size of the Button
-   *
-   * @default "medium"
-   */
   size?: ButtonSize;
-  /**
-   * The trailing icon for the Button
-   */
   trailingIcon?: React.ReactNode;
-  /**
-   * The type of the Button
-   */
   type?: ButtonType;
-  /**
-   * The variant of the Button
-   *
-   * @default "primary"
-   */
   variant?: ButtonVariant;
 }
-
-/**
- * @public
- *
- * @description
- *
- * The Button component is used to allows user to take an action.
- */
 export const Button = React.forwardRef<
   HTMLButtonElement,
   ButtonProps
