@@ -3,7 +3,7 @@
 
 <div align="center">
 
-A modern library for reactJS components
+The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.
 
 [![NPM version]][npm-url] [![NPM downloads]][download-url]
 
