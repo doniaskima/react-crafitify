@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "React-Crafitify is a versatile React component library designed to enhance the user interface of your web applications. With a focus on aesthetics and usability, React-Crafitify provides a collection of customizable UI components that can seamlessly integrate into your projects. ",
   "main": "index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",

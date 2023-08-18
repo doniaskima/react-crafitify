@@ -1,0 +1,2 @@
+const d=({calculateLayout:i,referrerRef:g,targetRef:n})=>{var r,h;const t=((r=g.current)==null?void 0:r.getBoundingClientRect())||{height:0,width:0},e=((h=n.current)==null?void 0:h.getBoundingClientRect())||{height:0,width:0},{left:c,top:o}=i({referrerHeight:t.height,referrerWidth:t.width,targetHeight:e.height,targetWidth:e.width});return{transform:`translate3d(${c}px, ${o}px, 0)`}};export{d as g};
+//# sourceMappingURL=getLayoutStyle-ef736a71.js.map

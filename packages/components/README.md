@@ -2,15 +2,15 @@
   <img src="./logo-craftify.png" alt="Logo" width="150" height="150" style="border-radius: 50%;" />
 </div>
 
-<h1 align="center">react-craftify-spinners</h1>
+<h1 align="center">react-craftify-components</h1>
 
 <div align="center">
-  <p>The react-craftify-spinners package provides a collection of customizable and visually appealing spinner components for React applications. These spinners can be used to indicate loading or processing states in various parts of your application.</p>
+  <p>A comprehensive collection of meticulously crafted and customizable React components that empower developers to build modern and visually stunning user interfaces. From buttons and inputs to complex data displays and interactive elements, React Craftify Components offers a wide range of building blocks to enhance the aesthetics and functionality of your applications. With a focus on simplicity, consistency, and flexibility, our library simplifies the process of creating dynamic and engaging UIs while maintaining a high level of customization. Elevate your development experience and create remarkable user experiences with React Craftify Components.</p>
 </div>
 
 <div align="center">
-  <a href="https://www.npmjs.com/package/react-craftify-spinners">
-    <img src="https://img.shields.io/npm/v/react-craftify-spinners.svg?style=flat-square" alt="npm version" />
+  <a href="https://www.npmjs.com/package/react-craftify-components">
+    <img src="https://img.shields.io/npm/v/react-craftify-components.svg?style=flat-square" alt="npm version" />
   </a>
 </div>
 
@@ -39,118 +39,13 @@ Author: Donia Skima 😊
 ## 📦 Install
 
 ```bash
-npm install react-craftify-spinners
+npm install react-craftify-components
 ```
 
 ```bash
-yarn add react-craftify-spinners
+yarn add react-craftify-components
 ```
 
-## 🔨 Usage
-
-
-## Available Spinner Components
-
-This library provides a variety of spinner components that you can easily integrate into your React projects. Here's a list of the available spinner components:
-
-- `CoffeSpinner`
-- `SmileSpinner`
-- `ScanSpinner`
-- `CartSpinner`
-- `GemoetricSpinner`
-- `CookingSpinner`
-- `BubbleSpinner`
-- `CircleLoader`
-- `PlanetSpinner`
-- `CornerLoader`
-- `CubeLoader`
-- `CustomLoader`
-- `CustomSpinner`
-- `DotSpinner`
-- `LoadingBar`
-- `NewtonsCradle`
-- `RotatingCircleBorderLoader`
-- `RotatingCirclesLoader`
-
-2. Import the spinner components you want to use in your React component file:
-
-```bash
-import React from 'react';
-import {
-  BubbleSpinner,
-  CookingSpinner,
-  AnimatedCircle,
-  CartSpinner,
-  CoffeSpinner,
-  GemoetricSpinner,
-  PlanetSpinner,
-  SmileSpinner,
-  ScanSpinner,
-  Loader,
-  CircleLoader,
-  CornerLoader,
-  CubeLoader,
-  CustomLoader,
-  CustomSpinner,
-  DotSpinner,
-  LoadingBar,
-  NewtonsCradle,
-  RotatingCircleBorderLoader,
-  RotatingCirclesLoader,
-  // Import more spinner components here
-} from 'react-craftify-spinners';
-
-const MyComponent = () => {
-  return (
-    <div>
-      {/* Example usage of different spinner components */}
-
-      {/* Coffe loader */}
-      <CoffeSpinner />
-
-
-      {/* Standard circle loader */}
-      <CircleLoader />
-
-      {/* Corner loader */}
-      <CornerLoader />
-
-      {/* Cube loader */}
-      <CubeLoader />
-
-      {/* Custom loader with customizable properties */}
-      <CustomLoader />
-
-      {/* Custom spinner with user-defined animation */}
-      <CustomSpinner />
-
-      {/* Simple dot spinner */}
-      <DotSpinner />
-
-      {/* Loading bar indicating progress */}
-      <LoadingBar />
-
-      {/* Newtons cradle animation */}
-      <NewtonsCradle />
-
-      {/* Circle loader with rotating border */}
-      <RotatingCircleBorderLoader />
-
-      {/* Multiple rotating circles */}
-      <RotatingCirclesLoader />
-
-      {/* Add more spinner components here */}
-      {/* Remember to provide relevant descriptions for any additional spinners */}
-
-      {/* End of spinner components */}
-    </div>
-  );
-};
-
-export default MyComponent;
-
-
-```
 
 ## ⌨️ Development
 

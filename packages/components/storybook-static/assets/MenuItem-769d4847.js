@@ -1,0 +1,2 @@
+import{j as s}from"./jsx-runtime-e6a661ac.js";import{c as a}from"./index-e131923d.js";import{T as r}from"./Typography-3a700a27.js";const o="_menuItemContainer_19svi_2",i={menuItemContainer:o},c=e=>{const{className:t,children:m,...n}=e;return s(r,{className:a(t,i.menuItemContainer),role:"menuitem",type:"h2",variant:"primary",...n,children:m})};c.displayName="MenuItem";export{c as M};
+//# sourceMappingURL=MenuItem-769d4847.js.map
