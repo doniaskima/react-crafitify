@@ -33,3 +33,5 @@ export {default as BlocksLoader} from "./Elements/BlocksLoader";
 export {default as FallingLines} from "./Elements/FallingLines";
 export {default as MagnifyingGlass} from "./Elements/MagnifyingGlass";
 export {default as ColorRing} from "./Elements/ColorRing";
+export {default as BookLoader } from "./Elements/BookLoader/BookLoader";
+export {default as GeometricSpinner } from "./Elements/GemoetricSpinner/GemoetricSpinner";
