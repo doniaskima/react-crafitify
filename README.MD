@@ -8,11 +8,6 @@
   <p>A comprehensive collection of meticulously crafted and customizable React components that empower developers to build modern and visually stunning user interfaces. From buttons and inputs to complex data displays and interactive elements, React Craftify Components offers a wide range of building blocks to enhance the aesthetics and functionality of your applications. With a focus on simplicity, consistency, and flexibility, our library simplifies the process of creating dynamic and engaging UIs while maintaining a high level of customization. Elevate your development experience and create remarkable user experiences with React Craftify Components.</p>
 </div>
 
-<div align="center">
-  <a href="https://www.npmjs.com/package/react-craftify-components">
-    <img src="https://img.shields.io/npm/v/react-craftify-components.svg?style=flat-square" alt="npm version" />
-  </a>
-</div>
 
 ## 📚 Documentation and Storybook
 
