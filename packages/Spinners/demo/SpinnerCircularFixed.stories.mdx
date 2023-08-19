@@ -1,0 +1,32 @@
+import { Story, Meta } from '@storybook/addon-docs/blocks';
+import { SpinnerCircularFixed, SpinnerCircularFixedProps } from '../src/Elements/SpinnerCircularFixed';
+
+<Meta title="Spinners/SpinnerCircularFixed" component={SpinnerCircularFixed} />
+
+# SpinnerCircularFixed: 🌀 Centered Joyful Animation for Your UI! 
+
+Introducing the *SpinnerCircularFixed* component, a centered spinner that brings joyful animation to your user interface while keeping things neat and tidy. 🎉✨
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import SpinnerCircularFixed from './SpinnerCircularFixed';  
+
+function App() {
+  return (
+    <div>
+      <h1>Adding Joyful Animation to Your UI! 🌟</h1>
+      <SpinnerCircularFixed
+        secondaryColor="#3189fc" // Customize the secondary color 
+        speed={100} // Adjust the animation speed 
+        still={false} // Set to true to stop the animation 
+        thickness={4} // Customize the thickness of the spinner 
+        width={66} // Set the width of the spinner 
+        height={66} // Set the height of the spinner 
+      />
+    </div>
+  );
+}
+
+export default App;

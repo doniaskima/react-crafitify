@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import MessageLoader from '../src/Elements/MessageLoader/MessageLoader';
+
+<Meta title="Spinners/MessageLoader" component={MessageLoader} />
+
+## MessageLoader: Bringing Life to Messages! 💌
+
+Introducing the *MessageLoader* component, a delightful way to infuse life into your messages and notifications. ✉️✨
+
+Whether you're creating a messaging app or just want to add a playful touch to your user interface, the MessageLoader is here to make your messages come alive.
+
+### Features:
+
+- **Animated Messages**: 🎉 MessageLoader adds dynamic animations to your messages, making them engaging and attention-grabbing.
+- **Customization**: 📐 You can customize the width, height, and appearance of the MessageLoader component to match your design needs.
+- **Accessibility**: ♿ MessageLoader includes accessibility attributes to ensure a seamless user experience.
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import MessageLoader from 'react-craftify-spinners';  
+
+function App() {
+  return (
+    <div>
+      {/* Use the MessageLoader component with custom props */}
+      <MessageLoader style={{ width: '200px', height: '200px' }} />
+    </div>
+  );
+}

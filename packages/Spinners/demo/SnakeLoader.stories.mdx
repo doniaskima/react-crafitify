@@ -1,0 +1,53 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import SnakeLoader from '../src/Elements/SnakeLoader/SnakeLoader';
+
+<Meta title="Spinners/SnakeLoader" component={SnakeLoader} />
+
+# SnakeLoader: 🐍 Ssssspinning into Action! 🌀
+
+Introducing the *SnakeLoader* component, a mesmerizing spinner that slithers and whirls with captivating animations. 🐍✨
+
+## Usage
+
+To use the `SnakeLoader` component, import it and render it in your React application. Customize the appearance using the following props:
+
+- `style`: Add custom styles to the component.
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={{}} />
+</Canvas>
+
+
+```jsx
+import React from 'react';
+import SnakeLoader from 'react-craftify-spinners';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <SnakeLoader />
+    </div>
+  );
+};
+```
+
+## Custom Style
+
+
+
+```jsx
+import React from 'react';
+import SnakeLoader from 'react-craftify-spinners';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Loading</h1>
+      <SnakeLoader style={{ width: '300px', height: '300px', backgroundColor: 'lightgray' }} />
+    </div>
+  );
+};
+```

@@ -1,0 +1,40 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { MagnifyingGlass } from '../src/Elements/MagnifyingGlass';
+
+<Meta title="Spinners/MagnifyingGlass" component={MagnifyingGlass} />
+
+## ✨ MagnifyingGlass: Mesmerizing Magnifying Glass! ✨
+
+Introducing the *MagnifyingGlass* component, a captivating addition to your UI that brings a mesmerizing magnifying glass to life. 🧐💫
+
+Whether you're looking to add a touch of elegance to your design or want to create a dynamic loading animation, the MagnifyingGlass component is here to infuse life into your projects. 🎨🔄
+
+### Features:
+
+- **Dynamic Animation**: MagnifyingGlass gracefully animates a magnifying glass, creating an elegant and engaging visual experience. 🌟🎥
+- **Customization**: You can customize the color, width, height, and visibility of the MagnifyingGlass component to suit your design needs. 🎨📏
+- **Accessibility**: MagnifyingGlass includes accessibility attributes to ensure a seamless user experience. ♿🌐
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import MagnifyingGlass from 'react-craftify-spinners';  
+
+function App() {
+  return (
+    <div>
+      <h1>Mesmerizing Magnifying Glass!</h1>
+      <MagnifyingGlass
+        visible={true}
+        height="80"
+        width="80"
+        className=""
+        wrapperStyle={{}}
+        ariaLabel="magnifying-glass-loading"
+        glassColor="#c0efff"
+        color="#e15b64"
+      />
+    </div>
+  );
+}

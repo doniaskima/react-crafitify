@@ -1,0 +1,38 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { BlocksLoader } from '../src/Elements/BlocksLoader';
+
+<Meta title="Spinners/BlocksLoader" component={BlocksLoader} />
+
+## 🧱 Blocks: Mesmerizing Blocks!
+
+Introducing the *Blocks* component, a captivating addition to your UI that brings mesmerizing blocks to life.
+
+Whether you're looking to add a touch of elegance to your design or want to create a dynamic loading animation, the Blocks component is here to infuse life into your projects.
+
+### Features:
+
+- **Dynamic Animation**: 🌀 Blocks gracefully animate, creating an elegant and engaging visual experience.
+- **Customization**: 📐 You can customize the width, height, and visibility of the Blocks component to suit your design needs.
+- **Accessibility**: ♿ Blocks includes accessibility attributes to ensure a seamless user experience.
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import BlocksLoader from 'react-craftify-spinners';  
+
+function App() {
+  return (
+    <div>
+      <h1>Mesmerizing Blocks!</h1>
+      <BlocksLoader
+        visible={true}
+        width="80"
+        height="80"
+        className=""
+        wrapperStyle={{}}
+        ariaLabel="blocks-loading"
+      />
+    </div>
+  );
+}

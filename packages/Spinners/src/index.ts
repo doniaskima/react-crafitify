@@ -28,3 +28,8 @@ export { SpinnerCircularFixed} from "./Elements/SpinnerCircularFixed";
 export { SpinnerCircularSplit} from "./Elements/SpinnerCircularSplit";
 export {default as CatLoader} from "./Elements/CatLoader/CatLoader";
 export {default as MessageLoader} from "./Elements/MessageLoader/MessageLoader";
+export {default as DNA} from "./Elements/DNA";
+export {default as BlocksLoader} from "./Elements/BlocksLoader";
+export {default as FallingLines} from "./Elements/FallingLines";
+export {default as MagnifyingGlass} from "./Elements/MagnifyingGlass";
+export {default as ColorRing} from "./Elements/ColorRing";
