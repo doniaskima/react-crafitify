@@ -1,2 +1,0 @@
-import{j as d}from"./jsx-runtime-e6a661ac.js";import{c as t}from"./index-e131923d.js";const k="_backdrop_1gavi_1",e="_noBackground_1gavi_10",o={backdrop:k,noBackground:e},p=a=>{const{className:c,children:r,showBackground:s=!0,...n}=a;return d("div",{className:t(o.backdrop,!s&&o.noBackground,c),...n,children:r})};p.displayName="Backdrop";export{p as B};
-//# sourceMappingURL=Backdrop-f82c2594.js.map

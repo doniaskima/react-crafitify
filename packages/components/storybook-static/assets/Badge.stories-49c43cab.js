@@ -1,8 +1,0 @@
-import{j as e,a as B}from"./jsx-runtime-e6a661ac.js";import{F as r}from"./index.esm-bffad61a.js";import{c as F}from"./index-e131923d.js";import{I as f}from"./IconButton-f8d199e3.js";import{F as x}from"./FlexRowContainer-5f99a0ca.js";import"./index-61bf1805.js";import"./_commonjsHelpers-de833af9.js";import"./iconBase-e697fdb3.js";import"./Ripple-55b24a9a.js";const z="_icon_12dv5_2",J={icon:z},t=d=>{const{ariaLabel:p="Badge",className:R,content:u,title:g,...S}=d;return e(f,{ariaLabel:p,className:F(R,J.icon),content:u,tabIndex:-1,title:g,...S})};t.displayName="Badge";const h={component:t,title:"Components/Presentation/Badge"},a=()=>e(t,{content:e(r,{}),title:"ReactJS"}),o=()=>B(x,{children:[e(t,{content:e(r,{}),size:"small",title:"ReactJS"}),e(t,{content:e(r,{}),size:"medium",title:"ReactJS"}),e(t,{content:e(r,{}),size:"large",title:"ReactJS"})]});var s,n,c;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:'() => <Badge content={<FaReact />} title="ReactJS" />',...(c=(n=a.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};var i,m,l;o.parameters={...o.parameters,docs:{...(i=o.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
-  return <FlexRowContainer>\r
-      <Badge content={<FaReact />} size="small" title="ReactJS" />\r
-      <Badge content={<FaReact />} size="medium" title="ReactJS" />\r
-      <Badge content={<FaReact />} size="large" title="ReactJS" />\r
-    </FlexRowContainer>;
-}`,...(l=(m=o.parameters)==null?void 0:m.docs)==null?void 0:l.source}}};const v=["Default","Size"];export{a as Default,o as Size,v as __namedExportsOrder,h as default};
-//# sourceMappingURL=Badge.stories-49c43cab.js.map

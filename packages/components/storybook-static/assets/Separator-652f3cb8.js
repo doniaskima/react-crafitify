@@ -1,2 +1,0 @@
-import{j as e}from"./jsx-runtime-e6a661ac.js";import{c}from"./index-e131923d.js";const p="_separator_1758c_1",l={separator:p},i=a=>{const{className:s,direction:o="horizontal",stroke:r=1,...t}=a;return e("span",{"aria-label":"",className:c(s,l.separator),role:"separator",style:o==="horizontal"?{borderTop:`${r}px solid #c8c8c8`,width:"100%"}:{borderLeft:`${r}px solid #c8c8c8`,height:"100%"},...t})};i.displayName="Separator";export{i as S};
-//# sourceMappingURL=Separator-652f3cb8.js.map
