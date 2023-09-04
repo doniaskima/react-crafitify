@@ -15,8 +15,8 @@ export interface AlertProps extends React.ComponentPropsWithoutRef<"div"> {
   children: string;
   closeable?: boolean;
   variant?: AlertVariant;
-  iconColor?: string; // Custom icon color
-  backgroundColor?: string; // Custom background color
+  iconColor?: string; 
+  backgroundColor?: string; 
 }
 
 export const Alert: React.FC<AlertProps> = (props) => {
@@ -25,8 +25,8 @@ export const Alert: React.FC<AlertProps> = (props) => {
     children,
     closeable = false,
     variant = "error",
-    iconColor, // Custom icon color
-    backgroundColor, // Custom background color
+    iconColor, 
+    backgroundColor, 
     ...rest
   } = props;
 
@@ -57,9 +57,9 @@ export const Alert: React.FC<AlertProps> = (props) => {
           variant === "info" && styles.info,
           variant === "success" && styles.success,
           variant === "warning" && styles.warning,
-          backgroundColor && { backgroundColor } // Use custom background color
+          backgroundColor && { backgroundColor } 
         )}
-        style={{ borderColor: backgroundColor }} // Set border color to background color
+        style={{ borderColor: backgroundColor }} 
         {...rest}
       >
         <div>
