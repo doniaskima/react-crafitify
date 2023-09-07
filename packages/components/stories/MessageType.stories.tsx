@@ -9,13 +9,13 @@ export default {
 };
 
 export const Error = () => (
-  <MessageType type="error">Pastrami biltong sirloin alcatra...</MessageType>
+  <MessageType type="error">There was an error!</MessageType>
 );
 
 export const Warning = () => (
-  <MessageType type="warning">Pastrami fatback frankfurter...</MessageType>
+  <MessageType type="warning">Here's some information.</MessageType>
 );
 
 export const Success = () => (
-  <MessageType type="success">Pig tri-tip ground round...</MessageType>
+  <MessageType type="success">That was successful!</MessageType>
 );
