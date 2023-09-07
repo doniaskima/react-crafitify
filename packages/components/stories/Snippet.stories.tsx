@@ -6,9 +6,9 @@ export default {
 };
 
 export const Default = () => (
-  <Snippet>npm install void-ui-library</Snippet>
+  <Snippet>npm install react-craftify-components</Snippet>
 );
 
 export const WithIndicator = () => (
-  <Snippet hasIndicator>npm install void-ui-library</Snippet>
+  <Snippet hasIndicator>npm install react-craftify-components</Snippet>
 );
