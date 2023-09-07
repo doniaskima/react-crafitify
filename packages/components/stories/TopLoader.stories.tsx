@@ -2,7 +2,6 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import TopLoader from '../TopLoader/TopLoader';
  
-
 export default {
   title: 'Components/TopLoader',
   component: TopLoader,
@@ -14,10 +13,10 @@ export const Loading = Template.bind({});
 Loading.args = {
   loading: true,
   context: {
-    primaryColor: 'blue',  
+    primaryColor: 'blue',
   },
   style: {
- 
+
   },
 };
 
@@ -25,9 +24,7 @@ export const NotLoading = Template.bind({});
 NotLoading.args = {
   loading: false,
   context: {
-    primaryColor: 'red',  
+    primaryColor: 'red',
   },
-  style: {
-    
-  },
+  style: {},
 };
