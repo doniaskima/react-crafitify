@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import './Drawer.scss';
@@ -10,8 +10,6 @@ function generateUniqueId() {
 
 function DrawerPortal(props) {
   const [showDrawer, setShowDrawer] = useState(false);
-  const drawerId = generateUniqueId();
-  const drawerOverlayId = generateUniqueId();
   const isClosing = useState(false);
 
   const closeDrawer = useCallback(async () => {
@@ -23,18 +21,8 @@ function DrawerPortal(props) {
         await setShowDrawer(showDrawer);
         isClosing.current = false;
       }, 300);
-
-      const selectedDrawer = document.querySelector(`#${drawerId}`);
-      if (selectedDrawer) {
-        if (props.position === 'right') {
-          selectedDrawer.classList.add('drawerOutRight');
-        } else {
-          selectedDrawer.classList.add('drawerOut');
-        }
-        document.querySelector(`#${drawerOverlayId}`).classList.add('drawerOverlayOut');
-      }
     }
-  }, [props, drawerId, drawerOverlayId]);
+  }, [props]);
 
   useEffect(() => {
     const { showDrawer } = props;
@@ -57,13 +45,14 @@ function DrawerPortal(props) {
 
   const drawerPositionClass =
     props.position === 'right' ? 'drawerWrapperRight' : 'drawerWrapper';
-  const drawerClass =
-    props.position === 'right' ? 'drawer drawerRight' : 'drawer';
 
   return showDrawer ? (
     <div>
       <div className={drawerPositionClass}>
-        <div id={drawerId} style={props.style} className={`${drawerClass} drawerAnimationIn`}>
+        <div
+          style={props.style}
+          className={`drawer ${showDrawer ? 'drawerAnimationIn' : 'drawerAnimationOut'}`}
+        >
           {props.isClosable && (
             <button className="closeDrawer" onClick={props.toggleDrawer}>
               <AiOutlineClose className="closeDrawerIcon" />
@@ -74,9 +63,8 @@ function DrawerPortal(props) {
         </div>
 
         <div
-          id={drawerOverlayId}
           onClick={props.toggleDrawer}
-          className="drawerOverlay drawerOverlayAnimIn"
+          className={`drawerOverlay ${showDrawer ? 'drawerOverlayAnimIn' : 'drawerOverlayOut'}`}
         ></div>
       </div>
 
