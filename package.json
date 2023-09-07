@@ -18,6 +18,7 @@
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/react": "^18.2.18",
+    "@types/sass": "^1.45.0",
     "babel-plugin-inline-react-svg": "^2.0.2",
     "babel-plugin-styled-components": "^2.1.4",
     "del": "^7.0.0",

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ArticleCard.scss";
+import "./ArticleCard.scss";
 import GetContext from "../GetContext";
 
 const ArticleCard = (props) => {
@@ -11,33 +11,33 @@ const ArticleCard = (props) => {
 	return (
 		<div
 			style={ props.style }
-			className={ `${ styles.articleWrapper } ${ props.className ? props.className : "" }` } >
+			className={ `articleWrapper ${ props.className ? props.className : "" }` } >
 			<div
 				style={{ backgroundImage: `url( ${ props.img })` }}
-				className={ styles.articleImg }>
+				className='articleImg'>
 			</div>
 
-			<div className={ styles.articleText  }>
-				<div className={ styles.articleTitleAndCat  }>
+			<div className='articleText'>
+				<div className="articleTitleAndCat">
 					<h6
 						style={{ color: primaryColor }}
-						className={ `${ styles.category }` }>
+						className='category'>
 						{ props.category }
 					</h6>
 
 					<h4
 						style={{ textDecorationColor : primaryColor }}
-						className={ `${ styles.title } ${ titleClassName }` }
+						className={ ` title ${ titleClassName }` }
 					>
 						{ props.title }
 					</h4>
 				</div>
 
-				<div className={ styles.author }>
+				<div className="author">
 					{ props.author }
 					{
 						props.author && props.time && (
-							<span className={ styles.authorAndTimeSeparator }>•</span>
+							<span className="authorAndTimeSeparator">•</span>
 						)
 					}
 					{ props.time }
