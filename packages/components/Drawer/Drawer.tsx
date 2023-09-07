@@ -1,137 +1,111 @@
-import React, { Component } from 'react';
-import ReactDOM from "react-dom";
+import React, { useEffect, useState, useCallback } from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import "./Drawer.scss";
+import './Drawer.scss';
+import { AiOutlineClose } from 'react-icons/ai';
 
-// Function to generate unique IDs
 function generateUniqueId() {
   return `drawer_${Math.random().toString(36).substr(2, 10)}`;
 }
 
-class DrawerPortal extends Component {
-  static propTypes = {
-    columns: PropTypes.array,
-    rows: PropTypes.array,
-  }
+function DrawerPortal(props) {
+  const [showDrawer, setShowDrawer] = useState(false);
+  const drawerId = generateUniqueId();
+  const drawerOverlayId = generateUniqueId();
+  const isClosing = useState(false);
 
-  state = {
-    showDrawer: false,
-    drawerId: generateUniqueId(),
-    drawerOverlayId: generateUniqueId(),
-    isClosing: false,
-  }
+  const closeDrawer = useCallback(async () => {
+    const { showDrawer } = props;
 
-  closeDrawer = async () => {
-    const { showDrawer } = this.props;
-
-    if (!this.state.isClosing) {
-      // Check if the drawer is already closing
-      await this.setState({ isClosing: true });
-      // add animation depending if it's a right or left drawer
+    if (!isClosing.current) {
+      isClosing.current = true;
       setTimeout(async () => {
-        await this.setState({
-          showDrawer,
-          isClosing: false,
-        });
+        await setShowDrawer(showDrawer);
+        isClosing.current = false;
       }, 300);
 
-      const selectedDrawer = document.querySelector(`#${this.state.drawerId}`);
+      const selectedDrawer = document.querySelector(`#${drawerId}`);
       if (selectedDrawer) {
-        if (this.props.position === "right") {
-          selectedDrawer.className = "drawer drawerOutRight";
+        if (props.position === 'right') {
+          selectedDrawer.classList.add('drawerOutRight');
         } else {
-          selectedDrawer.className = "drawer drawerOut";
+          selectedDrawer.classList.add('drawerOut');
         }
-        document.querySelector(`#${this.state.drawerOverlayId}`).className = "drawerOverlay drawerOverlayOut";
+        document.querySelector(`#${drawerOverlayId}`).classList.add('drawerOverlayOut');
       }
     }
-  }
+  }, [props, drawerId, drawerOverlayId]);
 
-  componentDidMount() {
-    const { showDrawer } = this.props;
-    this.setState({ showDrawer });
-  }
+  useEffect(() => {
+    const { showDrawer } = props;
+    setShowDrawer(showDrawer);
+  }, [props]);
 
-  componentDidUpdate(prevProps) {
-    const { showDrawer } = this.props;
-    // Add an animation to the drawer on close
-    if (showDrawer !== prevProps.showDrawer) {
-      const body = document.querySelector("body");
+  useEffect(() => {
+    const { showDrawer } = props;
+    const body = document.querySelector('body');
+    if (body) {
       if (!showDrawer) {
-        body.setAttribute("style", "overflow: visible;");
-        this.closeDrawer();
+        body.setAttribute('style', 'overflow: visible;');
+        closeDrawer();
       } else {
-        body.setAttribute("style", "overflow: hidden;");
-        this.setState({ showDrawer });
+        body.setAttribute('style', 'overflow: hidden;');
+        setShowDrawer(showDrawer);
       }
     }
-  }
+  }, [props, closeDrawer]);
 
-  render() {
-    // Check whether if the drawer is at left (default) or at right
-    const drawerPositionClass = this.props.position === "right" ? 'drawerWrapperRight' : 'drawerWrapper';
-    const drawerClass = this.props.position === "right" ? "drawer drawerRight" : "drawer";
+  const drawerPositionClass =
+    props.position === 'right' ? 'drawerWrapperRight' : 'drawerWrapper';
+  const drawerClass =
+    props.position === 'right' ? 'drawer drawerRight' : 'drawer';
 
-    return (
-      this.state.showDrawer && (
-        <div>
-          <div
-            className={drawerPositionClass}
-          >
-            <div
-              id={this.state.drawerId}
-              style={this.props.style}
-              className={drawerClass}>
-              {
-                this.props.isClosable && (
-                  <button
-                    className="closeDrawer"
-                    onClick={this.props.toggleDrawer}>
-                    {/* <Icon
-                      type="close"
-                      size="24px"
-                      className={ styles.closeDrawerIcon } /> */}
-                  </button>
-                )
-              }
+  return showDrawer ? (
+    <div>
+      <div className={drawerPositionClass}>
+        <div id={drawerId} style={props.style} className={`${drawerClass} drawerAnimationIn`}>
+          {props.isClosable && (
+            <button className="closeDrawer" onClick={props.toggleDrawer}>
+              <AiOutlineClose className="closeDrawerIcon" />
+            </button>
+          )}
 
-              <div>
-                {this.props.children}
-              </div>
-            </div>
-
-            <div
-              id={this.state.drawerOverlayId}
-              onClick={this.props.toggleDrawer}
-              className="drawerOverlay"></div>
-          </div>
-
-          <div className="drawerBlockClick"></div>
+          <div>{props.children}</div>
         </div>
-      )
-    )
-  }
+
+        <div
+          id={drawerOverlayId}
+          onClick={props.toggleDrawer}
+          className="drawerOverlay drawerOverlayAnimIn"
+        ></div>
+      </div>
+
+      <div className="drawerBlockClick"></div>
+    </div>
+  ) : null;
 }
+
+DrawerPortal.propTypes = {
+  columns: PropTypes.array,
+  rows: PropTypes.array,
+};
 
 DrawerPortal.defaultProps = {
   isClosable: true,
-}
+};
 
-// Create a portal to hook the Drawer into
-const Drawer = (props) => {
-  // Check if the portal-root div exists
-  let portalRoot = document.getElementById("portal-root");
-  // if not, add it to the body
+function Drawer(props) {
+  let portalRoot = document.getElementById('portal-root');
   if (!portalRoot) {
-    portalRoot = document.createElement("div");
-    portalRoot.id = "portal-root";
+    portalRoot = document.createElement('div');
+    portalRoot.id = 'portal-root';
     document.body.appendChild(portalRoot);
   }
-  // Create a portal to attach the drawer
+
   return ReactDOM.createPortal(
     <DrawerPortal {...props} />,
-    document.getElementById("portal-root")
-  )
+    document.getElementById('portal-root')
+  );
 }
 
 export default Drawer;

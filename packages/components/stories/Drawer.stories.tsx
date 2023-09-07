@@ -28,18 +28,18 @@ class MyComponent extends Component {
 }
  
 
-// Export default metadata for the Drawer component
+
 export default {
   title: 'Components/Drawer',
   component: Drawer,
 } as ComponentMeta<typeof Drawer>;
 
-// Define the template for the Default story
+
 const Template: ComponentStory<typeof Drawer> = (args) => (
   <MyComponent />
 );
 
-// Define stories using the Template
+
 export const Default = Template.bind({});
 Default.args = {
   showDrawer: false,
