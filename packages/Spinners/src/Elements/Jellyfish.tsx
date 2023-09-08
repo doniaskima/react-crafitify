@@ -16,9 +16,9 @@ const whirlpool = keyframes`
   }
 `;
 
-const WhirlpoolContainer = styled.div`
-  width: 100px;
-  height: 100px;
+const WhirlpoolContainer = styled.div<{ size: number }>`
+  width: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
   margin: 100px auto;
   position: relative;
 `;
@@ -122,9 +122,9 @@ const Ring9 = styled(Ring)`
   }
 `;
 
-const Jellyfish: React.FC = () => {
+const Jellyfish: React.FC<{ size: number }> = ({ size }) => {
   return (
-    <WhirlpoolContainer>
+    <WhirlpoolContainer size={size}>
       <Ring1 />
       <Ring2 />
       <Ring3 />

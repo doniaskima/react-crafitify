@@ -7,7 +7,25 @@ export default {
   component: CornerLoader,
 } as Meta;
 
-const Template: Story<CornerLoaderProps> = (args) => <CornerLoader {...args} />;
+const CenteredStory: React.FC = ({ children }) => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
+      {children}
+    </div>
+  );
+}
+
+
+const Template: Story<CornerLoaderProps> = (args) => (
+  <CenteredStory>
+   <CornerLoader {...args} />
+  </CenteredStory>
+);
 
 export const Default = Template.bind({});
 Default.args = {};

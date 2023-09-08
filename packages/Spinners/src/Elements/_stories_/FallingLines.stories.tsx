@@ -13,7 +13,26 @@ export default {
   },
 } as Meta;
 
-const Template: Story<FallingLinesProps> = (args) => <FallingLines {...args} />;
+
+const CenteredStory: React.FC = ({ children }) => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
+      {children}
+    </div>
+  );
+}
+
+
+const Template: Story<FallingLinesProps> = (args) => (
+  <CenteredStory>
+      <FallingLines {...args} />
+  </CenteredStory>
+)
 
 export const Default = Template.bind({});
 Default.args = {

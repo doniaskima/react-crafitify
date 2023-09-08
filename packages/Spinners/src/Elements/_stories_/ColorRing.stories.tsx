@@ -15,8 +15,25 @@ export default {
   },
 } as Meta;
 
+const CenteredStory: React.FC = ({ children }) => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
+      {children}
+    </div>
+  );
+}
 
-const Template: Story<ColorRingProps> = (args) => <ColorRing {...args} />;
+const Template: Story<ColorRingProps> = (args) => (
+<CenteredStory>
+<ColorRing {...args} />
+</CenteredStory>
+   
+);
 
 
 export const Default = Template.bind({});

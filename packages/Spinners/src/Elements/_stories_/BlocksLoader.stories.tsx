@@ -15,7 +15,25 @@ export default {
   },
 } as Meta;
 
-const Template: Story<BlocksProps> = (args) => <BlocksLoader {...args} />;
+const CenteredStory: React.FC = ({ children }) => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
+      {children}
+    </div>
+  );
+}
+
+
+const Template: Story<BlocksProps> = (args) =>(
+  <CenteredStory>
+     <BlocksLoader {...args} />
+  </CenteredStory>
+);
 
 export const Default = Template.bind({});
 Default.args = {

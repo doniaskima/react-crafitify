@@ -24,7 +24,25 @@ export default {
   },
 } as Meta;
 
-const Template: Story<DNAProps> = (args) => <DNA {...args} />;
+const CenteredStory: React.FC = ({ children }) => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
+      {children}
+    </div>
+  );
+}
+
+
+const Template: Story<DNAProps> = (args) => (
+  <CenteredStory>
+      <DNA {...args} />
+  </CenteredStory>
+);
 
 export const Default = Template.bind({});
 Default.args = {
