@@ -1,0 +1,71 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import SpeedLoader from '../src/Elements/SpeedLoader/SpeedLoader';
+
+<Meta title="Spinners/SpeedLoader" component={SpeedLoader} />
+
+# SpeedLoader: 🌀
+
+Introducing the *SpeedLoader* component, a mesmerizing spinner that adds a dynamic touch to your UI with captivating animations. ✨
+
+## Usage
+
+To use the `SpeedLoader` component, import it and render it in your React application. Customize the appearance using the following props:
+
+- `style`: Add custom styles to the component. 🎨
+
+## Default
+
+<Canvas>
+  <Story name="Default" args={{ style: { width: '150px', height: '150px' } }} />
+</Canvas>
+
+
+
+```jsx
+import React from 'react';
+import {SpeedLoader} from 'react-craftify-spinners';  
+
+function App() {
+  return (
+    <div>
+      <h1>Scanning for Awesomeness!</h1>
+      <SpeedLoader style={{ width: "200px", height: "200px" }} />
+    </div>
+  );
+}
+
+```
+
+### Custom backgroundColor:
+
+```jsx
+import React from 'react';
+import {SpeedLoader} from 'react-craftify-buttons';  
+
+function App() {
+  const spinnerStyle = {
+    width: '200px',
+    height: '200px',
+    backgroundColor: 'lightgray', 
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <SpeedLoader style={spinnerStyle} />
+    </div>
+  );
+}
+
+export default App;
+ 
+```
+
+ 
+In this added section:
+
+- I've included a step-by-step guide on how to use the component.
+- There's information about installing the necessary package.
+- Code snippets showcase importing the component and using it within a component.
+- I've added a note about customization using the `style` prop.
+
+

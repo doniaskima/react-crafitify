@@ -19,7 +19,26 @@ export default {
   },
 } as Meta;
 
-const Template: Story<MagnifyingGlassProps> = (args) => <MagnifyingGlass {...args} />;
+const CenteredStory: React.FC = ({ children }) => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
+      {children}
+    </div>
+  );
+}
+
+
+const Template: Story<MagnifyingGlassProps> = (args) => (
+  <CenteredStory>
+  <MagnifyingGlass {...args} />
+  </CenteredStory>
+ 
+);
 
 export const Default = Template.bind({});
 Default.args = {
