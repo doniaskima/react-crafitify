@@ -5,7 +5,6 @@ export {default as DotSpinner } from "./Elements/DotSpinner"
 export {default as LoadingBar} from "./Elements/LoadingBar";
 export {default as CubeLoader} from "./Elements/CubeLoader";
 export {default as RotatingCircleBorderLoader} from "./Elements/RotatingCircleBorderLoader";
-export {default as RotatingCirclesLoader} from "./Elements/RotatingCirclesLoader";
 export {default as NewtonsCradle} from "./Elements/NewtonsCradle";
 export {default as CustomLoader} from "./Elements/CustomLoader";
 export {default as Loader} from "./Elements/Loader";
@@ -48,3 +47,10 @@ export {default as SpeedLoader } from "./Elements/SpeedLoader/SpeedLoader";
 export {default as Mouse } from "./Elements/Mouse/Mouse";
 export {default as GreenLoader } from "./Elements/GreenLoader/GreenLoader";
 export {default as ThreeLineLoader } from "./Elements/ThreeLineLoader";
+export {default as Arcade2 } from "./Elements/Arcade2";
+export {default as ArcadeLoader } from "./Elements/ArcadeLoader";
+export {default as BatteryLoader } from "./Elements/BatteryLoader";
+export {default as EyesLoader } from "./Elements/EyesLoader";
+export {default as SettingLoader } from "./Elements/SettingLoader";
+export {default as Wobbling } from "./Elements/Wobbling";
+
