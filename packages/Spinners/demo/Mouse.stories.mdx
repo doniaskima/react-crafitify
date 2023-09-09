@@ -1,0 +1,61 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Mouse } from '../src/Elements/Mouse/Mouse';
+
+<Meta title="Spinners/Mouse" component={Mouse} />
+
+## Mouse Spinner: Scanning for Awesomeness! 🐭
+
+Introducing the *Mouse* component, your tool to infuse anticipation and excitement into your UI.  
+
+Whether you're building a search-centric app or just want to add a touch of exploration to your design, the Mouse is here to turn your UI into a realm of possibilities.
+
+### Features:
+
+- **Dynamic Scanning**: The Mouse starts its scanning journey as soon as it's placed, giving your UI an air of anticipation and dynamism.
+- **Endless Exploration**: Like an explorer in uncharted territory, the Mouse's animation loops endlessly, promising an ongoing adventure.
+- **Seamless Integration**: Adding the Mouse to your project is as easy as navigating an exciting quest, thanks to its user-friendly API.
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import {Mouse} from 'react-craftify-spinners';  
+
+function App() {
+  return (
+    <div>
+      <h1>Scanning for Awesomeness!</h1>
+      <Mouse style={{ width: "200px", height: "200px" }} />
+    </div>
+  );
+}
+
+```
+
+### Custom backgroundColor:
+
+```jsx
+import React from 'react';
+import {Mouse} from 'react-craftify-buttons';  
+
+function App() {
+  const spinnerStyle = {
+    width: '200px',
+    height: '200px',
+    backgroundColor: 'lightgray', 
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <Mouse style={spinnerStyle} />
+    </div>
+  );
+}
+
+export default App;
+ 
+```
+
+ 
+
+ 

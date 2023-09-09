@@ -1,0 +1,30 @@
+---
+title: Pulsing Loader
+---
+
+import { Meta, Story, Preview, Controls, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Pulsing from '../src/Elements/Pulsing';
+
+<Meta title="Spinners/Pulsing" component={Pulsing} />
+
+# Pulsing Loader
+
+The `Pulsing` loader is a simple spinner that you can customize.
+
+
+## Usage
+
+To use the `Pulsing` loader, import it from `'../Pulsing'` and pass the `color` and `size` props to customize its appearance.
+
+### Example:
+
+```jsx
+import Pulsing from '../Pulsing';
+
+function MyComponent() {
+  return (
+    <div>
+      <Pulsing color="#ff0000" size="30px" />
+    </div>
+  );
+}
