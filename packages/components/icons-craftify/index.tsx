@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import  "./Icon.scss";
-import uid from "uid";
+import { v4 as uuidv4 } from 'uuid';
 import hexRgb from "hex-rgb";
 
 import CloseIcon from "./Icons/CloseIcon";
@@ -62,7 +62,7 @@ import HeartOutlined from "./Icons/HeartOutlined";
 
 class Icon extends Component {
 	state = {
-		iconId: `icon_${ uid(10) }`,
+		iconId: `icon_${uuidv4()}`,
 		size: null,
 		color: null,
 		opacity: null,
