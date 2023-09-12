@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import  "./Icon.scss";
 import { v4 as uuidv4 } from 'uuid';
@@ -60,275 +60,94 @@ import Heart from "./Icons/Heart";
 import HeartOutlined from "./Icons/HeartOutlined";
 
 
-class Icon extends Component {
-	state = {
-		iconId: `icon_${uuidv4()}`,
-		size: null,
-		color: null,
-		opacity: null,
+const Icon = (props) => {
+	const [iconId] = useState(`icon_${uuidv4()}`);
+	const [size, setSize] = useState(null);
+	const [color, setColor] = useState(null);
+	const [opacity, setOpacity] = useState(null);
+  
+	useEffect(() => {
+	  const { size: propSize, color: propColor } = props;
+  
+	  if (!propSize || !propColor) {
+		const parent = document.getElementById(iconId).parentNode;
+		const parentStyle = getComputedStyle(parent);
+  
+		let iconSize = propSize;
+  
+		if (!propSize) {
+		  const pxSize = parentStyle['font-size'].split('px')[0] * 1.3;
+		  iconSize = `${pxSize}px`;
+		}
+  
+		let iconColor = propColor ? propColor : parentStyle['color'];
+		let iconOpacity = 1;
+  
+		if (iconColor.split('#').length > 1) {
+		  iconColor = `rgba(${hexRgb(iconColor, { format: 'array' }).join(', ')})`;
+		}
+  
+		if (iconColor.split('rgba').length > 1) {
+		  iconOpacity = Number(iconColor.split(',')[3].split(')')[0]);
+		  const iconColorNum = iconColor.split('rgba(')[1].split(',').slice(0, 3).join(',');
+		  iconColor = `rgb(${iconColorNum})`;
+		}
+  
+		setSize(iconSize);
+		setColor(iconColor);
+		setOpacity(iconOpacity);
+	  } else {
+		setSize(propSize);
+		setColor(propColor);
+		setOpacity(1);
+	  }
+	}, [props, iconId]);
+  
+	let chosenIcon;
+	switch (props.type) {
+	  case 'close':
+		chosenIcon = <CloseIcon />;
+		break;
+	  case 'arrowBack':
+		chosenIcon = <ArrowBack />;
+		break;
+	  case 'arrowTop':
+		chosenIcon = <ArrowTop />;
+		break;
+	  case 'arrowForward':
+		chosenIcon = <ArrowForward />;
+		break;
+	  // Add cases for other icons...
+	  default:
+		console.error(`${props.type} is not a valid icon.`);
 	}
-
-	componentDidMount(){
-		const { size, color } = this.props;
-		// Get the style from the parent component (color + fontSize)
-		if(!size || !color){
-			const parent = document.getElementById(this.state.iconId).parentNode;
-			const parentStyle = getComputedStyle(parent);
-			// Get the font size if there is no size specified
-			let iconSize = size;
-			// Scale the icon so it look bigger if it get it's size from it's parent fontSize
-			if(!size){
-				const pxSize = parentStyle["font-size"].split("px")[0] * 1.3;
-				iconSize = `${ pxSize }px`;
-			}
-
-			// Get the color if there is no color specified
-			let iconColor = color ? color : parentStyle["color"];
-			let iconOpacity = 1;
-
-			// convert it to a rgba color if it's an hex color
-			if(iconColor.split("#").length > 1){
-				iconColor = `rgba(${ hexRgb(iconColor, {format: 'array'}).join(", ") })`;
-			}
-
-			// If it's a RGBA color
-			// get the rgb color and the opacity separately if there is opacity
-			if(iconColor.split("rgba").length > 1){
-				// get the opacity first
-				iconOpacity = Number(iconColor.split(",")[3].split(")")[0]);
-				// get the rgb color
-				const iconColorNum = iconColor.split("rgba(")[1].split(",").slice(0, 3).join(",");
-				iconColor = `rgb(${ iconColorNum })`;
-			}
-
-			this.setState({
-				size: iconSize,
-				color: iconColor,
-				opacity: iconOpacity,
-			})
-		} else {
-			this.setState({
-				size: size,
-				color: color,
-				opacity: 1,
-			})
-		}
+  
+	// Check if the icon should be spinning
+	let isSpinning = '';
+	if (props.type === 'loader') {
+	  if (props.isSpinning !== false) {
+		isSpinning = 'isSpinning';
+	  }
+	} else if (props.isSpinning === true) {
+	  isSpinning = 'isSpinning';
 	}
-
-	render(){
-		// Choose the right icon
-		let chosenIcon;
-		switch(this.props.type){
-			case "close":
-			  chosenIcon = <CloseIcon />;
-				break;
-			case "arrowBack":
-			  chosenIcon = <ArrowBack />;
-				break;
-			case "arrowTop":
-				chosenIcon = <ArrowTop />;
-				break;
-			case "arrowForward":
-				chosenIcon = <ArrowForward />;
-				break;
-			case "arrowDown":
-				chosenIcon = <ArrowDown />;
-				break;
-			case "checkmark":
-				chosenIcon = <CheckMark />;
-				break;
-			case "menu":
-				chosenIcon = <Menu />;
-				break;
-			case "cycling":
-				chosenIcon = <Cycling />;
-				break;
-			case "chart":
-				chosenIcon = <LineChart />;
-				break;
-			case "star":
-				chosenIcon = <Star />;
-				break;
-			case "starOutlined":
-				chosenIcon = <StarOutlined />;
-				break;
-			case "starHalf":
-				chosenIcon = <StarHalf />;
-				break;
-			case "bookmark":
-				chosenIcon = <Bookmark />;
-				break;
-			case "bookmarkOutlined":
-				chosenIcon = <BookmarkOutlined />;
-				break;
-			case "cloudUpload":
-				chosenIcon = <CloudUpload />;
-				break;
-			case "cloudDownload":
-				chosenIcon = <CloudDownload />;
-				break;
-			case "cloud":
-				chosenIcon = <Cloud />;
-				break;
-			case "cloudOutlined":
-				chosenIcon = <CloudOutlined />;
-				break;
-			case "coffee":
-				chosenIcon = <Coffee />;
-				break;
-			case "lock":
-				chosenIcon = <Lock />;
-				break;
-			case "unlock":
-				chosenIcon = <UnLock />;
-				break;
-			case "time":
-				chosenIcon = <Time />;
-				break;
-			case "flash":
-				chosenIcon = <Flash />;
-				break;
-			case "loader":
-				chosenIcon = <Loader />;
-				break;
-			case "plus":
-				chosenIcon = <Plus />;
-				break;
-			case "minus":
-				chosenIcon = <Minus />;
-				break;
-			case "cash":
-				chosenIcon = <Cash />;
-				break;
-			case "card":
-				chosenIcon = <Card />;
-				break;
-			case "cart":
-				chosenIcon = <Cart />;
-				break;
-			case "chat":
-				chosenIcon = <Chat />;
-				break;
-			case "code":
-				chosenIcon = <Code />;
-				break;
-			case "bell":
-				chosenIcon = <Bell />;
-				break;
-			case "bellOutlined":
-				chosenIcon = <BellOutlined />;
-				break;
-			case "user":
-				chosenIcon = <User />;
-				break;
-			case "refresh":
-				chosenIcon = <Refresh />;
-				break;
-			case "settings":
-				chosenIcon = <Settings />;
-				break;
-			case "wifi":
-				chosenIcon = <Wifi />;
-				break;
-			case "save":
-				chosenIcon = <Save />;
-				break;
-			case "sync":
-				chosenIcon = <Sync />;
-				break;
-			case "globe":
-				chosenIcon = <Globe />;
-				break;
-			case "stop":
-				chosenIcon = <Stop />;
-				break;
-			case "search":
-				chosenIcon = <Search />;
-				break;
-			case "delete":
-				chosenIcon = <Delete />;
-				break;
-			case "edit":
-				chosenIcon = <Edit />;
-				break;
-			case "copy":
-				chosenIcon = <Copy />;
-				break;
-			case "home":
-				chosenIcon = <Home />;
-				break;
-			case "link":
-				chosenIcon = <Link />;
-				break;
-			case "clap":
-				chosenIcon = <Clap />;
-				break;
-			case "hand":
-				chosenIcon = <Hand />;
-				break;
-			case "thumbUp":
-				chosenIcon = <ThumbUp />;
-				break;
-			case "thumbDown":
-				chosenIcon = <ThumbDown />;
-				break;
-			case "rockOn":
-				chosenIcon = <RockOn />;
-				break;
-			case "heart":
-				chosenIcon = <Heart />;
-				break;
-			case "heartOutlined":
-				chosenIcon = <HeartOutlined />;
-				break;
-
-	 		default:
-			  console.error(`${ this.props.type } is not a valid icon.`);
-		}
-
-		// Add the props to the element if the icon exist
-		let elementWithProps = null;
-	  if(chosenIcon){
-			elementWithProps = React.cloneElement(
-				chosenIcon,
-				{
-					size: this.state.size,
-					color: this.state.color,
-					isSpinning: this.props.isSpinning,
-				}
-			);
-		}
-
-		// Check if the icon should be spinning
-		let isSpinning = "";
-		// Put the default spin to the loader icon!
-	  if(this.props.type === "loader"){
-			if(this.props.isSpinning !== false){
-				isSpinning = "isSpinning";
-			}
-		}
-		// Otherwise, check if it have the isSpinning props
-		else if(this.props.isSpinning === true){
-			isSpinning = "isSpinning";
-		}
-
-
-		return (
-			<span
-				id={ this.state.iconId }
-				className={ `iconSvg${ isSpinning }` }
-				style={{ opacity: this.state.opacity }}>
-				{ elementWithProps }
-			</span>
-		);
-	}
-};
-
-Icon.propTypes = {
-  type: PropTypes.string.isRequired,
-  size: PropTypes.string,
-  color: PropTypes.string,
+  
+	return (
+	  <span
+		id={iconId}
+		className={`iconSvg${isSpinning}`}
+		style={{ opacity }}
+	  >
+		{chosenIcon && React.cloneElement(chosenIcon, { size, color, isSpinning: props.isSpinning })}
+	  </span>
+	);
+  };
+  
+  Icon.propTypes = {
+	type: PropTypes.string.isRequired,
+	size: PropTypes.string,
+	color: PropTypes.string,
 	// isSpinning: PropTypes.boolean,
-};
-
-export default Icon;
+  };
+  
+  export default Icon;
