@@ -105,19 +105,170 @@ const Icon = (props) => {
   
 	let chosenIcon;
 	switch (props.type) {
-	  case 'close':
-		chosenIcon = <CloseIcon />;
-		break;
-	  case 'arrowBack':
-		chosenIcon = <ArrowBack />;
-		break;
-	  case 'arrowTop':
-		chosenIcon = <ArrowTop />;
-		break;
-	  case 'arrowForward':
-		chosenIcon = <ArrowForward />;
-		break;
-	  // Add cases for other icons...
+		case "close":
+			chosenIcon = <CloseIcon />;
+			  break;
+		  case "arrowBack":
+			chosenIcon = <ArrowBack />;
+			  break;
+		  case "arrowTop":
+			  chosenIcon = <ArrowTop />;
+			  break;
+		  case "arrowForward":
+			  chosenIcon = <ArrowForward />;
+			  break;
+		  case "arrowDown":
+			  chosenIcon = <ArrowDown />;
+			  break;
+		  case "checkmark":
+			  chosenIcon = <CheckMark />;
+			  break;
+		  case "menu":
+			  chosenIcon = <Menu />;
+			  break;
+		  case "cycling":
+			  chosenIcon = <Cycling />;
+			  break;
+		  case "chart":
+			  chosenIcon = <LineChart />;
+			  break;
+		  case "star":
+			  chosenIcon = <Star />;
+			  break;
+		  case "starOutlined":
+			  chosenIcon = <StarOutlined />;
+			  break;
+		  case "starHalf":
+			  chosenIcon = <StarHalf />;
+			  break;
+		  case "bookmark":
+			  chosenIcon = <Bookmark />;
+			  break;
+		  case "bookmarkOutlined":
+			  chosenIcon = <BookmarkOutlined />;
+			  break;
+		  case "cloudUpload":
+			  chosenIcon = <CloudUpload />;
+			  break;
+		  case "cloudDownload":
+			  chosenIcon = <CloudDownload />;
+			  break;
+		  case "cloud":
+			  chosenIcon = <Cloud />;
+			  break;
+		  case "cloudOutlined":
+			  chosenIcon = <CloudOutlined />;
+			  break;
+		  case "coffee":
+			  chosenIcon = <Coffee />;
+			  break;
+		  case "lock":
+			  chosenIcon = <Lock />;
+			  break;
+		  case "unlock":
+			  chosenIcon = <UnLock />;
+			  break;
+		  case "time":
+			  chosenIcon = <Time />;
+			  break;
+		  case "flash":
+			  chosenIcon = <Flash />;
+			  break;
+		  case "loader":
+			  chosenIcon = <Loader />;
+			  break;
+		  case "plus":
+			  chosenIcon = <Plus />;
+			  break;
+		  case "minus":
+			  chosenIcon = <Minus />;
+			  break;
+		  case "cash":
+			  chosenIcon = <Cash />;
+			  break;
+		  case "card":
+			  chosenIcon = <Card />;
+			  break;
+		  case "cart":
+			  chosenIcon = <Cart />;
+			  break;
+		  case "chat":
+			  chosenIcon = <Chat />;
+			  break;
+		  case "code":
+			  chosenIcon = <Code />;
+			  break;
+		  case "bell":
+			  chosenIcon = <Bell />;
+			  break;
+		  case "bellOutlined":
+			  chosenIcon = <BellOutlined />;
+			  break;
+		  case "user":
+			  chosenIcon = <User />;
+			  break;
+		  case "refresh":
+			  chosenIcon = <Refresh />;
+			  break;
+		  case "settings":
+			  chosenIcon = <Settings />;
+			  break;
+		  case "wifi":
+			  chosenIcon = <Wifi />;
+			  break;
+		  case "save":
+			  chosenIcon = <Save />;
+			  break;
+		  case "sync":
+			  chosenIcon = <Sync />;
+			  break;
+		  case "globe":
+			  chosenIcon = <Globe />;
+			  break;
+		  case "stop":
+			  chosenIcon = <Stop />;
+			  break;
+		  case "search":
+			  chosenIcon = <Search />;
+			  break;
+		  case "delete":
+			  chosenIcon = <Delete />;
+			  break;
+		  case "edit":
+			  chosenIcon = <Edit />;
+			  break;
+		  case "copy":
+			  chosenIcon = <Copy />;
+			  break;
+		  case "home":
+			  chosenIcon = <Home />;
+			  break;
+		  case "link":
+			  chosenIcon = <Link />;
+			  break;
+		  case "clap":
+			  chosenIcon = <Clap />;
+			  break;
+		  case "hand":
+			  chosenIcon = <Hand />;
+			  break;
+		  case "thumbUp":
+			  chosenIcon = <ThumbUp />;
+			  break;
+		  case "thumbDown":
+			  chosenIcon = <ThumbDown />;
+			  break;
+		  case "rockOn":
+			  chosenIcon = <RockOn />;
+			  break;
+		  case "heart":
+			  chosenIcon = <Heart />;
+			  break;
+		  case "heartOutlined":
+			  chosenIcon = <HeartOutlined />;
+			  break;
+
+	 
 	  default:
 		console.error(`${props.type} is not a valid icon.`);
 	}
