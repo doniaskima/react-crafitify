@@ -17,20 +17,20 @@ function MenuItem(props) {
     setIsHovered(false);
   };
 
-  // Create the hover style object
+
   const hoverStyle = isHovered
     ? {
         backgroundColor: primaryColor + '22',
       }
     : {};
 
-  // Get the right background color for the menu (if custom theming)
+
   let mainColor = primaryColor;
   if (context) {
     mainColor = context.primaryColor;
   }
 
-  // Create the menuItemStyle object
+
   const menuItemStyle = isSelected
     ? {
         backgroundColor: mainColor + '33',
@@ -38,7 +38,7 @@ function MenuItem(props) {
       }
     : {};
 
-  // Change the color of the children if it's the item selected
+
   const childCopy = isSelected
     ? React.cloneElement(props.children, {
         style: {
