@@ -1,0 +1,73 @@
+.messageDiv{
+	padding: 10px 16px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.11), 0 2px 8px rgba(0, 0, 0, 0.1);
+	font-size: .9rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	// white-space: nowrap;
+	margin: 0 4px;
+}
+
+.messageWrapperDiv{
+	width: 100%;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 999999999999;
+	display: flex;
+	justify-content: center;
+}
+
+.messageWrapper{
+  position: fixed;
+}
+
+.msgIcon{
+	height: 1.4rem;
+	padding-right: 3px;
+	margin-left: -6px;
+}
+
+
+.msgAnimation {
+  animation: fadeInMsg .2s;
+}
+@keyframes fadeInMsg{
+  from {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+  to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.messageDiv{
+	composes: msgAnimation;
+}
+
+
+.msgAnimationOut {
+  animation: fadeOutMsg .2s forwards;
+}
+
+@keyframes fadeOutMsg{
+  from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+  to {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+}
+
+.msgIsFadingOut{
+	composes: msgAnimationOut;
+}
