@@ -6,26 +6,11 @@ export type StatusVariant = "online" | "away" | "busy" | "offline";
 
 export interface StatusProps
   extends React.ComponentPropsWithoutRef<"div"> {
-  /**
-   * The state of the Status
-   *
-   * @default "offline"
-   */
   variant?: StatusVariant;
-  /**
-   * The label for the Status
-   */
   label?: string;
 }
 
-/**
- *
- * @public
- *
- * @description
- *
- * The Status component gives the condition of a thing or user.
- */
+
 export const Status: React.FC<StatusProps> = (props) => {
   const { className, label, variant = "offline", ...rest } = props;
 

@@ -16,17 +16,8 @@ export type BaseMenuAlignment =
 
 export interface BaseMenuProps
   extends React.ComponentPropsWithoutRef<"div"> {
-  /**
-   * The content for the Menu
-   */
   children: React.ReactNode;
-  /**
-   * The callback fired when the Menu closes
-   */
   onClose: (itemValue?: string) => void;
-  /**
-   * The trigger ref for the Menu
-   */
   triggerRef: React.RefObject<HTMLElement>;
 }
 

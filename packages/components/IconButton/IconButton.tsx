@@ -8,52 +8,15 @@ export type IconButtonVariant = "primary" | "secondary";
 
 export interface IconButtonProps
   extends React.ComponentPropsWithRef<"button"> {
-  /**
-   * The accessibile label for the Icon Button
-   *
-   * @default "Icon Button"
-   */
+
   ariaLabel?: string;
-  /**
-   * The content for the Icon Button
-   *
-   * @note Children must be short strings
-   */
   children?: React.ReactNode;
-  /**
-   * The content for the Icon Button
-   *
-   * @note Content must be icons from "react-icons"
-   */
   content?: React.ReactElement;
-  /**
-   * If the Icon Button is disabled
-   *
-   * @default false
-   */
   disabled?: boolean;
-  /**
-   * The size for the Icon Button
-   *
-   * @default "medium"
-   */
   size?: IconButtonSize;
-  /**
-   * The variant for the Icon Button
-   *
-   * @default "primary"
-   */
   variant?: IconButtonVariant;
 }
 
-/**
- * @public
- *
- * @description
- *
- * The Icon Button component displays an icon and
- * allows a user to take an action.
- */
 export const IconButton = React.forwardRef<
   HTMLButtonElement,
   IconButtonProps

@@ -8,23 +8,9 @@ export type PaginationVariant = "primary" | "secondary";
 
 export interface PaginationProps
   extends React.ComponentPropsWithoutRef<"div"> {
-  /**
-   * The current page to display for the Pagination
-   */
   currentPage: number;
-  /**
-   * The callback fired when changing the page
-   */
   onChangePage: (page: number) => void;
-  /**
-   * The amount of pages for the Pagination
-   */
   pages: number;
-  /**
-   * The variant for the Pagination
-   *
-   * @default "secondary"
-   */
   variant?: PaginationVariant;
 }
 

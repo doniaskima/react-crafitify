@@ -5,15 +5,10 @@ import styles from "./MenuSeparator.module.scss";
 
 export interface MenuSeparatorProps
   extends React.ComponentPropsWithoutRef<"span"> {
-  /**
-   * The accessible label for the Menu Separator
-   */
   ariaLabel?: string;
 }
 
-/**
- * @public
- */
+
 export const MenuSeparator: React.FC<MenuSeparatorProps> = (
   props
 ) => {

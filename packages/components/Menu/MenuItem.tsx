@@ -5,15 +5,10 @@ import styles from "./MenuItem.module.scss";
 
 export interface MenuItemProps
   extends React.ComponentPropsWithoutRef<"div"> {
-  /**
-   * The content for the MenuItem
-   */
   children: string;
 }
 
-/**
- * @public
- */
+
 export const MenuItem: React.FC<MenuItemProps> = (props) => {
   const { className, children, ...rest } = props;
 

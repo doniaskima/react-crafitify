@@ -12,19 +12,8 @@ export type RipplePosition = "center" | "cursor";
 
 export interface RippleProps
   extends React.ComponentPropsWithoutRef<"div"> {
-  /**
-   * The color of the Ripple
-   */
   color?: string;
-  /**
-   * The duration of the Ripple
-   */
   duration?: number;
-  /**
-   * The position of the Ripple relative to its container
-   *
-   * @default "cursor"
-   */
   position?: RipplePosition;
 }
 

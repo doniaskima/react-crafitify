@@ -3,21 +3,9 @@ import { RingLoader } from "react-spinners";
 
 export interface VoidProps
   extends React.ComponentPropsWithoutRef<"div"> {
-  /**
-   * The color of the Void
-   */
   color?: string;
-  /**
-   * If the Void is shown
-   */
   loading?: boolean;
-  /**
-   * The size of the Void
-   */
   size?: number;
-  /**
-   * The animation speed of the Void
-   */
   speedMultiplier?: number;
 }
 
