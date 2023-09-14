@@ -24,6 +24,12 @@ export default {
       <Col {...args} grid="col-2">
         <p>Column 3 Content</p>
       </Col>
+      <Col {...args} grid="col-2">
+        <p>Column 3 Content</p>
+      </Col>
+          <Col {...args} grid="col-2">
+        <p>Column 3 Content</p>
+      </Col>
     </div>
   );
   

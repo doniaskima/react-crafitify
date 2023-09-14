@@ -2,7 +2,7 @@ import React, { ReactNode, HTMLProps } from "react";
 import "./Container.scss";
 import { gutterSize } from "../layoutParams";
 
-interface ContainerProps extends HTMLProps<HTMLDivElement> {
+export interface ContainerProps extends HTMLProps<HTMLDivElement> {
   full?: boolean;
   children: ReactNode;
 }
