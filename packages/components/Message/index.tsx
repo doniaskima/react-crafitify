@@ -4,8 +4,6 @@ import CheckMark from '../icons-craftify/Icons/iconsSvg/CheckMarkGreen.svg';
 import Stop from "../icons-craftify/Icons/iconsSvg/StopRed.svg";
 import Exclamation from "../icons-craftify/Icons/iconsSvg/ExclamationBlue.svg";
 import Question from "../icons-craftify/Icons/iconsSvg/QuestionGray.svg";
-
-
 import styles from './Messages.scss';
 
 const message = (text, type, time = 2.5) => {
