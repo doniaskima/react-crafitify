@@ -1,0 +1,66 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { RosyOrbitLoader } from '../src/Elements/RosyOrbitLoader/RosyOrbitLoader';
+
+<Meta title="Spinners/RosyOrbitLoader" component={RosyOrbitLoader} />
+
+## RosyOrbitLoader: 🌺 Scanning for Awesomeness! 🌟
+
+Introducing the *RosyOrbitLoader* component, your tool to infuse anticipation and excitement into your UI. Get ready to embark on a journey like never before! 🚀
+
+Whether you're building a search-centric app or just want to add a touch of exploration to your design, the RosyOrbitLoader is here to turn your UI into a realm of endless possibilities. ✨
+
+### Features:
+
+- **Dynamic Scanning**: The RosyOrbitLoader starts its scanning journey as soon as it's placed, giving your UI an air of anticipation and dynamism.
+- **Endless Exploration**: Like an explorer in uncharted territory, the RosyOrbitLoader's animation loops endlessly, promising an ongoing adventure.
+- **Seamless Integration**: Adding the RosyOrbitLoader to your project is as easy as navigating an exciting quest, thanks to its user-friendly API.
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import {RosyOrbitLoader} from 'react-craftify-spinners;  
+
+function App() {
+  return (
+    <div>
+      <h1>Scanning for Awesomeness!</h1>
+      <RosyOrbitLoader style={{ width: "200px", height: "200px" }} />
+    </div>
+  );
+}
+
+```
+
+### Custom backgroundColor:
+
+```jsx
+import React from 'react';
+import {RosyOrbitLoader} from 'react-craftify-spinners;  
+
+function App() {
+  const spinnerStyle = {
+    width: '200px',
+    height: '200px',
+    backgroundColor: 'lightgray', 
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <RosyOrbitLoader style={spinnerStyle} />
+    </div>
+  );
+}
+
+export default App;
+ 
+```
+
+ 
+In this added section:
+
+- I've included a step-by-step guide on how to use the component.
+- There's information about installing the necessary package.
+- Code snippets showcase importing the component and using it within a component.
+- I've added a note about customization using the `style` prop.
+

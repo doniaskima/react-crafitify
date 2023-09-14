@@ -1,0 +1,66 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { AzureDotSpinner } from '../src/Elements/AzureDotSpinner/AzureDotSpinner';
+
+<Meta title="Spinners/AzureDotSpinner" component={AzureDotSpinner} />
+
+## AzureDotSpinner: 🌀 Unleash the Power of Scanning!
+
+Introducing the *AzureDotSpinner* component, your ultimate tool to infuse electrifying anticipation and excitement into your UI. Get ready to embark on a whirlwind journey like never before! 🌪️
+
+Whether you're constructing a search-centric app or seeking to inject a thrilling sense of exploration into your design, the AzureDotSpinner is here to transform your UI into a boundless realm of captivating possibilities. 💥
+
+### Features:
+
+- **Dynamic Scanning**: The AzureDotSpinner starts its scanning journey as soon as it's placed, giving your UI an air of anticipation and dynamism.
+- **Endless Exploration**: Like an explorer in uncharted territory, the AzureDotSpinner's animation loops endlessly, promising an ongoing adventure.
+- **Seamless Integration**: Adding the AzureDotSpinner to your project is as easy as navigating an exciting quest, thanks to its user-friendly API.
+
+### How to Use:
+
+```jsx
+import React from 'react';
+import {AzureDotSpinner} from 'react-craftify-spinners';  
+
+function App() {
+  return (
+    <div>
+      <h1>Scanning for Awesomeness!</h1>
+      <AzureDotSpinner style={{ width: "200px", height: "200px" }} />
+    </div>
+  );
+}
+
+```
+
+### Custom backgroundColor:
+
+```jsx
+import React from 'react';
+import {AzureDotSpinner} from 'react-craftify-buttons';  
+
+function App() {
+  const spinnerStyle = {
+    width: '200px',
+    height: '200px',
+    backgroundColor: 'lightgray', 
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <AzureDotSpinner style={spinnerStyle} />
+    </div>
+  );
+}
+
+export default App;
+ 
+```
+
+ 
+In this added section:
+
+- I've included a step-by-step guide on how to use the component.
+- There's information about installing the necessary package.
+- Code snippets showcase importing the component and using it within a component.
+- I've added a note about customization using the `style` prop.
+

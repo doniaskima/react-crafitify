@@ -53,4 +53,7 @@ export {default as BatteryLoader } from "./Elements/BatteryLoader";
 export {default as EyesLoader } from "./Elements/EyesLoader";
 export {default as SettingLoader } from "./Elements/SettingLoader";
 export {default as Wobbling } from "./Elements/Wobbling";
+export {default as AzureDotSpinner } from "./Elements/AzureDotSpinner/AzureDotSpinner";
+export {default as RosyOrbitLoader } from "./Elements/RosyOrbitLoader/RosyOrbitLoader";
+export {default as MelodySpinner } from "./Elements/MelodySpinner/MelodySpinner";
 
