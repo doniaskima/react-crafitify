@@ -5,11 +5,11 @@ import { Text, TextColor, TextLeading, TextProps, TextSize, TextTracking, TextVa
 import { EnhancedView, View, ViewGroup } from '../View/View';
   
   const shortSentence =
-    'The cat lazily stretched out on the sun-soaked windowsill, basking in the warmth of the afternoon sun.';
+    'Writing is the Painting of the Voice. ';
   const longText =
-    'The sun slowly rose over the horizon, casting a warm glow across the peaceful meadow. The flowers swayed gently in the breeze, their sweet fragrance filling the air. A group of birds chirped happily in the distance, their melodies creating a beautiful symphony. In the distance, a lone figure could be seen walking along the path, lost in thought. As the morning continued, the world around them came to life, with animals scurrying about and the gentle hum of insects buzzing in the air. It was a perfect day, filled with promise and possibility.';
+    'Intelligence is really attractive. A person who talks to you about different topics, who writes correctly, who can explain things that you dont understand, who knows different languages, who can express himself in a profound way and who is capable of debating various topics is exciting';
   
-  const colors: TextColor[] = [
+const colors: TextColor[] = [
     'white',
     'blue',
     'red',
@@ -83,7 +83,7 @@ import { EnhancedView, View, ViewGroup } from '../View/View';
   
   const meta: Meta = {
     title: 'Components/Text',
-    Component: Text,
+    component: Text,
     argTypes: {
       variant: {
         options: variants,
