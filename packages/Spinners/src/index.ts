@@ -37,7 +37,6 @@ export {default as GeometricSpinner } from "./Elements/GemoetricSpinner/Gemoetri
 export {default as CuteFace } from "./Elements/CuteFace/CuteFace";
 export {default as Jellyfish } from "./Elements/Jellyfish";
 export {default as FishLoader } from "./Elements/FishLoader/FishLoader";
-export {default as CommetLoader } from "./Elements/CommetLoader";
 export {default as BounceBall } from "./Elements/BounceBall/BounceBall";
 export {default as Cube } from "./Elements/Cube/Cube";
 export {default as PinkyLoader } from "./Elements/PinkyLoader/PinkyLoader";
@@ -56,4 +55,6 @@ export {default as Wobbling } from "./Elements/Wobbling";
 export {default as AzureDotSpinner } from "./Elements/AzureDotSpinner/AzureDotSpinner";
 export {default as RosyOrbitLoader } from "./Elements/RosyOrbitLoader/RosyOrbitLoader";
 export {default as MelodySpinner } from "./Elements/MelodySpinner/MelodySpinner";
+export {default as Devices } from "./Elements/Devices";
+export {default as GradientSpinner } from "./Elements/GradientSpinner";
 
