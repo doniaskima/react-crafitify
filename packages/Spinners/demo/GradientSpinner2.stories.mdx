@@ -1,0 +1,111 @@
+---
+title: GradientSpinner2
+description: Showcase the GradientSpinner2 component with different sizes and colors.
+---
+
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import GradientSpinner2, { GradientSpinner2Props } from '../src/Elements/GradientSpinner2';
+
+<Meta title="Spinners/GradientSpinner2" component={GradientSpinner2} />
+
+## How GradientSpinner2 Works 🌀
+
+The `GradientSpinner2` component is a visually appealing spinner that uses CSS gradients and animations to create a dynamic and captivating loading effect.
+
+### Props ⚙️
+
+- **size**: The size of the spinner. Accepts CSS size values (e.g., `"100px"`, `"2em"`).
+
+- **startColor**: The starting color for the gradient. Accepts a CSS color value (e.g., `"#9b59b6"`).
+
+- **midColor**: The middle color for the gradient. Accepts a CSS color value (e.g., `"#84cdfa"`).
+
+- **endColor**: The ending color for the gradient. Accepts a CSS color value (e.g., `"#5ad1cd"`).
+
+### How to Use 🛠️
+
+To use the `GradientSpinner2`, import it from `'path/to/GradientSpinner2'` and include it in your component. You can customize the colors and size using the props mentioned above.
+
+Example usage:
+
+```jsx
+import React from 'react';
+import { GradientSpinner2 } from 'react-craftify-spinners';
+
+const MyComponent = () => {
+  return (
+    <div>
+      {/* Use the GradientSpinner2 component with custom props */}
+      <GradientSpinner2
+        startColor="#9b59b6"
+        midColor="#84cdfa"
+        endColor="#5ad1cd"
+        size="96px"
+      />
+    </div>
+  );
+};
+```
+
+## Variations 🔍
+
+### Default
+
+This is the default version of the GradientSpinner2 with the default size and colors.
+
+```jsx
+import React from 'react';
+import { GradientSpinner2 } from 'react-craftify-spinners';
+
+const DefaultExample = () => {
+  return (
+    <div>
+      <GradientSpinner2 />
+    </div>
+  );
+};
+
+
+```
+
+### Custom Size
+
+You can adjust the size of the spinner by setting the size prop.
+
+```jsx
+import React from 'react';
+import { GradientSpinner2 } from 'react-craftify-spinners';
+
+const CustomSizeExample = () => {
+  return (
+    <div>
+      <GradientSpinner2 size="50px" />
+    </div>
+  );
+};
+
+
+```
+
+### Custom Colors
+
+Customize the colors of the spinner using the startColor, midColor, and endColor props.
+
+```jsx
+import React from 'react';
+import { GradientSpinner2 } from 'react-craftify-spinners';
+
+const CustomColorsExample = () => {
+  return (
+    <div>
+      <GradientSpinner2
+        startColor="#FF5733"
+        midColor="#DAF7A6"
+        endColor="#C70039"
+      />
+    </div>
+  );
+};
+
+
+```

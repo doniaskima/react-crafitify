@@ -1,0 +1,27 @@
+---
+title: Codecite Spinner
+---
+import { Meta } from  '@storybook/addon-docs/blocks';
+import {Codecite} from "../src/Elements/Codecite"
+
+<Meta title="Spinners/Codecite" component={Codecite} />
+
+## Codecite Spinner
+
+Codecite is a spinner component that displays a cascading effect with the provided colors.
+
+## Usage
+
+To use the Codecite component, import it into your file and place it in your JSX/TSX where you want the spinner to appear.
+
+```jsx
+import Codecite from 'path/to/your/Codecite';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <Codecite colors={['#A32EFF', '#A32EFF', '#A32EFF', '#A32EFF', '#A32EFF', '#A32EFF', '#A32EFF', '#A32EFF']} size="150px" />
+    </div>
+  );
+};
+```
