@@ -13,6 +13,13 @@ const Template: Story = (args) => (
   </div>
 );
 
+export const Aperture = Template.bind({});
+Aperture.args = {
+  type: 'aperture',
+  size: '32px',
+  color: 'orange',  
+};
+
 // Close Icon
 export const Close = Template.bind({});
 Close.args = {
