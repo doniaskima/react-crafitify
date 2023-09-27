@@ -1,4 +1,4 @@
-import * as styles from './styles/Text.styles';
+import * as styles from './styles';
 import { createContext, Provider, useContext } from 'react';
 
 export type Theme = {
@@ -6,11 +6,17 @@ export type Theme = {
 };
 
 type ThemeComponents = {
+  Card: typeof styles.cardStyles;
+  Modal: typeof styles.modalStyles.base;
+  Overlay: typeof styles.overlayStyles.base;
   Text: typeof styles.textStyles.base;
 };
 
 const defaultTheme: Theme = {
   components: {
+    Card: styles.cardStyles,
+    Modal: styles.modalStyles.base,
+    Overlay: styles.overlayStyles.base,
     Text: styles.textStyles.base,
   },
 };

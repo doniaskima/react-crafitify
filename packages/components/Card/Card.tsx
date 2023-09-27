@@ -1,34 +1,78 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Card.scss';
+import { forwardRef, Ref, useMemo } from 'react';
+import { twMerge } from 'tailwind-merge';
+import { CardContextProvider } from './Card.context';
+import { CardComponent, CardContext, CardProps } from './Card.types';
+import { useComponentTheme } from '../themes/theme.context';
+import { usePropId } from '../utils/usePropId';
+import { CardHeader } from './CardHeader';
+import { CardImage } from './CardImage';
+import { CardBody } from './CardBody';
+import { CardFooter } from './CardFooter';
 
-export default function Card(props) {
-  const { border, title, children, className, padding } = props;
-  let borderStyle = '';
-  if (border === 'none') {
-    borderStyle = 'noBorderCard';
-  }
-  const cardHeader = title ? (
-    <div className="cardHead">
-      <div className="cardHeadTitle">
-        <span>{title}</span>
-      </div>
-    </div>
-  ) : null;
-  return (
-    <div {...props} className={`card ${borderStyle} ${className}`}>
-      {cardHeader}
-      <div style={padding && { padding }} className="cardBody">
-        {children}
-      </div>
-    </div>
-  );
-}
-
-Card.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.node.isRequired,
-  border: PropTypes.string,
-  className: PropTypes.string,
-  padding: PropTypes.string,
+const defaultProps: Partial<CardProps> = {
+  bordered: true,
+  color: 'white',
+  radius: 'base',
+  shadow: 'sm',
+  size: 'base',
+  withDivider: true,
 };
+
+const CardRoot: CardComponent = forwardRef<HTMLDivElement, CardProps>(
+  (props: CardProps, ref?: Ref<HTMLDivElement>) => {
+    const theme = useComponentTheme('Card');
+    const {
+      bordered,
+      children,
+      className = '',
+      color,
+      radius,
+      shadow,
+      size,
+      withDivider,
+      ...additionalProps
+    } = {
+      ...defaultProps,
+      ...props,
+    };
+    const id = usePropId(props.id);
+    const contextValue: CardContext = {
+      radius,
+      size,
+      withDivider,
+    };
+
+    const classes = useMemo(() => {
+      return twMerge(
+        theme.base({
+          bordered,
+          className,
+          color,
+          radius,
+          shadow,
+          withDivider,
+        })
+        
+      );
+    }, [bordered, className, color, radius, shadow, withDivider, theme]);
+
+    return (
+      <CardContextProvider value={contextValue}>
+        <div id={id} ref={ref} className={classes} {...additionalProps}>
+          {children}
+        </div>
+      </CardContextProvider>
+    );
+  }
+);
+
+CardRoot.displayName = 'Card';
+
+const Card = Object.assign(CardRoot, {
+  Header: CardHeader,
+  Image: CardImage,
+  Body: CardBody,
+  Footer: CardFooter,
+});
+
+export default Card;

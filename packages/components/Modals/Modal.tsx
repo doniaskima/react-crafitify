@@ -9,6 +9,7 @@ import { Overlay } from '../Overlay';
 import { useFocusTrap } from '../hooks/use-focus-trap.hook';
 import { useModalGroupContext } from './ModalGroup/ModalGroup.context';
 import { useKeypress } from '../hooks/use-keypress';
+import { ModalGroup } from './ModalGroup/ModalGroup';
 
 const defaultProps: Partial<ModalProps> = {
   closeOnEscape: true,

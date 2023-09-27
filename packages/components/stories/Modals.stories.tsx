@@ -1,50 +1,127 @@
-// Modal.stories.tsx
-import React, { useState } from 'react';
-import { Meta, Story } from  "@storybook/react";
-import { Modal, ModalProps } from '../Modals';
-import { ModalGroup } from '../Modals/ModalGroup/ModalGroup';
+import { Meta, Story } from '@storybook/react';
+import { useState } from 'react';
+import * as React from 'react';
+import { Modal, ModalProps, ModalSize } from '../Modals';
+import { Button } from '../Button';
+import { Card } from '../Card';
+import { Text } from '../Text';
 
-export default {
-  title: 'Components/Modal',
+
+const sizes: ModalSize[] = ['auto', 'sm', 'md', 'lg', 'xl', 'screen'];
+
+const meta: Meta = {
+  title: 'Components/Modals',
   component: Modal,
-} as Meta;
+  argTypes: {
+    size: {
+      options: sizes,
+      control: { type: 'radio' },
+    },
+    ref: {
+      table: {
+        disable: true,
+      },
+    },
+    onClose: {
+      table: {
+        disable: true,
+      },
+    },
+    open: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+  parameters: {
+    controls: { expanded: true, sort: 'alpha' },
+  },
+};
+
+export default meta;
 
 const Template: Story<ModalProps> = (args) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setIsOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsOpen(false);
-  };
+  const [parentOpen, setParentOpen] = useState(false);
+  const [firstChildOpen, setFirstChildOpen] = useState(false);
+  const [secondChildOpen, setSecondChildOpen] = useState(false);
 
   return (
     <>
-      <button onClick={handleOpenModal}>Open Modal</button>
-      <Modal {...args} open={isOpen} onClose={handleCloseModal}>
-        <div>
-          <h2>Modal Content</h2>
-          <p>This is the modal content.</p>
-          <button onClick={handleCloseModal}>Close Modal</button>
-        </div>
-      </Modal>
+      <Modal.Group>
+        <Modal {...args} open={parentOpen} onClose={() => setParentOpen(false)}>
+          <Card className="w-full">
+            <Card.Body>
+              <h1>This is a parent modal</h1>
+            </Card.Body>
+
+            <Card.Footer className="bg-gray-50/50 justify-end space-x-2">
+              <Button variant="secondary" onClick={() => setParentOpen(false)}>
+                Cancel
+              </Button>
+              <Button onClick={() => setFirstChildOpen(true)}>Next</Button>
+            </Card.Footer>
+          </Card>
+        </Modal>
+
+        <Modal {...args} open={firstChildOpen} onClose={() => setFirstChildOpen(false)}>
+          <Card className="w-full">
+            <Card.Body>
+              <h1>This is a child modal</h1>
+            </Card.Body>
+
+            <Card.Footer className="bg-gray-50/50 justify-end space-x-2">
+              <Button variant="secondary" onClick={() => setFirstChildOpen(false)}>
+                Back
+              </Button>
+              <Button onClick={() => setSecondChildOpen(true)}>Next</Button>
+            </Card.Footer>
+          </Card>
+        </Modal>
+
+        <Modal {...args} open={secondChildOpen} onClose={() => setSecondChildOpen(false)}>
+          <Card className="w-full">
+            <Card.Body>
+              <h1>This is a second child modal</h1>
+            </Card.Body>
+
+            <Card.Footer className="bg-gray-50/50 justify-end space-x-2">
+              <Button variant="secondary" onClick={() => setSecondChildOpen(false)}>
+                Back
+              </Button>
+            </Card.Footer>
+          </Card>
+        </Modal>
+      </Modal.Group>
+
+      <Button onClick={() => setParentOpen(true)}>Open</Button>
     </>
   );
 };
 
-export const Default = Template.bind({});
-Default.args = {
- 
+const DefaultTemplate: Story<ModalProps> = (args) => {
+  return <Template {...args} />;
 };
 
- 
-export const ModalGroupExample: Story = () => {
+export const Default = DefaultTemplate.bind({});
+
+const FullscreenTemplate: Story<ModalProps> = (args) => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <ModalGroup>
-      <button>Open Modal 1</button>
-   
-    </ModalGroup>
+    <>
+      <Modal {...args} mode="fullscreen" radius="none" open={open} onClose={() => setOpen(false)}>
+        <div className="flex flex-col h-full space-y-2 p-2">
+          <Text>This is a fullscreen modal</Text>
+
+          <Button onClick={() => setOpen(false)} size="md" color="gray">
+            Close
+          </Button>
+        </div>
+      </Modal>
+
+      <Button onClick={() => setOpen(true)}>Open</Button>
+    </>
   );
 };
+
+export const Fullscreen = FullscreenTemplate.bind({});
