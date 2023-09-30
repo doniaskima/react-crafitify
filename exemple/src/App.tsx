@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './App.css'
 import ArticleCards from './components/ArticleCards'
-import Modals from './components/Modals'
+import CardComponent from './components/Card'
+import Modalss from './components/Modals'
+ 
 
 function App() {
   return (
     <>
- 
-    <Modals/>
+    <ArticleCards/>
+    {/* <CardComponent/> */}
+    {/* <Modalss/> */}
     </>
   )
 }

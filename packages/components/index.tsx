@@ -33,3 +33,6 @@ export * from "./ArticleCard";
 export * from "./Radio";
 export * from "./Statistic";
 export * from "./Popup";
+export * from "./Progress";
+export * from "./Tag";
+export * from "./Table";
