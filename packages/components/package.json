@@ -1,7 +1,7 @@
 {
-  "name": "react-crafitify-components",
+  "name": "react-craftify/core",
   "version": "0.0.1",
-  "description": "React-Crafitify is a versatile React component library designed to enhance the user interface of your web applications. With a focus on aesthetics and usability, React-Crafitify provides a collection of customizable UI components that can seamlessly integrate into your projects. ",
+  "description": "React-craftify is a versatile React component library designed to enhance the user interface of your web applications. With a focus on aesthetics and usability, React-craftify provides a collection of customizable UI components that can seamlessly integrate into your projects. ",
   "main": "index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -13,17 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doniaskima/react-crafitify.git"
+    "url": "git+https://github.com/doniaskima/react-craftify.git"
   },
   "keywords": [
-    "React-Crafitify"
+    "React-craftify"
   ],
   "author": "Donia Skima",
   "license": "MIT ",
   "bugs": {
-    "url": "https://github.com/doniaskima/react-crafitify/issues"
+    "url": "https://github.com/doniaskima/react-craftify/issues"
   },
-  "homepage": "https://github.com/doniaskima/react-crafitify#readme",
+  "homepage": "https://github.com/doniaskima/react-craftify#readme",
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@babel/plugin-transform-runtime": "^7.22.10",
