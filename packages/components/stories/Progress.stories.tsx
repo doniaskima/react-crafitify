@@ -1,7 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import DefaultProgressWrapper from '../Progress/DefaultProgress';
- 
 
 export default {
   title: 'Components/Progress',
