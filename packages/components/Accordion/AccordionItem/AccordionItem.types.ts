@@ -8,9 +8,9 @@ export interface AccordionItemContext{
 
 export interface AccordionItemProps extends ComponentPropsWithoutRef<'div'> {
     anchor: string;
-  }
+}
   
-  export type AccordionItemComponent = FC<AccordionItemProps> & {
+export type AccordionItemComponent = FC<AccordionItemProps> & {
     displayName?: string;
-  };
+};
   
