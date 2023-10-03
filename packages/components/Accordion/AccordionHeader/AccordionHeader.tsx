@@ -5,6 +5,7 @@ import { AccordionHeaderComponent, AccordionHeaderProps } from './AccordionHeade
 import { useComponentTheme } from '../../themes/theme.context';
 import { useAccordionContext } from '../Accordion.context';
 import { useAccordionItemContext } from '../AccordionItem/AccordionItem.context';
+import ChevronDown from '../../icons-craftify/Icons/ChevronDown';
 
 const AccordionHeader: AccordionHeaderComponent = forwardRef<
   HTMLButtonElement,
@@ -61,11 +62,11 @@ const AccordionHeader: AccordionHeaderComponent = forwardRef<
       onClick={handleClick}
       className={classes}
       aria-expanded={expanded}
-      aria-controls={bodyId}
+      aria-controls={bodyId} 
       {...additionalProps}
     >
       {children}
-      <ChevronDownIcon className={iconClasses} />
+      <ChevronDown className={iconClasses} />
     </button>
   );
 });

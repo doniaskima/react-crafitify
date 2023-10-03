@@ -5,6 +5,7 @@ import { useComponentTheme } from '../../themes/theme.context';
 import { AccordionBodyComponent, AccordionBodyProps } from './AccordionBody.types';
 import { useAccordionContext } from '../Accordion.context';
 import { useAccordionItemContext } from '../AccordionItem/AccordionItem.context';
+import { Collapse } from '../../Collapse';
 
 const AccordionBody: AccordionBodyComponent = forwardRef<HTMLDivElement, AccordionBodyProps>(
   (props: AccordionBodyProps, ref?: Ref<HTMLDivElement>) => {
