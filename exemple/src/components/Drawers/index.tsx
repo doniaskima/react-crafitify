@@ -1,60 +1,72 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import { Button, Card, Drawer } from 'react-craftify-core';
+ 
+ 
 
-const Drawers = () => {
-  const [showDrawer, setShowDrawer] = useState(false);
-  const [showRightDrawer, setShowRightDrawer] = useState(false);
+class Drawers extends Component {
+	state = {
+		showDrawer: false,
+		showRightDrawer: false,
+	}
 
-  const toggleDrawer = () => {
-    setShowDrawer(!showDrawer);
-  };
+	toggleDrawer = () => {
+		this.setState(prevState => ({
+			showDrawer: !prevState.showDrawer
+		}))
+	}
 
-  const toggleRightDrawer = () => {
-    setShowRightDrawer(!showRightDrawer);
-  };
+	toggleRightDrawer = () => {
+		this.setState(prevState => ({
+			showRightDrawer: !prevState.showRightDrawer
+		}));
+	}
 
-  return (
-    <Card>
-      <div className="componentBlock">
-        <h3>Drawers</h3>
-        <p className="componentDescr">Display dataset inside table.</p>
 
-        <Button onClick={toggleDrawer} type="primary">
-          Show Drawer
-        </Button>
+	render(){
+		const { showDrawer, showRightDrawer } = this.state;
+		return (
+	 
+				<Card>
+					<div className="componentBlock">
+						<h3 className="componentTitle">Drawers</h3>
+						<p className="componentDescr">Display dataset inside table.</p>
 
-        <Button
-          style={{ marginLeft: '.5rem' }}
-          onClick={toggleRightDrawer}
-          type="primary"
-        >
-          Show Right Drawer
-        </Button>
+					  <Button
+							onClick={ this.toggleDrawer }
+							type="primary">Show Drawer</Button>
 
-        <Drawer
-          showDrawer={showDrawer}
-          toggleDrawer={toggleDrawer}
-          key="drawer"
-        >
-          <div>Drawer</div>
-          <p>This is a drawer</p>
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((x, i) => (
-            <p key={i}>This is a drawer</p>
-          ))}
-        </Drawer>
+						<Button
+							style={{ marginLeft: ".5rem" }}
+							onClick={ this.toggleRightDrawer }
+							type="primary">Show Right Drawer</Button>
 
-        <Drawer
-          showDrawer={showRightDrawer}
-          toggleDrawer={toggleRightDrawer}
-          position="right"
-          key="right-drawer"
-        >
-          <div>Drawer</div>
-          <p>This is a right position drawer</p>
-        </Drawer>
-      </div>
-    </Card>
-  );
-};
+
+						<Drawer
+							showDrawer={ showDrawer }
+							toggleDrawer={ this.toggleDrawer }
+						>
+							<div>Drawer</div>
+							<p>This is a drawer</p>
+							{
+								[0,1,2,3,4,5,6,7,8,9,10, 0,1,2,3,4,5,6,7,8,9,10].map((x, i) => (
+									<p key={ i }>This is a drawer</p>
+								))
+							}
+						</Drawer>
+
+						<Drawer
+							showDrawer={ showRightDrawer }
+							toggleDrawer={ this.toggleRightDrawer }
+							position="right"
+						>
+							<div>Drawer</div>
+							<p>This is a right position drawer</p>
+						</Drawer>
+					</div>
+				</Card>
+		 
+		)
+	}
+}
 
 export default Drawers;
