@@ -6,6 +6,7 @@ export type Theme = {
 };
 
 type ThemeComponents = {
+  Accordion: typeof styles.accordionStyles;
   Card: typeof styles.cardStyles;
   Modal: typeof styles.modalStyles.base;
   Overlay: typeof styles.overlayStyles.base;
@@ -14,6 +15,7 @@ type ThemeComponents = {
 
 const defaultTheme: Theme = {
   components: {
+    Accordion: styles.accordionStyles,
     Card: styles.cardStyles,
     Modal: styles.modalStyles.base,
     Overlay: styles.overlayStyles.base,
