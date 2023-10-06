@@ -36,3 +36,6 @@ export * from "./Popup";
 export * from "./Progress";
 export * from "./Tag";
 export * from "./Table";
+export * from "./Accordion";
+export * from "./Ripple";
+
