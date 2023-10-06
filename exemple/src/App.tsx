@@ -9,10 +9,10 @@ import Drawers from './components/Drawers'
 function App() {
   return (
     <>
-    {/* <ArticleCards/> */}
-    {/* <CardComponent/> */}
+      {/* <ArticleCards/>
+      <CardComponent/> */}
     {/* <Modalss/> */}
-    <Drawers/>
+    {/* <Drawers/> */}
     </>
   )
 }
