@@ -38,4 +38,6 @@ export * from "./Tag";
 export * from "./Table";
 export * from "./Accordion";
 export * from "./Ripple";
+export * from "./Drawer";
+ 
 
