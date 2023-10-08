@@ -2,7 +2,7 @@
   "name": "react-craftify-core",
   "version": "0.0.17",
   "description": "React-craftify is a versatile React component library designed to enhance the user interface of your web applications. With a focus on aesthetics and usability, React-craftify provides a collection of customizable UI components that can seamlessly integrate into your projects. ",
-  "main": "dist/cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
