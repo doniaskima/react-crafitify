@@ -5,7 +5,7 @@ import CardComponent from './components/Card'
 import Modalss from './components/Modals'
 import Drawers from './components/Drawers'
 import Tables from './components/Tables'
- 
+import Statistics from './components/Statistics'
 
 function App() {
   return (
@@ -15,9 +15,14 @@ function App() {
       }
       {/* <Modalss/> */}
       {/* <Drawers/> */}
-      <div style={{ margin: "8rem 0" }}>
+      {/* <div style={{ margin: "8rem 0" }}>
 					<Tables />
-			</div>
+			</div> */}
+      
+				<div style={{ margin: "8rem 0" }}>
+					<Statistics />
+				</div>
+
     </>
   )
 }
