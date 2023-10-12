@@ -12,18 +12,18 @@ import Menus from './components/Menus'
 function App() {
   return (
     <>
-    {/* <Navbar>
+    <Navbar>
       Heyy I have
       Heyy I have <br/>
       Heyy I have <br/>
       Heyy I have  <br/>
 <br/>
       Heyy I have
-    </Navbar> */}
-      {/* <ArticleCards/>
-       <CardComponent/> */
-      }
-      {/* <Modalss/> */}
+    </Navbar>
+       <ArticleCards/>
+       {/* <CardComponent/>   */}
+       
+      <Modalss/>
       {/* <Drawers/> */}
       {/* <div style={{ margin: "8rem 0" }}>
 					<Tables />
