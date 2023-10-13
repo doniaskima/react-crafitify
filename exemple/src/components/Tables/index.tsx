@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Container, Table } from 'react-craftify-core';
-import { Link } from "react-router-dom";
+import { Card, Container, Link, Table } from 'react-craftify-core';
+ 
 
 const Tables = props => {
 	const tableData = {
@@ -25,7 +25,7 @@ const Tables = props => {
 
 	return (
 		<Container>
-			<Card>
+		
 				<div className="componentBlock">
 					<h3 className="componentTitle">Table</h3>
 					<p className="componentDescr">Display dataset inside table.</p>
@@ -39,7 +39,7 @@ const Tables = props => {
 					  columns={ tableData.columns }
 						rows={ tableData.rows } />
 				</div>
-			</Card>
+		
 		</Container>
 	)
 }

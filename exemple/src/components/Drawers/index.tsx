@@ -1,62 +1,26 @@
-import React, { useState } from 'react';
-import { Button, Card, Container, Drawer } from 'react-craftify-core';
+import React, { useState } from "react";
+import { Button, Drawer } from "react-craftify-core";
 
-const Drawers = () => {
-  const [showDrawer, setShowDrawer] = useState(false);
-  const [showRightDrawer, setShowRightDrawer] = useState(false);
+const MyComponent = () => {
+  const [drawerIsVisible, setDrawerIsVisible] = useState(false);
 
   const toggleDrawer = () => {
-    setShowDrawer(!showDrawer);
-  };
-
-  const toggleRightDrawer = () => {
-    setShowRightDrawer(!showRightDrawer);
-  };
+    setDrawerIsVisible(!drawerIsVisible);
+  }
 
   return (
-    <Container>
-      <Card>
-        <div className="componentBlock">
-          <h3>Drawers</h3>
-          <p className="componentDescr">Display dataset inside table.</p>
+    <div>
+      <Button type="primary" onClick={toggleDrawer}>Show the drawer</Button>
 
-          <Button onClick={toggleDrawer} type="primary">
-            Show Drawer
-          </Button>
-
-          <Button
-            style={{ marginLeft: '.5rem' }}
-            onClick={toggleRightDrawer}
-            type="primary"
-          >
-            Show Right Drawer
-          </Button>
-
-          <Drawer
-            showDrawer={showDrawer}
-            toggleDrawer={toggleDrawer}
-            key="drawer"
-          >
-            <div>Drawer</div>
-            <p>This is a drawer</p>
-            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((x, i) => (
-              <p key={i}>This is a drawer</p>
-            ))}
-          </Drawer>
-
-          <Drawer
-            showDrawer={showRightDrawer}
-            toggleDrawer={toggleRightDrawer}
-            position="right"
-            key="right-drawer"
-          >
-            <div>Drawer</div>
-            <p>This is a right position drawer</p>
-          </Drawer>
-        </div>
-      </Card>
-    </Container>
+      <Drawer
+        showDrawer={drawerIsVisible}
+        toggleDrawer={toggleDrawer}
+      >
+        <h3>I'm a drawer!</h3>
+        <p>You can put everything you want inside easily!</p>
+      </Drawer>
+    </div>
   );
-};
+}
 
-export default Drawers;
+export default MyComponent;

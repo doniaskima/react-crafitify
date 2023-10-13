@@ -1,35 +1,24 @@
-import React, { Component } from 'react';
+
+import { DefaultProgress, RadialProgress } from 'react-craftify-core';
  
+const ProgressComponent = () => {
+  return (
+    <>
+      <h1>RadialProgress</h1>
+      <RadialProgress
+        prcnt={Math.round(Math.random() * 100)}
+        size={"130px"}
+      />
 
-class ProgressComponent extends Component {
-  state = {
-    username: "",
-  }
+      <h1>Progress</h1>
+      <div style={{ width: "250px" }}>
+        <DefaultProgress
+          prcnt={Math.round(Math.random() * 100)}
+        />
+      </div>
+    </>
+  );
+};
 
-  render() {
-    return (
-      <>
- 
-          <h1>RadialProgress</h1>
-          <RadialProgress
-            prcnt={Math.round(Math.random() * 100)}
-            // strokeColor={ "#6600ff" }
-            size={"130px"}
-            // square
-          />
-
-          <h1>Progress</h1>
-          <div style={{ width: "250px" }}>
-            <DefaultProgress
-              // strokeColor={ "#ff4444" }
-              prcnt={Math.round(Math.random() * 100)}
-              // square
-            />
-          </div>
-       
-      </>
-    );
-  }
-}
 
 export default ProgressComponent;

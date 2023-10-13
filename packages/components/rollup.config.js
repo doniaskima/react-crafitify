@@ -9,32 +9,33 @@ import svg from "rollup-plugin-svg";
 const packageJson = require("./package.json");
 
 export default [
-  {
-    input: "index.ts",
-    output: [
-      {
-        file: packageJson.main,
-        format: "cjs",
-        sourcemap: true,
-      },
-      {
-        file: packageJson.module,
-        format: "esm",
-        sourcemap: true,
-      },
-    ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      typescript({
-        tsconfig: "./tsconfig.json",
-        declaration: true, 
-      }),
-      postcss(),
-      terser(),
-      svg(),
-    ],
-    external: ["react", "react-dom"],
-  },
+  {
+    input: "index.ts",
+    output: [
+      {
+        file: packageJson.main,
+        format: "cjs",
+        sourcemap: true,
+      },
+      {
+        file: packageJson.module,
+        format: "esm",
+        sourcemap: true,
+      },
+    ],
+    plugins: [
+      peerDepsExternal(),
+      resolve(),
+      commonjs(),
+      typescript({
+        tsconfig: "./tsconfig.json",
+        declaration: true,
+        declarationDir: "./dist",
+      }),
+      postcss(),
+      terser(),
+      svg(),
+    ],
+    external: ["react", "react-dom"],
+  },
 ];

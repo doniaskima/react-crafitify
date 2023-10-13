@@ -8,31 +8,34 @@ import Tables from './components/Tables'
 import Statistics from './components/Statistics'
 import Navbar from './components/Navbar'
 import Menus from './components/Menus'
+import TagComponent from './components/Tag'
+import MyComponent from './components/Rating'
+import TooltipComponent from './components/Toolip'
+import ProgressComponent from './components/Progress'
+import DropdownComponent from './components/Dropdown'
+ 
+
 
 function App() {
   return (
     <>
     <Navbar>
-      Heyy I have
-      Heyy I have <br/>
-      Heyy I have <br/>
-      Heyy I have  <br/>
-<br/>
-      Heyy I have
+      Hey There im a cute simple Navbar 
     </Navbar>
+    <br />
+    <br />
+       <Drawers/>
        <ArticleCards/>
-       {/* <CardComponent/>   */}
-       
-      <Modalss/>
-      {/* <Drawers/> */}
-      {/* <div style={{ margin: "8rem 0" }}>
-					<Tables />
-			</div> */}
-{/*       
-				<div style={{ margin: "8rem 0" }}>
-					<Statistics />
-				</div> */}
-        {/* <Menus/> */}
+      {/* <TagComponent/> */}
+      {/* <MyComponent/> */}
+      {/* <Menus/> */}
+      {/* <Tables/> */}
+      <ProgressComponent/>
+      <Statistics/>
+      {/* <TooltipComponent/> */}
+      <DropdownComponent/>
+      <Tables/>
+   
     </>
   )
 }
