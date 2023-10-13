@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import './Tooltip.scss';
+import GetContext from '../GetContext';
 
-import { GetContext } from '../GetContext';
 
 const Tooltip = () => {
   const { primaryColor, primaryTextColor } = useContext(GetContext);
