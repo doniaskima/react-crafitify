@@ -13,6 +13,7 @@ import MyComponent from './components/Rating'
 import TooltipComponent from './components/Toolip'
 import ProgressComponent from './components/Progress'
 import DropdownComponent from './components/Dropdown'
+import MessageComponent from './components/Message'
  
 
 
@@ -35,6 +36,7 @@ function App() {
       {/* <TooltipComponent/> */}
       <DropdownComponent/>
       <Tables/>
+      <MessageComponent/>
    
     </>
   )
