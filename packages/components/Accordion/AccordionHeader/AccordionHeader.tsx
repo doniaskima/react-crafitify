@@ -1,5 +1,6 @@
 
 import { forwardRef, Ref, useMemo } from 'react';
+import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { AccordionHeaderComponent, AccordionHeaderProps } from './AccordionHeader.types';
 import { useComponentTheme } from '../../themes/theme.context';

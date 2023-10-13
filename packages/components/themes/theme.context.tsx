@@ -11,6 +11,7 @@ type ThemeComponents = {
   Modal: typeof styles.modalStyles.base;
   Overlay: typeof styles.overlayStyles.base;
   Text: typeof styles.textStyles.base;
+  Avatar: typeof styles.avatarStyles;
 };
 
 const defaultTheme: Theme = {
@@ -20,6 +21,8 @@ const defaultTheme: Theme = {
     Modal: styles.modalStyles.base,
     Overlay: styles.overlayStyles.base,
     Text: styles.textStyles.base,
+    Avatar: styles.avatarStyles,
+ 
   },
 };
 

@@ -1,6 +1,7 @@
  
 import { forwardRef, Ref, useMemo } from 'react';
 import { twMerge } from 'tailwind-merge';
+import React from 'react';
 import { CardHeaderComponent, CardHeaderProps } from './CardHeader.types';
 import { useComponentTheme } from '../../themes/theme.context';
 import { useCardContext } from '../Card.context';

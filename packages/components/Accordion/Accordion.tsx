@@ -1,5 +1,6 @@
  
 import { forwardRef, Ref, useMemo, useState } from 'react';
+import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { AccordionContextProvider } from './Accordion.context';
 import { AccordionComponent, AccordionContext, AccordionProps } from './Accordion.types';

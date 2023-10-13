@@ -4,6 +4,7 @@ import { CardImageComponent, CardImageProps } from './CardImage.types';
 import { useComponentTheme } from '../../themes/theme.context';
 import { useCardContext } from '../Card.context';
 import { usePropId } from '../../utils/usePropId';
+import React from 'react';
 
 const CardImage: CardImageComponent = forwardRef<HTMLDivElement, CardImageProps>(
   (props: CardImageProps, ref?: Ref<HTMLDivElement>) => {

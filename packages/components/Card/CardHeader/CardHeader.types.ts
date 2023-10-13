@@ -5,6 +5,7 @@ import {
   ReactNode,
   RefAttributes,
 } from 'react';
+import React from 'react';
 
 export interface CardHeaderProps extends ComponentPropsWithRef<'div'> {
   actions?: ReactNode;

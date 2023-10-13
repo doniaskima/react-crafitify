@@ -4,6 +4,8 @@ import {
   PropsWithoutRef,
   RefAttributes,
 } from 'react';
+import React from 'react';
+
 
 export interface CardBodyProps extends ComponentPropsWithRef<'div'> {}
 

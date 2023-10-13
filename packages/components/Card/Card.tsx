@@ -8,6 +8,7 @@ import { CardHeader } from './CardHeader';
 import { CardImage } from './CardImage';
 import { CardBody } from './CardBody';
 import { CardFooter } from './CardFooter';
+import React from 'react';
 
 const defaultProps: Partial<CardProps> = {
   bordered: true,

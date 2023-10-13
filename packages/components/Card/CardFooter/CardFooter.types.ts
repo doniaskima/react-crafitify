@@ -4,7 +4,7 @@ import {
   PropsWithoutRef,
   RefAttributes,
 } from 'react';
-
+import React from 'react';
 export interface CardFooterProps extends ComponentPropsWithRef<'div'> {}
 
 export type CardFooterComponent = ForwardRefExoticComponent<

@@ -15,6 +15,7 @@ import ProgressComponent from './components/Progress'
 import DropdownComponent from './components/Dropdown'
 import MessageComponent from './components/Message'
 import AvatarComponent from './components/Avatar'
+import AccordionComponent from './components/Accordion'
  
 
 
@@ -39,6 +40,7 @@ function App() {
       <Tables/>
       {/* <MessageComponent/> */}
       <AvatarComponent/>
+      <AccordionComponent/>
      
     </>
   )

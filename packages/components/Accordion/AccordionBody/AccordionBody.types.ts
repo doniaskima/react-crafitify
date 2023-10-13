@@ -4,7 +4,7 @@ import {
     PropsWithoutRef,
     RefAttributes,
   } from 'react';
-  
+  import React from 'react'; 
   export interface AccordionBodyProps extends ComponentPropsWithRef<'div'> {}
   
   export type AccordionBodyComponent = ForwardRefExoticComponent<
