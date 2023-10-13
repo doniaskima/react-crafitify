@@ -1,4 +1,5 @@
-import { BasePopupPosition } from "../components/Popup/BasePopup";
+ 
+import { BasePopupPosition } from "../Popup/BasePopup";
 import { getLayoutStyle } from "./getLayoutStyle";
 
 export const getPopupPositionStyle = ({

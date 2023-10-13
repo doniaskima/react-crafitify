@@ -1,4 +1,5 @@
-import { BaseMenuAlignment } from "../components/Menu/BaseMenu";
+
+import { BaseMenuAlignment } from "../Menu/BaseMenu";
 import { getLayoutStyle } from "./getLayoutStyle";
 
 export const getMenuAlignmentStyle = ({

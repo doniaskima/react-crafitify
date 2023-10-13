@@ -39,7 +39,6 @@ const TopLoaderPortal: React.FC<TopLoaderPortalProps> = (props) => {
     portalRoot.id = 'portal-root';
     document.body.appendChild(portalRoot);
   }
-
   return ReactDOM.createPortal(<TopLoader {...props} />, document.getElementById('portal-root'));
 };
 

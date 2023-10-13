@@ -9,7 +9,7 @@ import svg from "rollup-plugin-svg";
 const packageJson = require("./package.json");
 
 export default [
-  {
+ {
     input: "index.ts",
     output: [
       {
@@ -18,7 +18,7 @@ export default [
         sourcemap: true,
       },
       {
-        file: packageJson.module,
+       file: packageJson.module,
         format: "esm",
         sourcemap: true,
       },

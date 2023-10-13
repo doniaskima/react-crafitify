@@ -1,6 +1,4 @@
- 
-import { forwardRef, Ref, useMemo, useState } from 'react';
-import React from 'react';
+import React, { forwardRef, Ref, useMemo, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { AccordionContextProvider } from './Accordion.context';
 import { AccordionComponent, AccordionContext, AccordionProps } from './Accordion.types';
@@ -27,6 +25,7 @@ const AccordionRoot: AccordionComponent = forwardRef<HTMLDivElement, AccordionPr
   (props: AccordionProps, ref?: Ref<HTMLDivElement>) => {
     const variant = useComponentVariant('Accordion', props.variant) as Partial<AccordionProps>;
     const theme = useComponentTheme('Accordion');
+
     const {
       activeColor,
       bordered = true,
@@ -46,6 +45,7 @@ const AccordionRoot: AccordionComponent = forwardRef<HTMLDivElement, AccordionPr
       ...variant,
       ...props,
     };
+
     const id = usePropId(props.id);
     const [activeItemAnchor, setActiveItemAnchor] = useState(defaultItem);
     const contextValue: AccordionContext = {
