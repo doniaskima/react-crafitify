@@ -4,7 +4,7 @@ import { forwardRef, Ref, useEffect, useMemo } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { usePropId } from '../utils/usePropId';
 import { useComponentTheme } from '../themes/theme.context';
-import { OverlayProps } from './Overlay.types';
+import { OverlayComponent, OverlayProps } from './Overlay.types';
 
 const defaultProps: Partial<OverlayProps> = {
   blur: 'sm',

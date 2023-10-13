@@ -17,6 +17,7 @@ import MessageComponent from './components/Message'
 import AvatarComponent from './components/Avatar'
 import AccordionComponent from './components/Accordion'
 import MyToploader from './components/TopLoader'
+import BadgeComponent from './components/Badge'
  
  
 
@@ -43,7 +44,7 @@ function App() {
       {/* <MessageComponent/> */}
       {/* <AvatarComponent/> */}
       {/* <AccordionComponent/> */}
-     
+      <BadgeComponent/>
       <MyToploader/>
      
     </>
