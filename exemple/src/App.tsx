@@ -14,6 +14,7 @@ import TooltipComponent from './components/Toolip'
 import ProgressComponent from './components/Progress'
 import DropdownComponent from './components/Dropdown'
 import MessageComponent from './components/Message'
+import AvatarComponent from './components/Avatar'
  
 
 
@@ -36,8 +37,9 @@ function App() {
       {/* <TooltipComponent/> */}
       <DropdownComponent/>
       <Tables/>
-      <MessageComponent/>
-   
+      {/* <MessageComponent/> */}
+      <AvatarComponent/>
+     
     </>
   )
 }
