@@ -1,9 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import './Tooltip.scss';
 import GetContext from '../GetContext';
 
-
-const Tooltip = () => {
+const Tooltip = (props) => {
   const { primaryColor, primaryTextColor } = useContext(GetContext);
 
   const [tooltipStyle, setTooltipStyle] = useState('');
@@ -23,10 +22,7 @@ const Tooltip = () => {
   return (
     <div className="tooltipWrapper">
       {props.children}
-      <div
-        className={`tooltip ${position}`}
-        // style={{ transitionDelay: '.25s' }}
-      >
+      <div className={`tooltip ${position}`}>
         <span className={`tooltiptext ${tooltipStyle}`}>{props.text}</span>
       </div>
     </div>

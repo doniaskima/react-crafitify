@@ -1,5 +1,7 @@
+import React from 'react'; 
+
 import { Close } from '../icons';
-import { THXMX_ICONS_SIZES } from '../constants';
+import { Craftify_ICONS_SIZES } from '../constants';
 
 import { TagContainer, TagLable } from './Tag.styles';
 import { TagProps } from './types';
@@ -16,7 +18,7 @@ const Tag: React.FC<TagProps> = ({
     onClose?.(e);
   };
 
-  const iconSize = parseInt(THXMX_ICONS_SIZES[size], 10);
+  const iconSize = parseInt(Craftify_ICONS_SIZES[size], 10);
 
   return (
     <TagContainer size={size} color={color}>

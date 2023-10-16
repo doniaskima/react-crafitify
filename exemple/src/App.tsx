@@ -35,7 +35,7 @@ function App() {
       {/* <TagComponent/> */}
       {/* <MyComponent/> */}
       {/* <Menus/> */}
-      {/* <Tables/> */}
+      
       <ProgressComponent/>
       <Statistics/>
       {/* <TooltipComponent/> */}
@@ -43,7 +43,7 @@ function App() {
       <Tables/>
       {/* <MessageComponent/> */}
       {/* <AvatarComponent/> */}
-      {/* <AccordionComponent/> */}
+      <AccordionComponent/>
       <BadgeComponent/>
       <MyToploader/>
      

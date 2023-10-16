@@ -1,6 +1,7 @@
 
 import { createContext, Provider, useContext } from 'react';
 import { textVariants } from './variants/Text.variants';
+import { accordionVariants } from './variants/Accordion.variants';
 
 export type Variant = {
   components: VariantComponents;
@@ -8,10 +9,12 @@ export type Variant = {
 
 type VariantComponents = {
   Text: typeof textVariants;
+  Accordion: typeof accordionVariants;
 };
 
 const defaultVariant: Variant = {
   components: {
+    Accordion: accordionVariants,
     Text: textVariants,
   },
 };

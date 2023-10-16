@@ -1,17 +1,14 @@
-import React, { Component } from "react";
 import { Avatar, Badge } from "react-craftify-core";
  
- 
-
 const BadgeComponent = () => {
     return(
         <div>
-          <Badge  count={ 0 }>
+          <Badge count={ 0 }>
             <Avatar
               src="https://yt3.googleusercontent.com/-CFTJHU7fEWb7BYEb6Jh9gm1EpetvVGQqtof0Rbh-VQRIznYYKJxCaqv_9HeBcmJmIsp2vOO9JU=s900-c-k-c0x00ffffff-no-rj"
               color="blue" 
               shadow="lg" 
-             />
+            />
           </Badge>
   
           <Badge
