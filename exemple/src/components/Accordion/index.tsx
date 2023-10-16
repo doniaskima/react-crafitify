@@ -1,4 +1,4 @@
-import { Accordion } from "react-craftify-core";
+import { Accordion } from "../../../../packages/components/Accordion";
 
  
 

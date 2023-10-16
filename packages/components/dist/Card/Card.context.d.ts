@@ -1,6 +1,6 @@
-/// <reference types="react" />
 import { CardContext } from "./Card.types";
+import React from 'react';
 export declare const CardContextProvider: ({ children, value }: {
     value: CardContext;
-    children: import("react").ReactNode;
-}) => import("react").JSX.Element, useCardContext: () => CardContext;
+    children: React.ReactNode;
+}) => React.JSX.Element, useCardContext: () => CardContext;

@@ -1,6 +1,6 @@
-/// <reference types="react" />
+import React from 'react';
 import { AccordionProps } from './Accordion.types';
-declare const Accordion: import("react").ForwardRefExoticComponent<Omit<AccordionProps, "ref"> & import("react").RefAttributes<HTMLDivElement>> & {
+declare const Accordion: React.ForwardRefExoticComponent<Omit<AccordionProps, "ref"> & React.RefAttributes<HTMLDivElement>> & {
     displayName?: string | undefined;
 } & {
     Item: import("./AccordionItem/AccordionItem.types").AccordionItemComponent;

@@ -9,6 +9,7 @@ type ThemeComponents = {
     Modal: typeof styles.modalStyles.base;
     Overlay: typeof styles.overlayStyles.base;
     Text: typeof styles.textStyles.base;
+    Avatar: typeof styles.avatarStyles;
 };
 export type ThemeContextType = {
     theme: Theme;

@@ -1,8 +1,8 @@
-import { IThxmxSize } from '@/interfaces';
-export declare const THXMX_FONT_SIZES: IThxmxSize;
-export declare const THXMX_PADDING_SIZES: {
+import { ICRAFTSize } from "../interfaces";
+export declare const Craftify_FONT_SIZES: ICRAFTSize;
+export declare const Craftify_PADDING_SIZES: {
     sm: number;
     m: number;
     lg: number;
 };
-export declare const THXMX_ICONS_SIZES: IThxmxSize;
+export declare const Craftify_ICONS_SIZES: ICRAFTSize;

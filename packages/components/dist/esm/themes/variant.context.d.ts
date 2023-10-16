@@ -1,10 +1,12 @@
 import { Provider } from 'react';
 import { textVariants } from './variants/Text.variants';
+import { accordionVariants } from './variants/Accordion.variants';
 export type Variant = {
     components: VariantComponents;
 };
 type VariantComponents = {
     Text: typeof textVariants;
+    Accordion: typeof accordionVariants;
 };
 export type VariantContextType = {
     variant: Variant;

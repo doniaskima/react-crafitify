@@ -30,22 +30,22 @@ function App() {
     </Navbar>
     <br />
     <br />
-       <Drawers/>
-       <ArticleCards/>
+       {/* <Drawers/>
+       <ArticleCards/> */}
       {/* <TagComponent/> */}
       {/* <MyComponent/> */}
       {/* <Menus/> */}
       
-      <ProgressComponent/>
-      <Statistics/>
+      {/* <ProgressComponent/> */}
+      {/* <Statistics/> */}
       {/* <TooltipComponent/> */}
-      <DropdownComponent/>
-      <Tables/>
+      {/* <DropdownComponent/> */}
+      {/* <Tables/> */}
       {/* <MessageComponent/> */}
       {/* <AvatarComponent/> */}
       <AccordionComponent/>
-      <BadgeComponent/>
-      <MyToploader/>
+      {/* <BadgeComponent/>
+      <MyToploader/> */}
      
     </>
   )

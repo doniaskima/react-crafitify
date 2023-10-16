@@ -1,6 +1,6 @@
-/// <reference types="react" />
 import { CardProps } from './Card.types';
-declare const Card: import("react").ForwardRefExoticComponent<Omit<CardProps, "ref"> & import("react").RefAttributes<HTMLDivElement>> & {
+import React from 'react';
+declare const Card: React.ForwardRefExoticComponent<Omit<CardProps, "ref"> & React.RefAttributes<HTMLDivElement>> & {
     displayName?: string | undefined;
 } & {
     Header: import("./CardHeader/CardHeader.types").CardHeaderComponent;

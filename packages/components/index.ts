@@ -3,7 +3,6 @@ export * from "./Alert";
 export * from "./Backdrop";
 export * from "./Badge";
 export * from "./Card";
-export * from "./Avatar";
 export * from "./Button";
 export * from "./ButtonSet";
 export * from "./Chart";
@@ -51,7 +50,7 @@ import ArticleCard from "./ArticleCard"
 import Rating from "./Rate/Rate"
 import Dropdown from "./Dropdown/Dropdown"
 import TopLoader from "./TopLoader/TopLoader"
-import Avatar from "./Avatar"
+// import {Avatar} from "./Avatar"
 import {Badge} from "./Badge"
 import Statistic  from "./Statistic"
 import Tag  from "./Tag/Tag"
@@ -71,7 +70,7 @@ export {
 	Rating,
 	Dropdown,
 	TopLoader,
-	Avatar,
+	// Avatar,
 	Badge,
 	Statistic,
 	Tag,

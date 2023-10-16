@@ -1,6 +1,5 @@
 import { createElementContext } from "../hooks/use-element-context.hook";
 import { AccordionContext } from "./Accordion.types";
-import React from 'react';
 
  
 

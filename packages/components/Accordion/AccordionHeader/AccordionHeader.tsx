@@ -1,12 +1,10 @@
-
+ 
 import { forwardRef, Ref, useMemo } from 'react';
-import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { AccordionHeaderComponent, AccordionHeaderProps } from './AccordionHeader.types';
 import { useComponentTheme } from '../../themes/theme.context';
 import { useAccordionContext } from '../Accordion.context';
 import { useAccordionItemContext } from '../AccordionItem/AccordionItem.context';
-import ChevronDown from '../../icons-craftify/Icons/ChevronDown';
 
 const AccordionHeader: AccordionHeaderComponent = forwardRef<
   HTMLButtonElement,
@@ -63,11 +61,11 @@ const AccordionHeader: AccordionHeaderComponent = forwardRef<
       onClick={handleClick}
       className={classes}
       aria-expanded={expanded}
-      aria-controls={bodyId} 
+      aria-controls={bodyId}
       {...additionalProps}
     >
       {children}
-      <ChevronDown className={iconClasses} />
+      {/* <ChevronDownIcon className={iconClasses} /> */}
     </button>
   );
 });
