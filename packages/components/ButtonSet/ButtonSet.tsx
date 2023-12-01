@@ -1,19 +1,12 @@
 import * as React from "react";
 import classNames from "classnames";
 import styles from "./ButtonSet.module.scss";
-import { Button } from "../Button/Button";
+import Button from "../Button/Button";
+ 
 
 export interface ButtonSetProps
   extends React.ComponentPropsWithoutRef<"ul"> {
-  /**
-   * The Buttons in the Button Set
-   */
   children: React.ReactNode;
-  /**
-   * The flex direction of the Button Set
-   *
-   * @default "row"
-   */
   flexDirection?: "row" | "column";
 }
 

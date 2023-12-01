@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styles from "./Button.module.scss";
 import classNames from "classnames";
 import { Typography } from "../Typography/Typography";
@@ -8,8 +8,7 @@ export type ButtonVariant = "primary" | "secondary";
 export type ButtonSize = "small" | "medium" | "large";
 export type ButtonType = "button" | "submit" | "reset";
 
-export interface ButtonProps
-  extends React.ComponentPropsWithoutRef<"button"> {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
   children: string;
   disabled?: boolean;
   leadingIcon?: React.ReactNode;
@@ -18,11 +17,12 @@ export interface ButtonProps
   trailingIcon?: React.ReactNode;
   type?: ButtonType;
   variant?: ButtonVariant;
+  backgroundColor?: string; // New prop for background color
+  hoverColor?: string; // New prop for hover color
+  activeColor?: string; // New prop for active color
 }
-export const Button = React.forwardRef<
-  HTMLButtonElement,
-  ButtonProps
->((props, ref) => {
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const {
     className,
     children,
@@ -33,6 +33,9 @@ export const Button = React.forwardRef<
     trailingIcon,
     type,
     variant = "primary",
+    backgroundColor,
+    hoverColor,
+    activeColor,
     ...rest
   } = props;
 
@@ -59,6 +62,11 @@ export const Button = React.forwardRef<
           ? "submit"
           : "button"
       }
+      style={{
+        backgroundColor: disabled
+          ? "lightgray"
+          : backgroundColor || (variant === "primary" ? "#29A0B1" : "white"),
+      }}
       {...rest}
     >
       {!disabled && <Ripple position="cursor" />}
@@ -81,4 +89,4 @@ export const Button = React.forwardRef<
   );
 });
 
-Button.displayName = "Button";
+export default Button;
