@@ -1,26 +1,23 @@
-import React from 'react'
-import Card from "../../../../packages/components/Card/Card";
+import React from 'react';
+import Card from '../../../../packages/components/Card/Card';
+
 const CardComponent = () => {
   return (
     <div>
-       <div>
-      {/* Use the Card component here */}
-      <Card
-        bordered={true}
-        color="white"
-        radius="base"
-        shadow="sm"
-        size="base"
-        withDivider={true}
-      >
-        {/* Content of the card */}
-        
-        <Card.Body>Card Body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptatem optio libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum vitae harum incidunt eum perspiciatis id sit dolore amet? Sit beatae suscipit ut, quia expedita voluptatum fugit est, eveniet modi nulla sapiente enim quas labore debitis repellendus sed accusantium a rerum.</Card.Body>
-   
+      <Card className="radius-md shadow divide-y color-slate">
+        <Card.Header className="size-lg"  >
+          Standard Plan
+        </Card.Header>
+        <Card.Body className="size-base withDivider">
+          <h2  >$19.99/month</h2>
+          <p  >Includes all basic features</p>
+        </Card.Body>
+        <Card.Footer className="size-sm"  >
+          <button>Subscribe Now</button>
+        </Card.Footer>
       </Card>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default CardComponent
+export default CardComponent;

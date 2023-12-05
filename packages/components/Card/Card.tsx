@@ -7,9 +7,11 @@ import { useComponentTheme } from '../themes/theme.context';
 import { usePropId } from '../utils/usePropId';
 import { CardContextProvider } from './Card.context';
 import CardImage from './CardImage/CardImage';
-import CardFooter from './CardFooter/CardFooter';
+ 
 import { CardBody } from './CardBody';
-import CardHeader from './CadHeader/CardHeader';
+import { CardHeader } from './CadHeader/CardHeader';
+import { CardFooter } from './CardFooter/CardFooter';
+ 
  
 
 const defaultProps: Partial<CardProps> = {
