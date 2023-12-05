@@ -1,3 +1,3 @@
-import DefaultProgress from "./DefaultProgress";
-import RadialProgress from "./RadialProgress";
+import DefaultProgress from './DefaultProgress';
+import RadialProgress from './RadialProgress';
 export { DefaultProgress, RadialProgress };

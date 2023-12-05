@@ -1,4 +1,8 @@
-import { CraftifyUIThemes, CraftifyUIThemesPalette, CraftifyUIThemesExpressiveness } from './index';
+import {
+  CraftifyUIThemes,
+  CraftifyUIThemesPalette,
+  CraftifyUIThemesExpressiveness,
+} from './index';
 export declare const palette: CraftifyUIThemesPalette;
 export declare const expressiveness: CraftifyUIThemesExpressiveness;
 export declare const font: CraftifyUIThemesFont;

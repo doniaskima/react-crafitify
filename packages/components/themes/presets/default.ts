@@ -1,5 +1,9 @@
-import { CraftifyUIThemes, CraftifyUIThemesPalette, CraftifyUIThemesExpressiveness } from './index'
-import { defaultFont, defaultBreakpoints, defaultLayout } from './shared'
+import {
+  CraftifyUIThemes,
+  CraftifyUIThemesPalette,
+  CraftifyUIThemesExpressiveness,
+} from './index';
+import { defaultFont, defaultBreakpoints, defaultLayout } from './shared';
 
 export const palette: CraftifyUIThemesPalette = {
   accents_1: '#fafafa',
@@ -40,7 +44,7 @@ export const palette: CraftifyUIThemesPalette = {
   alert: '#ff0080',
   magenta: '#eb367f',
   link: '#0070f3',
-}
+};
 
 export const expressiveness: CraftifyUIThemesExpressiveness = {
   linkStyle: 'none',
@@ -52,13 +56,13 @@ export const expressiveness: CraftifyUIThemesExpressiveness = {
   shadowMedium: '0 8px 30px rgba(0, 0, 0, 0.12)',
   shadowLarge: '0 30px 60px rgba(0, 0, 0, 0.12)',
   portalOpacity: 0.25,
-}
+};
 
-export const font = defaultFont
+export const font = defaultFont;
 
-export const breakpoints = defaultBreakpoints
+export const breakpoints = defaultBreakpoints;
 
-export const layout = defaultLayout
+export const layout = defaultLayout;
 
 export const themes: CraftifyUIThemes = {
   type: 'light',
@@ -67,6 +71,6 @@ export const themes: CraftifyUIThemes = {
   palette,
   breakpoints,
   expressiveness,
-}
+};
 
-export default themes
+export default themes;

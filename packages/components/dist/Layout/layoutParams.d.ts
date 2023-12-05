@@ -1,2 +1,2 @@
-declare const gutterSize = "12px";
+declare const gutterSize = '12px';
 export { gutterSize };

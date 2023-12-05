@@ -4,7 +4,6 @@ import {
   PropsWithoutRef,
   RefAttributes,
 } from 'react';
-import React from 'react';
 
 export type CardColor = 'white' | 'gray' | 'slate' | 'zinc';
 export type CardRadius = 'none' | 'sm' | 'base' | 'md' | 'lg';

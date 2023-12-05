@@ -23,9 +23,13 @@ gulp.task('js', () => {
     .pipe(
       babel({
         babelrc: false,
-        plugins: ['inline-react-svg', 'transform-object-assign', 'babel-plugin-styled-components'],
+        plugins: [
+          'inline-react-svg',
+          'transform-object-assign',
+          'babel-plugin-styled-components',
+        ],
         presets: ['es2015', 'react', 'stage-0'],
-        resolveModuleSource: source => {
+        resolveModuleSource: (source) => {
           const isRelativeImport = source.charAt(0) === '.';
 
           if (!isRelativeImport) {
@@ -36,8 +40,8 @@ gulp.task('js', () => {
           const basePath = paths[paths.length - 1];
 
           return `./${basePath}`;
-        }
-      })
+        },
+      }),
     )
     .pipe(flatten())
     .pipe(gulp.dest('dist'));
@@ -48,9 +52,18 @@ gulp.task('js', () => {
  */
 gulp.task('copy', () => {
   return gulp
-    .src(['package.json', 'README.md', 'CHANGELOG.md', 'index.d.ts', '../../LICENSE.md'], {
-      allowEmpty: true
-    })
+    .src(
+      [
+        'package.json',
+        'README.md',
+        'CHANGELOG.md',
+        'index.d.ts',
+        '../../LICENSE.md',
+      ],
+      {
+        allowEmpty: true,
+      },
+    )
     .pipe(gulp.dest('./dist'));
 });
 

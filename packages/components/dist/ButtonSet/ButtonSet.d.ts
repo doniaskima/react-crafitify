@@ -1,15 +1,15 @@
-import * as React from "react";
-export interface ButtonSetProps extends React.ComponentPropsWithoutRef<"ul"> {
-    /**
-     * The Buttons in the Button Set
-     */
-    children: React.ReactNode;
-    /**
-     * The flex direction of the Button Set
-     *
-     * @default "row"
-     */
-    flexDirection?: "row" | "column";
+import * as React from 'react';
+export interface ButtonSetProps extends React.ComponentPropsWithoutRef<'ul'> {
+  /**
+   * The Buttons in the Button Set
+   */
+  children: React.ReactNode;
+  /**
+   * The flex direction of the Button Set
+   *
+   * @default "row"
+   */
+  flexDirection?: 'row' | 'column';
 }
 /**
  * @public

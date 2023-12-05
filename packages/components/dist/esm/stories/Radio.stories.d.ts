@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 declare const _default: {
-    component: React.FC<import("../Radio/Radio").RadioProps>;
-    title: string;
+  component: React.FC<import('../Radio/Radio').RadioProps>;
+  title: string;
 };
 export default _default;
 export declare const Default: () => React.JSX.Element;

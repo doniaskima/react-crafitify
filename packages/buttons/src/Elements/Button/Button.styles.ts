@@ -1,7 +1,11 @@
 import styled from '@emotion/styled';
-import {ICRAFTSIZE} from "../../../interfaces"
+import { ICRAFTSIZE } from '../../../interfaces';
 
-import { colors, CRAFT_FONT_SIZES, CRAFT_PADDING_SIZES } from '../../../constants';
+import {
+  colors,
+  CRAFT_FONT_SIZES,
+  CRAFT_PADDING_SIZES,
+} from '../../../constants';
 import { ButtonColor } from './types';
 
 type ContainerButtonType = {
@@ -19,14 +23,14 @@ export const ContainerButton = styled.button<ContainerButtonType>(
         ? 'none'
         : colors[`${variant}-lighter`]
       : outline
-      ? 'none'
-      : colors[variant],
+        ? 'none'
+        : colors[variant],
     color: outline ? colors[variant] : 'white',
     width: full ? '100%' : 'fit-content',
     outline: 'none',
     fontWeight: 'bold',
     height: 'fit-content',
-    fontSize:CRAFT_FONT_SIZES[size],
+    fontSize: CRAFT_FONT_SIZES[size],
     border: outline
       ? `2.8px solid ${
           disabled ? colors[`${variant}-lighter`] : colors[variant]
@@ -45,14 +49,14 @@ export const ContainerButton = styled.button<ContainerButtonType>(
           ? 'none'
           : colors[`${variant}-lighter`]
         : outline
-        ? 'none'
-        : colors[`${variant}-darker`],
+          ? 'none'
+          : colors[`${variant}-darker`],
       opacity: outline ? (disabled ? 1 : '.7') : 1,
     },
     '&:focus': {
       outlineStyle: 'none',
     },
-  })
+  }),
 );
 
 export const ContainerLinkButton = styled.a<ContainerButtonType>(
@@ -60,11 +64,11 @@ export const ContainerLinkButton = styled.a<ContainerButtonType>(
     color: colors[variant],
     fontWeight: 'bold',
     cursor: 'pointer',
-    fontSize:CRAFT_FONT_SIZES[size],
+    fontSize: CRAFT_FONT_SIZES[size],
     textDecoration: 'none',
     '&:hover': {
       color: colors[`${variant}-darker`],
       textDecoration: 'underline',
     },
-  })
+  }),
 );

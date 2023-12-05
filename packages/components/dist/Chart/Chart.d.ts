@@ -1,24 +1,24 @@
-import * as React from "react";
-export type ChartType = "line" | "bar";
+import * as React from 'react';
+export type ChartType = 'line' | 'bar';
 export interface ChartProps {
-    /**
-     * The data for the Chart
-     */
-    data: Array<object>;
-    /**
-     * The data keys for the LineChart
-     */
-    dataKeys: Array<string>;
-    /**
-     * The title for the LineChart
-     */
-    title: string;
-    /**
-     * The type for the Chart
-     *
-     * @default "line"
-     */
-    type?: ChartType;
+  /**
+   * The data for the Chart
+   */
+  data: Array<object>;
+  /**
+   * The data keys for the LineChart
+   */
+  dataKeys: Array<string>;
+  /**
+   * The title for the LineChart
+   */
+  title: string;
+  /**
+   * The type for the Chart
+   *
+   * @default "line"
+   */
+  type?: ChartType;
 }
 /**
  * @public

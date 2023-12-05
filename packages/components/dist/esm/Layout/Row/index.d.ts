@@ -1,6 +1,6 @@
-import React, { ReactNode, HTMLProps } from "react";
+import React, { ReactNode, HTMLProps } from 'react';
 interface RowProps extends HTMLProps<HTMLDivElement> {
-    children: ReactNode;
+  children: ReactNode;
 }
 declare const Row: React.FC<RowProps>;
 export default Row;

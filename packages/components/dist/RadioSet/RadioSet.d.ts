@@ -1,9 +1,9 @@
-import * as React from "react";
-export interface RadioSetProps extends React.ComponentPropsWithoutRef<"ul"> {
-    /**
-     * The Radios in the Radios Set
-     */
-    children: React.ReactNode;
+import * as React from 'react';
+export interface RadioSetProps extends React.ComponentPropsWithoutRef<'ul'> {
+  /**
+   * The Radios in the Radios Set
+   */
+  children: React.ReactNode;
 }
 /**
  * @public

@@ -1,1 +1,1 @@
-export * from "./Snippet";
+export * from './Snippet';

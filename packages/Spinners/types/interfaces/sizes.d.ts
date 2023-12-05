@@ -1,5 +1,5 @@
 export interface ICRAFTSIZE {
-    sm: string;
-    m: string;
-    lg: string;
+  sm: string;
+  m: string;
+  lg: string;
 }

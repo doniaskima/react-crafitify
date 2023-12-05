@@ -1,9 +1,9 @@
-import * as React from "react";
-interface SelectItemProps extends React.ComponentPropsWithoutRef<"div"> {
-    /**
-     * The content for the SelectItem
-     */
-    children: string;
+import * as React from 'react';
+interface SelectItemProps extends React.ComponentPropsWithoutRef<'div'> {
+  /**
+   * The content for the SelectItem
+   */
+  children: string;
 }
 /**
  * @public

@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 export interface DateRangePickerProps {
-    /**
-     * The initial selected date for the DateRangePicker
-     */
-    selected?: Date;
+  /**
+   * The initial selected date for the DateRangePicker
+   */
+  selected?: Date;
 }
 /**
  * @public

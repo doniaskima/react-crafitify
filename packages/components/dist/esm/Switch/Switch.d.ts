@@ -1,15 +1,15 @@
-import * as React from "react";
-export interface SwitchProps extends React.ComponentPropsWithoutRef<"button"> {
-    /**
-     * If the Switch is on
-     *
-     * @default false
-     */
-    isOn?: boolean;
-    /**
-     * The label for the Switch
-     */
-    label?: string;
+import * as React from 'react';
+export interface SwitchProps extends React.ComponentPropsWithoutRef<'button'> {
+  /**
+   * If the Switch is on
+   *
+   * @default false
+   */
+  isOn?: boolean;
+  /**
+   * The label for the Switch
+   */
+  label?: string;
 }
 /**
  * @public

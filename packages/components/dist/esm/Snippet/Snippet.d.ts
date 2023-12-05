@@ -1,15 +1,15 @@
-import * as React from "react";
-export interface SnippetProps extends React.ComponentPropsWithoutRef<"div"> {
-    /**
-     * The content for the Snippet
-     */
-    children: string;
-    /**
-     * If the Popup has an indicator
-     *
-     * @default false
-     */
-    hasIndicator?: boolean;
+import * as React from 'react';
+export interface SnippetProps extends React.ComponentPropsWithoutRef<'div'> {
+  /**
+   * The content for the Snippet
+   */
+  children: string;
+  /**
+   * If the Popup has an indicator
+   *
+   * @default false
+   */
+  hasIndicator?: boolean;
 }
 /**
  * @public

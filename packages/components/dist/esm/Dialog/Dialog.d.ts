@@ -1,26 +1,26 @@
-import * as React from "react";
-import { BaseDialogProps } from "./BaseDialog";
+import * as React from 'react';
+import { BaseDialogProps } from './BaseDialog';
 export interface DialogProps extends BaseDialogProps {
-    /**
-     * If the Dialog has a backdrop
-     *
-     * @default true
-     */
-    hasBackdrop?: boolean;
-    /**
-     * If the Dialog is open
-     *
-     * @default false
-     */
-    isOpen?: boolean;
-    /**
-     * The callback fired when the Dialog opens
-     */
-    onOpen: () => void;
-    /**
-     * The trigger for the Dialog
-     */
-    trigger: React.ReactElement;
+  /**
+   * If the Dialog has a backdrop
+   *
+   * @default true
+   */
+  hasBackdrop?: boolean;
+  /**
+   * If the Dialog is open
+   *
+   * @default false
+   */
+  isOpen?: boolean;
+  /**
+   * The callback fired when the Dialog opens
+   */
+  onOpen: () => void;
+  /**
+   * The trigger for the Dialog
+   */
+  trigger: React.ReactElement;
 }
 /**
  * @public

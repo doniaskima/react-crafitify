@@ -1,14 +1,26 @@
-import React from 'react';
-import { Card } from 'react-craftify-core';
-
+import React from 'react'
+import Card from "../../../../packages/components/Card/Card";
 const CardComponent = () => {
   return (
-    <Card>
-      <Card.Header>Header</Card.Header>
-      <Card.Body>...</Card.Body>
-      <Card.Footer>Footer</Card.Footer>
-    </Card>
-  );
-};
+    <div>
+       <div>
+      {/* Use the Card component here */}
+      <Card
+        bordered={true}
+        color="white"
+        radius="base"
+        shadow="sm"
+        size="base"
+        withDivider={true}
+      >
+        {/* Content of the card */}
+        
+        <Card.Body>Card Body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptatem optio libero?</Card.Body>
+   
+      </Card>
+    </div>
+    </div>
+  )
+}
 
-export default CardComponent;
+export default CardComponent

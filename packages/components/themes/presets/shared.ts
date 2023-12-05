@@ -1,11 +1,15 @@
-import { CraftifyUIThemesBreakpoints, CraftifyUIThemesFont, CraftifyUIThemesLayout } from './index'
+import {
+  CraftifyUIThemesBreakpoints,
+  CraftifyUIThemesFont,
+  CraftifyUIThemesLayout,
+} from './index';
 
 export const defaultFont: CraftifyUIThemesFont = {
   sans: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
   mono: 'Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace',
   prism:
     'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono", "Courier New", monospace',
-}
+};
 
 export const defaultBreakpoints: CraftifyUIThemesBreakpoints = {
   xs: {
@@ -28,7 +32,7 @@ export const defaultBreakpoints: CraftifyUIThemesBreakpoints = {
     min: '1920px',
     max: '10000px',
   },
-}
+};
 
 export const defaultLayout: CraftifyUIThemesLayout = {
   gap: '16pt',
@@ -44,4 +48,4 @@ export const defaultLayout: CraftifyUIThemesLayout = {
   breakpointTablet: defaultBreakpoints.sm.max,
   radius: '6px',
   unit: '16px',
-}
+};
