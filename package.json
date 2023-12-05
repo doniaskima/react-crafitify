@@ -1,0 +1,13 @@
+{
+  "name": "react-crafitify",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img src=\"./logo-craftify.png\" alt=\"Logo\" width=\"200\" height=\"200\" style=\"border-radius: 50%;\" />\r </div>",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -15,7 +15,7 @@ const CardComponent = () => {
       >
         {/* Content of the card */}
         
-        <Card.Body>Card Body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptatem optio libero?</Card.Body>
+        <Card.Body>Card Body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptatem optio libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum vitae harum incidunt eum perspiciatis id sit dolore amet? Sit beatae suscipit ut, quia expedita voluptatum fugit est, eveniet modi nulla sapiente enim quas labore debitis repellendus sed accusantium a rerum.</Card.Body>
    
       </Card>
     </div>
