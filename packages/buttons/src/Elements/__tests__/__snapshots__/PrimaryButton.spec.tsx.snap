@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`PrimaryButton renders the button with custom class name 1`] = `
-<button
-  class="sc-bcPKhP fBJcTv custom-button"
->
-  Custom Style
-</button>
-`;
