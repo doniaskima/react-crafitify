@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
     "react": "^18.2.0",
     "react-craftify-core": "^0.0.23",
     "react-dom": "^18.2.0",
