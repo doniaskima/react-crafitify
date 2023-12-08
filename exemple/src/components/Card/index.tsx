@@ -6,7 +6,7 @@ import { Button } from 'react-craftify-core';
 const CardComponent = () => {
   return (
     <div>
-      <Card className="radius-md shadow divide-y color-slate">
+      {/* <Card className="radius-md shadow divide-y color-slate">
         <Card.Header className="size-lg"  >
           Standard Plan
         </Card.Header>
@@ -39,7 +39,40 @@ const CardComponent = () => {
  
   </Card>
       </div>
+      <div>
+      <Card bordered={true}>
+    // ...
+  </Card> */}
 
+  {/* <Card bordered={false}>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti, quos sunt non, enim accusamus quia ratione optio facilis sequi facere ab ipsa, eum nulla consequatur labore illo? Alias officia reiciendis eum architecto fuga quibusdam exercitationem dolor sapiente, nostrum perspiciatis placeat porro voluptatibus magni veritatis magnam consequuntur earum ex necessitatibus minima nam facilis ratione eius! Quidem placeat aut, ipsam aliquam natus culpa ipsa ducimus corrupti. Fugiat libero nemo quisquam molestiae necessitatibus earum itaque veritatis magnam officiis accusantium totam expedita voluptatum mollitia autem optio debitis, dolor corrupti voluptate veniam assumenda. Illum.
+  </Card> */}
+  
+  <Card shadow="lg">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque praesentium omnis ipsam, maxime consectetur magnam enim cum veniam hic odit tempore delectus sint? Perferendis, sint hic! Architecto, nisi. Minima, accusantium?
+  </Card>
+  
+ 
+{/* 
+  <Card shadow="sm">
+    // ...
+  </Card>
+
+  <Card shadow="base">
+    // ...
+  </Card>
+
+  <Card shadow="md">
+    // ...
+  </Card>
+
+  <Card shadow="lg">
+    // ...
+  </Card>
+
+  <Card shadow="xl">
+    // ...
+  </Card> */}
     </div>
   );
 };
