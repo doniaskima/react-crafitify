@@ -283,64 +283,52 @@ $border-radius-lg: 0.5rem;
 }
 
 // Card.styles.scss
-
-// Define the base styles
-$base: (
-  fit: (
-    contain: 'object-contain',
-    cover: 'object-cover',
-    fill: 'object-fill',
-    none: 'object-none',
-    'scale-down': 'object-scale-down',
-  ),
-  radius: (
-    none: '',
-    sm: 'rounded-sm',
-    base: 'rounded',
-    md: 'rounded-md',
-    lg: 'rounded-lg',
-    xl: 'rounded-xl',
-    '2xl': 'rounded-2xl',
-    '3xl': 'rounded-3xl',
-    full: 'rounded-full',
-  ),
-);
-
-// Define the caption styles
-$caption: (
-  mode: (
-    light: (
-      'bg-gray-200/75',
-      'text-gray-900',
-    ),
-    dark: (
-      'bg-gray-800/50',
-      'text-gray-50',
-    ),
-  ),
-);
-
-// Define the wrapper styles
-$wrapper: (
-  relative: 'relative',
-);
-
-// Mixin for applying styles
-@mixin applyStyles($styles) {
-  @each $style, $values in $styles {
-    @each $variant, $className in $values {
-      .#{$style}-#{$variant} {
-        #{$style}: #{$className};
-      }
-    }
-  }
+/* Base styles */
+.rounded-sm {
+  border-radius: 0.125rem; /* Adjust as needed */
 }
 
-// Apply base styles
-@include applyStyles($base);
+.rounded {
+  border-radius: 0.25rem; /* Adjust as needed */
+}
 
-// Apply caption styles
-@include applyStyles($caption);
+.rounded-md {
+  border-radius: 0.375rem; /* Adjust as needed */
+}
 
-// Apply wrapper styles
-@include applyStyles($wrapper);
+.rounded-lg {
+  border-radius: 0.5rem; /* Adjust as needed */
+}
+
+.rounded-xl {
+  border-radius: 0.75rem; /* Adjust as needed */
+}
+
+.rounded-2xl {
+  border-radius: 1rem; /* Adjust as needed */
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem; /* Adjust as needed */
+}
+
+.rounded-full {
+  border-radius: 9999px; /* Large value for a circle */
+}
+
+/* Caption styles */
+.bg-gray-200-75 {
+  background-color: rgba(204, 204, 204, 0.75); /* Adjust as needed */
+}
+
+.text-gray-900 {
+  color: #333; /* Adjust as needed */
+}
+
+.bg-gray-800-50 {
+  background-color: rgba(102, 102, 102, 0.5); /* Adjust as needed */
+}
+
+.text-gray-50 {
+  color: #fff; /* Adjust as needed */
+}

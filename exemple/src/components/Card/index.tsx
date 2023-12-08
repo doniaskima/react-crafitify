@@ -34,7 +34,7 @@ const CardComponent = () => {
     <Card.Image
       alt="A beautiful image"
       caption="This is a beautiful image"
-      mode="dark"
+      mode="light"
       src="https://www.euractiv.com/wp-content/uploads/sites/2/2023/02/shutterstock_2212948463-1-800x450.jpg" />
  
   </Card>

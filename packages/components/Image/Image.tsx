@@ -39,8 +39,14 @@ const Image: ImageComponent = forwardRef<HTMLDivElement, ImageProps>(
     const id = usePropId(props.id);
 
     const classes = useMemo(() => {
-        return `${styles.base} ${styles.wrapper} ${styles.caption.mode.dark.join(' ')}`;
-      }, []);      
+      const baseClasses = ['rounded-md']; // Add other base classes as needed
+      const wrapperClasses = ['relative']; // Add other wrapper classes as needed
+      const captionDarkClasses = ['bg-gray-800-50', 'text-gray-50']; // Add other caption dark mode classes as needed
+    
+      return `${baseClasses.join(' ')} ${wrapperClasses.join(' ')} ${captionDarkClasses.join(' ')}`;
+    }, []);
+    
+    
       
     return (
       <div

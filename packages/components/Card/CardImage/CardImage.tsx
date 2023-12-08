@@ -21,13 +21,13 @@ const CardImage: CardImageComponent = forwardRef<HTMLDivElement, CardImageProps>
     } = props;
     const { radius } = useCardContext();
     const id = usePropId(props.id);
-    const classes = theme.image({ radius });
+   
 
     return (
       <Image
         id={id}
         ref={ref}
-        className={classes}
+ 
         src={src}
         alt={alt}
         caption={caption}
