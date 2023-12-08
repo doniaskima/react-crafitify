@@ -257,7 +257,7 @@ const header = cva(
         className: ['bg-gray-400', 'text-gray-800'],
       },
     ],
-  }
+  },
 );
 
 const icon = cva(['transition', 'transform', 'duration-250', 'ease-in-out'], {

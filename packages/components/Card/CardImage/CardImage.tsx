@@ -1,9 +1,10 @@
-
+ 
 import { forwardRef, Ref } from 'react';
 import { CardImageComponent, CardImageProps } from './CardImage.types';
 import { useComponentTheme } from '../../themes/theme.context';
 import { useCardContext } from '../Card.context';
 import { usePropId } from '../../utils/usePropId';
+import { Image } from '../../Image/index';
 import React from 'react';
 
 const CardImage: CardImageComponent = forwardRef<HTMLDivElement, CardImageProps>(
@@ -20,13 +21,13 @@ const CardImage: CardImageComponent = forwardRef<HTMLDivElement, CardImageProps>
     } = props;
     const { radius } = useCardContext();
     const id = usePropId(props.id);
-    const classes = theme.image({ radius });
+   
 
     return (
       <Image
         id={id}
         ref={ref}
-        className={classes}
+ 
         src={src}
         alt={alt}
         caption={caption}

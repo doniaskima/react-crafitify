@@ -1,4 +1,4 @@
-import * as styles from './styles';
+import * as styles from './styles/Card.styles.scss';
 import { createContext, Provider, useContext } from 'react';
 
 export type Theme = {
@@ -6,22 +6,26 @@ export type Theme = {
 };
 
 type ThemeComponents = {
-  Accordion: typeof styles.accordionStyles;
-  Card: typeof styles.cardStyles;
-  Modal: typeof styles.modalStyles.base;
-  Overlay: typeof styles.overlayStyles.base;
-  Text: typeof styles.textStyles.base;
-  Avatar: typeof styles.avatarStyles;
+ 
+  Card: typeof styles;
+  Image: typeof styles;
+
+
+  // Modal: typeof styles.modalStyles.base;
+  // Overlay: typeof styles.overlayStyles.base;
+  // Text: typeof styles.textStyles.base;
+  // Avatar: typeof styles.avatarStyles;
 };
 
 const defaultTheme: Theme = {
   components: {
-    Accordion: styles.accordionStyles,
-    Card: styles.cardStyles,
-    Modal: styles.modalStyles.base,
-    Overlay: styles.overlayStyles.base,
-    Text: styles.textStyles.base,
-    Avatar: styles.avatarStyles,
+ 
+    Card: styles,
+    Image:styles,
+    // Modal: styles.modalStyles.base,
+    // Overlay: styles.overlayStyles.base,
+    // Text: styles.textStyles.base,
+    // Avatar: styles.avatarStyles,
  
   },
 };

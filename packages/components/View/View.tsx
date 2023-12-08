@@ -78,51 +78,24 @@ const Quote = styled.span`
   margin-left: 0.125rem;
 `;
 
-interface ViewProps {
-  prop: string;
-  value?: string;
-  direction?: 'row' | 'column';
-  justify?: 'start' | 'evenly';
-  children: ReactNode;
-}
-
-export const View: React.FC<ViewProps> = ({
-  prop,
-  value = '',
-  direction = 'row',
-  justify = 'evenly',
-  children,
-}) => {
-  return (
-    <Container>
-      <Header>
-        <PropName>{prop}</PropName>
-        {value && (
-          <BadgeWrapper>
-            <Equals>=&quot;</Equals>
-            <Badge>{value}</Badge>
-            <Quote>&quot;</Quote>
-          </BadgeWrapper>
-        )}
-      </Header>
-      <ContentContainer>
-        {children}
-      </ContentContainer>
-    </Container>
-  );
-};
-
 interface EnhancedViewProps {
   prop: string;
   value?: string;
-  children: ReactNode;
+  children: React.ReactNode;
+}
+ 
+
+function isChildrenObject(obj: any): obj is { [key: string]: React.ReactNode } {
+  return typeof obj === 'object' && obj !== null && !React.isValidElement(obj);
 }
 
-export const EnhancedView: React.FC<EnhancedViewProps> = ({
+export const View: React.FC<EnhancedViewProps> = ({
   prop,
   value = '',
   children,
 }) => {
+  const childrenObject = isChildrenObject(children) ? children : {};
+
   return (
     <Container>
       <Header>
@@ -138,25 +111,26 @@ export const EnhancedView: React.FC<EnhancedViewProps> = ({
       <ContentContainer>
         <SubContainer>
           <PropTitle>Props</PropTitle>
-          {Object.keys(children).map((propName) => (
+          {Object.keys(childrenObject).map((propName) => (
             <PropValue key={propName}>
               {propName}
-              {typeof children[propName] === 'string' && (
-                <Badge>{children[propName]}</Badge>
+              {typeof childrenObject[propName] === 'string' && (
+                <Badge>{childrenObject[propName]}</Badge>
               )}
             </PropValue>
           ))}
-          {Object.keys(children).length === 0 && (
+          {Object.keys(childrenObject).length === 0 && (
             <PropValue>No properties selected</PropValue>
           )}
         </SubContainer>
-        <Grid>
-          {children}
-        </Grid>
+        <Grid>{children}</Grid>
       </ContentContainer>
     </Container>
   );
 };
+
+ 
+
 
 interface ViewGroupProps {
   children: ReactNode;

@@ -1,14 +1,18 @@
-import { forwardRef, Ref, useMemo } from 'react';
-import { twMerge } from 'tailwind-merge';
-import { CardContextProvider } from './Card.context';
+// CardRoot.jsx
+
+import React, { forwardRef, useMemo } from 'react';
+import styles from './Card.module.scss';
 import { CardComponent, CardContext, CardProps } from './Card.types';
 import { useComponentTheme } from '../themes/theme.context';
 import { usePropId } from '../utils/usePropId';
-import { CardHeader } from './CardHeader';
-import { CardImage } from './CardImage';
+import { CardContextProvider } from './Card.context';
+ 
 import { CardBody } from './CardBody';
-import { CardFooter } from './CardFooter';
-import React from 'react';
+import { CardHeader } from './CadHeader/CardHeader';
+import { CardFooter } from './CardFooter/CardFooter';
+import { CardImage } from './CardImage/CardImage';
+ 
+ 
 
 const defaultProps: Partial<CardProps> = {
   bordered: true,
@@ -20,7 +24,7 @@ const defaultProps: Partial<CardProps> = {
 };
 
 const CardRoot: CardComponent = forwardRef<HTMLDivElement, CardProps>(
-  (props: CardProps, ref?: Ref<HTMLDivElement>) => {
+  (props: CardProps, ref?) => {
     const theme = useComponentTheme('Card');
     const {
       bordered,
@@ -44,18 +48,12 @@ const CardRoot: CardComponent = forwardRef<HTMLDivElement, CardProps>(
     };
 
     const classes = useMemo(() => {
-      return twMerge(
-        theme.base({
-          bordered,
-          className,
-          color,
-          radius,
-          shadow,
-          withDivider,
-        })
-        
-      );
-    }, [bordered, className, color, radius, shadow, withDivider, theme]);
+      return `
+        ${styles.card} ${styles['color-' + color]} ${styles['radius-' + radius]} ${styles['shadow-' + shadow]} ${
+        withDivider ? styles.withDivider : ''
+      } ${bordered ? styles.bordered : ''} ${className}
+      `;
+    }, [styles.card, styles['color-' + color], styles['radius-' + radius], styles['shadow-' + shadow], styles.withDivider, styles.bordered, className]);
 
     return (
       <CardContextProvider value={contextValue}>
@@ -77,3 +75,4 @@ const Card = Object.assign(CardRoot, {
 });
 
 export default Card;
+

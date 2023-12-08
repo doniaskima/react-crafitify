@@ -1,0 +1,334 @@
+$color-white: #fff;
+$color-gray: #f4f4f5;
+$color-slate: #e4e7eb;
+$color-zinc: #a0aec0;
+
+$border-color-white: #edf2f7;
+$border-color-gray: #cbd5e0;
+$border-color-slate: #a0aec0;
+$border-color-zinc: #4a5568;
+
+$padding-size-sm: 0.75rem;
+$padding-size-base: 1rem;
+$padding-size-md: 1.25rem;
+$padding-size-lg: 1.5rem;
+
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-md: 1.125rem;
+$font-size-lg: 1.25rem;
+
+$border-radius-none: 0;
+$border-radius-sm: 0.125rem;
+$border-radius-base: 0.25rem;
+$border-radius-md: 0.375rem;
+$border-radius-lg: 0.5rem;
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &.bordered {
+    border: 1px solid $border-color-white;
+  }
+
+  &.color-white {
+    background-color: $color-white;
+    &.withDivider {
+      border-color: $border-color-white;
+    }
+    &.bordered {
+      border-color: $border-color-white;
+    }
+  }
+
+  &.color-gray {
+    background-color: $color-gray;
+    &.withDivider {
+      border-color: $border-color-gray;
+    }
+    &.bordered {
+      border-color: $border-color-gray;
+    }
+  }
+
+  &.color-slate {
+    background-color: $color-slate;
+    &.withDivider {
+      border-color: $border-color-slate;
+    }
+    &.bordered {
+      border-color: $border-color-slate;
+    }
+  }
+
+  &.color-zinc {
+    background-color: $color-zinc;
+    &.withDivider {
+      border-color: $border-color-zinc;
+    }
+    &.bordered {
+      border-color: $border-color-zinc;
+    }
+  }
+
+  &.radius-none {
+    border-radius: $border-radius-none;
+  }
+
+  &.radius-sm {
+    border-radius: $border-radius-sm;
+  }
+
+  &.radius-base {
+    border-radius: $border-radius-base;
+  }
+
+  &.radius-md {
+    border-radius: $border-radius-md;
+  }
+
+  &.radius-lg {
+    border-radius: $border-radius-lg;
+  }
+
+  &.shadow-none {
+    box-shadow: none;
+  }
+
+  &.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &.shadow-md {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &.shadow-lg {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &.shadow-xl {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &.divide-y {
+    border-bottom: 1px solid #edf2f7;
+  }
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &.size-sm {
+    padding: $padding-size-sm;
+    font-size: $font-size-sm;
+  }
+
+  &.size-base {
+    padding: $padding-size-base;
+    font-size: $font-size-base;
+  }
+
+  &.size-md {
+    padding: $padding-size-md;
+    font-size: $font-size-md;
+  }
+
+  &.size-lg {
+    padding: $padding-size-lg;
+    font-size: $font-size-lg;
+  }
+
+  &.radius-none {
+    border-radius: $border-radius-none;
+  }
+
+  &.radius-sm {
+    border-radius: $border-radius-sm;
+  }
+
+  &.radius-base {
+    border-radius: $border-radius-base;
+  }
+
+  &.radius-md {
+    border-radius: $border-radius-md;
+  }
+
+  &.radius-lg {
+    border-radius: $border-radius-lg;
+  }
+}
+
+.card-body {
+  &.size-sm {
+    padding: $padding-size-sm;
+    font-size: $font-size-sm;
+  }
+
+  &.size-base {
+    padding: $padding-size-base;
+    font-size: $font-size-base;
+  }
+
+  &.size-md {
+    padding: $padding-size-md;
+    font-size: $font-size-md;
+  }
+
+  &.size-lg {
+    padding: $padding-size-lg;
+    font-size: $font-size-lg;
+  }
+
+  &.withDivider {
+    border-top: 1px solid #edf2f7;
+  }
+
+  &.size-sm.withDivider {
+    padding-top: $padding-size-sm;
+  }
+
+  &.size-base.withDivider {
+    padding-top: $padding-size-base;
+  }
+
+  &.size-md.withDivider {
+    padding-top: $padding-size-md;
+  }
+
+  &.size-lg.withDivider {
+    padding-top: $padding-size-lg;
+  }
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+
+  &.size-sm {
+    padding: $padding-size-sm;
+    font-size: $font-size-sm;
+  }
+
+  &.size-base {
+    padding: $padding-size-base;
+    font-size: $font-size-base;
+  }
+
+  &.size-md {
+    padding: $padding-size-md;
+    font-size: $font-size-md;
+  }
+
+  &.size-lg {
+    padding: $padding-size-lg;
+    font-size: $font-size-lg;
+  }
+
+  &.radius-none {
+    border-radius: $border-radius-none;
+  }
+
+  &.radius-sm {
+    border-radius: $border-radius-sm;
+  }
+
+  &.radius-base {
+    border-radius: $border-radius-base;
+  }
+
+  &.radius-md {
+    border-radius: $border-radius-md;
+  }
+
+  &.radius-lg {
+    border-radius: $border-radius-lg;
+  }
+}
+
+.card-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &.radius-none {
+    border-radius: $border-radius-none;
+  }
+
+  &.radius-sm {
+    border-radius: $border-radius-sm;
+  }
+
+  &.radius-base {
+    border-radius: $border-radius-base;
+  }
+
+  &.radius-md {
+    border-radius: $border-radius-md;
+  }
+
+  &.radius-lg {
+    border-radius: $border-radius-lg;
+  }
+}
+
+// Card.styles.scss
+/* Base styles */
+.rounded-sm {
+  border-radius: 0.125rem; /* Adjust as needed */
+}
+
+.rounded {
+  border-radius: 0.25rem; /* Adjust as needed */
+}
+
+.rounded-md {
+  border-radius: 0.375rem; /* Adjust as needed */
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Adjust as needed */
+}
+
+.rounded-xl {
+  border-radius: 0.75rem; /* Adjust as needed */
+}
+
+.rounded-2xl {
+  border-radius: 1rem; /* Adjust as needed */
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem; /* Adjust as needed */
+}
+
+.rounded-full {
+  border-radius: 9999px; /* Large value for a circle */
+}
+
+/* Caption styles */
+.bg-gray-200-75 {
+  background-color: rgba(204, 204, 204, 0.75); /* Adjust as needed */
+}
+
+.text-gray-900 {
+  color: #333; /* Adjust as needed */
+}
+
+.bg-gray-800-50 {
+  background-color: rgba(102, 102, 102, 0.5); /* Adjust as needed */
+}
+
+.text-gray-50 {
+  color: #fff; /* Adjust as needed */
+}
