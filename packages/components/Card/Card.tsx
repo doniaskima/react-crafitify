@@ -6,11 +6,11 @@ import { CardComponent, CardContext, CardProps } from './Card.types';
 import { useComponentTheme } from '../themes/theme.context';
 import { usePropId } from '../utils/usePropId';
 import { CardContextProvider } from './Card.context';
-import CardImage from './CardImage/CardImage';
  
 import { CardBody } from './CardBody';
 import { CardHeader } from './CadHeader/CardHeader';
 import { CardFooter } from './CardFooter/CardFooter';
+import { CardImage } from './CardImage/CardImage';
  
  
 

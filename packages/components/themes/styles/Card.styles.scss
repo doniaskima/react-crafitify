@@ -281,3 +281,66 @@ $border-radius-lg: 0.5rem;
     border-radius: $border-radius-lg;
   }
 }
+
+// Card.styles.scss
+
+// Define the base styles
+$base: (
+  fit: (
+    contain: 'object-contain',
+    cover: 'object-cover',
+    fill: 'object-fill',
+    none: 'object-none',
+    'scale-down': 'object-scale-down',
+  ),
+  radius: (
+    none: '',
+    sm: 'rounded-sm',
+    base: 'rounded',
+    md: 'rounded-md',
+    lg: 'rounded-lg',
+    xl: 'rounded-xl',
+    '2xl': 'rounded-2xl',
+    '3xl': 'rounded-3xl',
+    full: 'rounded-full',
+  ),
+);
+
+// Define the caption styles
+$caption: (
+  mode: (
+    light: (
+      'bg-gray-200/75',
+      'text-gray-900',
+    ),
+    dark: (
+      'bg-gray-800/50',
+      'text-gray-50',
+    ),
+  ),
+);
+
+// Define the wrapper styles
+$wrapper: (
+  relative: 'relative',
+);
+
+// Mixin for applying styles
+@mixin applyStyles($styles) {
+  @each $style, $values in $styles {
+    @each $variant, $className in $values {
+      .#{$style}-#{$variant} {
+        #{$style}: #{$className};
+      }
+    }
+  }
+}
+
+// Apply base styles
+@include applyStyles($base);
+
+// Apply caption styles
+@include applyStyles($caption);
+
+// Apply wrapper styles
+@include applyStyles($wrapper);

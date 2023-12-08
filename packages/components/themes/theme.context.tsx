@@ -8,6 +8,9 @@ export type Theme = {
 type ThemeComponents = {
  
   Card: typeof styles;
+  Image: typeof styles;
+
+
   // Modal: typeof styles.modalStyles.base;
   // Overlay: typeof styles.overlayStyles.base;
   // Text: typeof styles.textStyles.base;
@@ -18,6 +21,7 @@ const defaultTheme: Theme = {
   components: {
  
     Card: styles,
+    Image:styles,
     // Modal: styles.modalStyles.base,
     // Overlay: styles.overlayStyles.base,
     // Text: styles.textStyles.base,
