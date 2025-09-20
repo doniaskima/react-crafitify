@@ -1,4 +1,4 @@
-import * as styles from './styles';
+import * as styles from './styles/Card.styles.scss';
 import { createContext, Provider, useContext } from 'react';
 
 export type Theme = {
@@ -6,7 +6,6 @@ export type Theme = {
 };
 
 type ThemeComponents = {
-<<<<<<< HEAD
  
   Card: typeof styles;
   Image: typeof styles;
@@ -16,19 +15,10 @@ type ThemeComponents = {
   // Overlay: typeof styles.overlayStyles.base;
   // Text: typeof styles.textStyles.base;
   // Avatar: typeof styles.avatarStyles;
-=======
-  Accordion: typeof styles.accordionStyles;
-  Card: typeof styles.cardStyles;
-  Modal: typeof styles.modalStyles.base;
-  Overlay: typeof styles.overlayStyles.base;
-  Text: typeof styles.textStyles.base;
-  Avatar: typeof styles.avatarStyles;
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)
 };
 
 const defaultTheme: Theme = {
   components: {
-<<<<<<< HEAD
  
     Card: styles,
     Image:styles,
@@ -36,14 +26,6 @@ const defaultTheme: Theme = {
     // Overlay: styles.overlayStyles.base,
     // Text: styles.textStyles.base,
     // Avatar: styles.avatarStyles,
-=======
-    Accordion: styles.accordionStyles,
-    Card: styles.cardStyles,
-    Modal: styles.modalStyles.base,
-    Overlay: styles.overlayStyles.base,
-    Text: styles.textStyles.base,
-    Avatar: styles.avatarStyles,
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)
  
   },
 };

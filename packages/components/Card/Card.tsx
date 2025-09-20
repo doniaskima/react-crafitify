@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // CardRoot.jsx
 
 import React, { forwardRef, useMemo } from 'react';
@@ -14,19 +13,6 @@ import { CardFooter } from './CardFooter/CardFooter';
 import { CardImage } from './CardImage/CardImage';
  
  
-=======
-import { forwardRef, Ref, useMemo } from 'react';
-import { twMerge } from 'tailwind-merge';
-import { CardContextProvider } from './Card.context';
-import { CardComponent, CardContext, CardProps } from './Card.types';
-import { useComponentTheme } from '../themes/theme.context';
-import { usePropId } from '../utils/usePropId';
-import { CardHeader } from './CardHeader';
-import { CardImage } from './CardImage';
-import { CardBody } from './CardBody';
-import { CardFooter } from './CardFooter';
-import React from 'react';
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)
 
 const defaultProps: Partial<CardProps> = {
   bordered: true,
@@ -38,11 +24,7 @@ const defaultProps: Partial<CardProps> = {
 };
 
 const CardRoot: CardComponent = forwardRef<HTMLDivElement, CardProps>(
-<<<<<<< HEAD
   (props: CardProps, ref?) => {
-=======
-  (props: CardProps, ref?: Ref<HTMLDivElement>) => {
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)
     const theme = useComponentTheme('Card');
     const {
       bordered,
@@ -66,27 +48,12 @@ const CardRoot: CardComponent = forwardRef<HTMLDivElement, CardProps>(
     };
 
     const classes = useMemo(() => {
-<<<<<<< HEAD
       return `
         ${styles.card} ${styles['color-' + color]} ${styles['radius-' + radius]} ${styles['shadow-' + shadow]} ${
         withDivider ? styles.withDivider : ''
       } ${bordered ? styles.bordered : ''} ${className}
       `;
     }, [styles.card, styles['color-' + color], styles['radius-' + radius], styles['shadow-' + shadow], styles.withDivider, styles.bordered, className]);
-=======
-      return twMerge(
-        theme.base({
-          bordered,
-          className,
-          color,
-          radius,
-          shadow,
-          withDivider,
-        })
-        
-      );
-    }, [bordered, className, color, radius, shadow, withDivider, theme]);
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)
 
     return (
       <CardContextProvider value={contextValue}>
@@ -108,7 +75,4 @@ const Card = Object.assign(CardRoot, {
 });
 
 export default Card;
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)

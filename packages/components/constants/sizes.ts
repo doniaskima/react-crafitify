@@ -1,6 +1,4 @@
-import { ICRAFTSize } from "../interfaces";
-
- 
+import { ICRAFTSize } from '../interfaces';
 
 export const Craftify_FONT_SIZES: ICRAFTSize = {
   sm: '12px',

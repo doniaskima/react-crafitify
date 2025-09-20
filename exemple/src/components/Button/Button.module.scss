@@ -1,0 +1,63 @@
+// Button.module.scss
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .custom-button {
+    margin-bottom: 10px; 
+  }
+  
+  .primary-button {
+    &.custom-1 {
+      background-color: #FFAEBC;
+      &:hover {
+        background-color: #D8A7B1;
+      }
+      &:active {
+        background-color: #EF7C8E;
+      }
+    }
+  
+    &.custom-2 {
+      background-color: #B6E2D3;
+      &:hover {
+        background-color: #D8A7B1;
+      }
+      &:active {
+        background-color: #EF7C8E;
+      }
+    }
+  
+    // Add styles for other primary buttons as needed
+  }
+  
+  .secondary-button {
+    &.custom-1 {
+      background-color: #A0E7E5;
+      &:hover {
+        background-color: #B4F8C8;
+      }
+      &:active {
+        background-color: #922b21;
+      }
+    }
+  
+    &.custom-2 {
+      background-color: #DDFFE7;
+      &:hover {
+        background-color: #B4F8C8;
+      }
+      &:active {
+        background-color: #922b21;
+      }
+    }
+  
+  }
+  
+  .disabled-button {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

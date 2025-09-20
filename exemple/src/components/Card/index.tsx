@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import Card from '../../../../packages/components/Card/Card';
 import "./Card.css"
 import { Button } from 'react-craftify-core';
@@ -78,18 +77,4 @@ const CardComponent = () => {
   );
 };
 
-=======
-import { Card } from 'react-craftify-core';
-
-const CardComponent = () => {
-  return (
-    <Card>
-      <Card.Header>Header</Card.Header>
-      <Card.Body>...</Card.Body>
-      <Card.Footer>Footer</Card.Footer>
-    </Card>
-  );
-};
-
->>>>>>> parent of 10bb73d (fix(Card): resolve styling issues and improve class composition and fixing issues :bug:)
 export default CardComponent;

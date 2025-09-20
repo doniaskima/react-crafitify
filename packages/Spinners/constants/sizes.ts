@@ -1,6 +1,5 @@
-import { ICRAFTSIZE } from "../interfaces";
+import { ICRAFTSIZE } from '../interfaces';
 
- 
 export const CRAFT_FONT_SIZES: ICRAFTSIZE = {
   sm: '12px',
   m: '15px',
