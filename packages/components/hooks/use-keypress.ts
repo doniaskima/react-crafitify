@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 export function useKeypress(
   key: string,
   active?: boolean,
-  callback?: (event: KeyboardEvent) => void,
+  callback?: (event: KeyboardEvent) => void
 ): void {
   useEffect(() => {
     if (!active) {

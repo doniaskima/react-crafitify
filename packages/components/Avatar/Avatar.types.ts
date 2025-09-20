@@ -25,11 +25,7 @@ export type AvatarShadowColor =
   | 'black';
 export type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type AvatarStatus = 'none' | 'online' | 'offline' | 'busy' | 'away';
-export type AvatarStatusPosition =
-  | 'top-right'
-  | 'top-left'
-  | 'bottom-right'
-  | 'bottom-left';
+export type AvatarStatusPosition = 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left';
 export type AvatarTone = 'solid' | 'light' | 'glossy' | 'outline';
 
 export interface AvatarProps extends ComponentPropsWithRef<'div'> {

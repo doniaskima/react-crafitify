@@ -48,8 +48,7 @@ export const LoaderRingContainer = styled.div`
     border: ${(props) => `${props.borderSize}px solid ${props.color}`};
     border-radius: 50%;
     animation: ${loading} 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: ${(props) =>
-      `${props.color} transparent transparent transparent`};
+    border-color: ${(props) => `${props.color} transparent transparent transparent`};
   }
 
   & > div:nth-of-type(1) {

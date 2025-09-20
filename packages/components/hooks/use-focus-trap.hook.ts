@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-export function useFocusTrap(
-  active: boolean = true,
-): (element: HTMLElement | null) => void {
+export function useFocusTrap(active: boolean = true): (element: HTMLElement | null) => void {
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -16,22 +14,17 @@ export function useFocusTrap(
 
         const focusableElements: HTMLElement[] = Array.from(
           ref.current?.querySelectorAll(
-            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-          ),
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+          )
         );
 
         if (!focusableElements.length) {
           return;
         }
 
-        const activeElementIndex = focusableElements.indexOf(
-          document.activeElement as HTMLElement,
-        );
+        const activeElementIndex = focusableElements.indexOf(document.activeElement as HTMLElement);
 
-        const getNextFocusableElement = (
-          currentIndex: number,
-          shiftKey: boolean,
-        ) => {
+        const getNextFocusableElement = (currentIndex: number, shiftKey: boolean) => {
           const nextIndex = shiftKey ? currentIndex - 1 : currentIndex + 1;
           if (nextIndex < 0 || nextIndex >= focusableElements.length) {
             return shiftKey
@@ -68,6 +61,6 @@ export function useFocusTrap(
 
       return ref;
     },
-    [active],
+    [active]
   );
 }

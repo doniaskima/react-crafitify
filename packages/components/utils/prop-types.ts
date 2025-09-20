@@ -1,6 +1,6 @@
-export const tuple = <T extends string[]>(...args: T) => args;
+export const tuple = <T extends string[]>(...args: T) => args
 
-export const tupleNumber = <T extends number[]>(...args: T) => args;
+export const tupleNumber = <T extends number[]>(...args: T) => args
 
 const buttonTypes = tuple(
   'default',
@@ -13,15 +13,9 @@ const buttonTypes = tuple(
   'success-light',
   'warning-light',
   'error-light',
-);
+)
 
-const normalTypes = tuple(
-  'default',
-  'secondary',
-  'success',
-  'warning',
-  'error',
-);
+const normalTypes = tuple('default', 'secondary', 'success', 'warning', 'error')
 
 const snippetTypes = tuple(
   'default',
@@ -31,7 +25,7 @@ const snippetTypes = tuple(
   'error',
   'dark',
   'lite',
-);
+)
 
 const cardTypes = tuple(
   'default',
@@ -45,11 +39,11 @@ const cardTypes = tuple(
   'purple',
   'violet',
   'cyan',
-);
+)
 
-const copyTypes = tuple('default', 'silent', 'prevent');
+const copyTypes = tuple('default', 'silent', 'prevent')
 
-const triggerTypes = tuple('hover', 'click');
+const triggerTypes = tuple('hover', 'click')
 
 const placement = tuple(
   'top',
@@ -64,22 +58,22 @@ const placement = tuple(
   'right',
   'rightStart',
   'rightEnd',
-);
+)
 
-const dividerAlign = tuple('start', 'center', 'end', 'left', 'right');
+const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')
 
-export type ButtonTypes = (typeof buttonTypes)[number];
+export type ButtonTypes = typeof buttonTypes[number]
 
-export type NormalTypes = (typeof normalTypes)[number];
+export type NormalTypes = typeof normalTypes[number]
 
-export type SnippetTypes = (typeof snippetTypes)[number];
+export type SnippetTypes = typeof snippetTypes[number]
 
-export type CardTypes = (typeof cardTypes)[number];
+export type CardTypes = typeof cardTypes[number]
 
-export type CopyTypes = (typeof copyTypes)[number];
+export type CopyTypes = typeof copyTypes[number]
 
-export type TriggerTypes = (typeof triggerTypes)[number];
+export type TriggerTypes = typeof triggerTypes[number]
 
-export type Placement = (typeof placement)[number];
+export type Placement = typeof placement[number]
 
-export type DividerAlign = (typeof dividerAlign)[number];
+export type DividerAlign = typeof dividerAlign[number]

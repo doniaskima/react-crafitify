@@ -1,14 +1,7 @@
 import { cva } from 'class-variance-authority';
 
 const base = cva(
-  [
-    'inline-flex',
-    'items-center',
-    'justify-center',
-    'relative',
-    'hover:z-20',
-    'z-10',
-  ],
+  ['inline-flex', 'items-center', 'justify-center', 'relative', 'hover:z-20', 'z-10'],
   {
     variants: {
       tone: {
@@ -384,7 +377,7 @@ const base = cva(
         className: ['text-black', 'border-gray-800'],
       },
     ],
-  },
+  }
 );
 
 const status = cva(['absolute', 'rounded-full', 'outline'], {

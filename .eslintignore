@@ -1,8 +1,0 @@
-.vscode/ 
-
-node_modules/
-
-# Build products
-build/
-dist/
-tools/

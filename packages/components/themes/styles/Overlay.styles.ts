@@ -82,7 +82,7 @@ const base = cva(
         className: ['bg-gray-900/75'],
       },
     ],
-  },
+  }
 );
 
 const overlayStyles = {
